@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#1B4DFF" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/logos/company.svg" />
+    <link rel="apple-touch-icon" href="./assets/images/logos/company.svg" />
+
+    <!-- Preload key resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+    <!-- Stylesheets -->
+    <link href="./output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Lumira | Homepage</title>
+  </head>
+  <body>
+    <main class="p-3.5 bg-white flex flex-col">
+      <header class="relative w-full">
+        <img id="Bg-Image" src="assets/images/backgrounds/bg-header.png" alt="image" class="absolute rounded-[18px] left-0 w-full h-[810px]" />
+        <div class="px-[142px] pt-[60px] pb-[80px] relative flex flex-col items-center gap-[120px]">
+          <nav class="flex items-center justify-between w-full bg-white py-3.5 rounded-full px-4 border border-Lumira-Border-Gray">
+            <a href="#">
+              <img src="assets/images/logos/company.svg" alt="company logo" class="w-[180px] h-[48px] shrink-0" />
+            </a>
+            <ul class="flex items-center gap-[18px] text-Lumira-Gray-500">
+              <li>
+                <a href="" class="font-medium">Home</a>
+              </li>
+              <li class="relative group">
+                <button type="button" class="flex items-center gap-2 focus:outline-none" data-dropdown="ui-kit">
+                  <p class="font-medium">UI Kit</p>
+                  <img src="assets/images/icons/chevron-down.svg" alt="Chevron Down" class="size-4 shrink-0" />
+                </button>
+                <ul id="UiKitDropdown" class="hidden absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg z-10 font-medium">
+                  <li><a href="" class="block px-4 py-2 hover:bg-gray-100">UI Kit 1</a></li>
+                  <li><a href="" class="block px-4 py-2 hover:bg-gray-100">UI Kit 2</a></li>
+                  <li><a href="" class="block px-4 py-2 hover:bg-gray-100">UI Kit 3</a></li>
+                </ul>
+              </li>
+              <li class="relative group">
+                <button type="button" class="flex items-center gap-2 focus:outline-none" data-dropdown="website">
+                  <p class="font-medium">Website</p>
+                  <img src="assets/images/icons/chevron-down.svg" alt="Chevron Down" class="size-4 shrink-0" />
+                </button>
+                <ul id="WebsiteDropdown" class="hidden absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg z-10 font-medium">
+                  <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Website 1</a></li>
+                  <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Website 2</a></li>
+                  <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Website 3</a></li>
+                </ul>
+              </li>
+              <li class="relative group">
+                <button type="button" class="flex items-center gap-2 focus:outline-none" data-dropdown="icon">
+                  <p class="font-medium">Icon</p>
+                  <img src="assets/images/icons/chevron-down.svg" alt="Chevron Down" class="size-4 shrink-0" />
+                </button>
+                <ul id="IconDropdown" class="hidden absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg z-10 font-medium">
+                  <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Icon 1</a></li>
+                  <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Icon 2</a></li>
+                  <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Icon 3</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Freebies</a>
+              </li>
+            </ul>
+            <div class="flex items-center gap-1.5">
+              <a href="#">
+                <div class="py-3 px-5 rounded-full">Login</div>
+              </a>
+              <a href="#">
+                <div class="py-3 px-5 rounded-full bg-Lumira-Indigo-600 text-white border border-Lumira-Indigo-400">Register</div>
+              </a>
+            </div>
+          </nav>
+          <div id="ACuratedLibrary" class="flex flex-col items-center max-w-[1022px] mx-auto w-full">
+            <span class="rounded-full bg-[#D8C1CE] font-medium py-1.5 px-5">Instant Solutions for Faster Design</span>
+            <h1 class="font-semibold text-[60px] text-center leading-[70px] mt-6 max-w-[810px]">A Curated Library of Ready to Use Design Templates</h1>
+            <p class="text-[20px] leading-[30px] text-center mt-[30px] max-w-[664px]">Kickstart your next project with our premium templates crafted for designers, developers, and modern creators.</p>
+            <div id="HeaderSearch" class="mt-10 max-w-[340px] w-full relative">
+              <img src="assets/images/icons/search-gray.svg" alt="search gray" class="absolute left-[14px] top-1/2 transform -translate-y-1/2 size-5" />
+              <input type="text" name="search" placeholder="search..." id="" class="w-full focus:outline-none rounded-full bg-white h-[44px] pl-[42px] pr-3.5 placeholder:text-Lumira-Gray-500 hover:ring-2 hover:ring-Lumira-Pink-400 focus:ring-2 focus:ring-Lumira-Pink-400 transition-all duration-300" />
+            </div>
+            <div id="ResultHeaderSearch" class="max-w-[600px] w-full mt-5 px-[26.5px] flex flex-wrap gap-1.5 justify-center">
+              <a href="">
+                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full">
+                  <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
+                  <p class="font-medium text-sm leading-5">Technology</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full">
+                  <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
+                  <p class="font-medium text-sm leading-5">Startup</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full">
+                  <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
+                  <p class="font-medium text-sm leading-5">Portfolio</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full">
+                  <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
+                  <p class="font-medium text-sm leading-5">Store</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full">
+                  <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
+                  <p class="font-medium text-sm leading-5">POS</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full">
+                  <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
+                  <p class="font-medium text-sm leading-5">Sports</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full">
+                  <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
+                  <p class="font-medium text-sm leading-5">Finance</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full">
+                  <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
+                  <p class="font-medium text-sm leading-5">Health</p>
+                </div>
+              </a>
+              <a href="">
+                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full">
+                  <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
+                  <p class="font-medium text-sm leading-5">Education</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="Slider" class="mt-3.5"></section>
+      <section id="GrandOpeningDeals!" class="mt-3.5"></section>
+      <section id="GoingViralCategories" class="mt-20"></section>
+      <section id="KickstartProjectsInMinutes" class="mt-20"></section>
+      <section id="FeaturedProducts" class="mt-28"></section>
+      <hr />
+      <section id="TrendingWebsiteTemplates" class="mt-[52px]"></section>
+      <hr />
+      <section id="Trending3D&2DIconPack"></section>
+      <section id="FreebieProducts"></section>
+      <section id="BecomeALumiraCreator"></section>
+      <footer></footer>
+    </main>
+    <script>
+      // Konfigurasi dropdown
+      const dropdowns = [
+        { buttonSelector: '[data-dropdown="ui-kit"]', id: "UiKitDropdown" },
+        { buttonSelector: '[data-dropdown="website"]', id: "WebsiteDropdown" },
+        { buttonSelector: '[data-dropdown="icon"]', id: "IconDropdown" },
+      ];
+
+      class DropdownManager {
+        constructor(dropdowns) {
+          this.dropdowns = dropdowns;
+          this.init();
+        }
+
+        init() {
+          // Inisialisasi setiap dropdown
+          this.dropdowns.forEach((dropdown) => {
+            const button = document.querySelector(dropdown.buttonSelector);
+            const menu = document.getElementById(dropdown.id);
+
+            if (button && menu) {
+              this.setupDropdown(button, menu);
+            }
+          });
+
+          // Click outside listener
+          document.addEventListener("click", () => this.closeAllDropdowns());
+        }
+
+        setupDropdown(button, menu) {
+          button.addEventListener("click", (e) => {
+            e.stopPropagation();
+            this.toggleDropdown(menu);
+          });
+
+          // Prevent dropdown menu clicks from closing
+          menu.addEventListener("click", (e) => e.stopPropagation());
+        }
+
+        toggleDropdown(menu) {
+          // Close all other dropdowns first
+          this.closeAllDropdowns();
+          // Toggle current dropdown
+          menu.classList.toggle("hidden");
+        }
+
+        closeAllDropdowns() {
+          this.dropdowns.forEach((dropdown) => {
+            const menu = document.getElementById(dropdown.id);
+            if (menu) {
+              menu.classList.add("hidden");
+            }
+          });
+        }
+      }
+
+      // Initialize dropdowns when DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        new DropdownManager(dropdowns);
+      });
+    </script>
+  </body>
+</html>

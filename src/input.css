@@ -1,0 +1,23 @@
+@import "tailwindcss";
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  min-height: 100vh;
+  color: var(--color-Lumira-Black);
+}
+
+@theme {
+  --color-Lumira-Black: #000000;
+  --color-Lumira-Pink-600: #dd2590;
+  --color-Lumira-Pink-400: #f670c7;
+  --color-Lumira-Pink-50: #fdf2fa;
+  --color-Lumira-Gray-50: #f9fafb;
+  --color-Lumira-Gray-200: #eaecf0;
+  --color-Lumira-Gray-300: #d0d5dd;
+  --color-Lumira-Gray-500: #667085;
+  --color-Lumira-Gray-600: #475467;
+  --color-Lumira-Gray-900: #101828;
+  --color-Lumira-Indigo-400: #8098F9;
+  --color-Lumira-Indigo-600: #444CE7;
+  --color-Lumira-Border-Gray: #E1E1E1;
+  --color-Lumira-BlackOpium: #231f1d;
+}
