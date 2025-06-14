@@ -16,8 +16,26 @@ body {
   --color-Lumira-Gray-500: #667085;
   --color-Lumira-Gray-600: #475467;
   --color-Lumira-Gray-900: #101828;
-  --color-Lumira-Indigo-400: #8098F9;
-  --color-Lumira-Indigo-600: #444CE7;
-  --color-Lumira-Border-Gray: #E1E1E1;
+  --color-Lumira-Pink-700: #c11574;
+  --color-Lumira-Indigo-400: #8098f9;
+  --color-Lumira-Indigo-600: #444ce7;
+  --color-Lumira-Border-Gray: #e1e1e1;
   --color-Lumira-BlackOpium: #231f1d;
+}
+
+.slider-left {
+  animation: slide-left 20s infinite linear;
+}
+
+.gradient-slider {
+  background: linear-gradient(270deg, rgba(174, 13, 102, 0) 0%, #ae0d66 100%);
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatex(-100%);
+  }
 }
