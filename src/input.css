@@ -20,10 +20,13 @@ body {
   --color-Lumira-Pink-200: #fcceee;
   --color-Lumira-Pink-700: #c11574;
   --color-Lumira-Pink-900: #851651;
+  --color-Lumira-Indigo-100: #E0EAFF;
   --color-Lumira-Indigo-400: #8098f9;
   --color-Lumira-Indigo-600: #444ce7;
+  --color-Lumira-Indigo-700: #3538CD;
   --color-Lumira-Border-Gray: #e1e1e1;
   --color-Lumira-BlackOpium: #231f1d;
+  --color-Lumira-Green-600: #099250;
 }
 
 .gradient-slider {
@@ -88,4 +91,13 @@ body {
 
 .blink {
   animation: blink 1s ease-in-out infinite;
+}
+
+/* text gradient */
+.text-radial-gradient {
+  background: radial-gradient(52.92% 223.92% at 46.63% 50%, #444ce7 0%, #ff008b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
