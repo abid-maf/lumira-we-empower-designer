@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -18,52 +18,53 @@
     <!-- Stylesheets -->
     <link href="./output.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Lumira | Homepage</title>
   </head>
   <body>
-    <main class="p-3.5 bg-white flex flex-col">
+    <main class="flex flex-col bg-white p-3.5">
       <header class="relative w-full">
-        <img id="Bg-Image" src="assets/images/backgrounds/bg-header.png" alt="image" class="absolute rounded-[18px] left-0 w-full h-[810px]" />
-        <img src="assets/images/backgrounds/header-mask.png" alt="mask" class="absolute w-[815.59px] h-[464.43px] top-[160px] left-1/2 transform -translate-x-1/2" />
-        <div class="px-[142px] pt-[60px] pb-[80px] relative flex flex-col items-center gap-[120px]">
-          <nav class="flex items-center justify-between w-full bg-white py-3.5 rounded-full px-4 border border-Lumira-Border-Gray">
+        <img id="Bg-Image" src="assets/images/backgrounds/bg-header.png" alt="image" class="absolute left-0 h-[810px] w-full rounded-[18px]" />
+        <img src="assets/images/backgrounds/header-mask.png" alt="mask" class="absolute top-[160px] left-1/2 h-[464.43px] w-[815.59px] -translate-x-1/2 transform" />
+        <div class="relative flex flex-col items-center gap-[120px] px-[142px] pt-[60px] pb-[80px]">
+          <nav class="border-Lumira-Border-Gray flex w-full items-center justify-between rounded-full border bg-white px-4 py-3.5">
             <a href="#">
-              <img src="assets/images/logos/company.svg" alt="company logo" class="w-[180px] h-[48px] shrink-0" />
+              <img src="assets/images/logos/company.svg" alt="company logo" class="h-[48px] w-[180px] shrink-0" />
             </a>
-            <ul class="flex items-center gap-[18px] text-Lumira-Gray-500">
+            <ul class="text-Lumira-Gray-500 flex items-center gap-[18px]">
               <li>
                 <a href="">
                   <p class="font-medium">Home</p>
                 </a>
               </li>
-              <li class="relative group">
+              <li class="group relative">
                 <button type="button" class="flex items-center gap-2 focus:outline-none" data-dropdown="ui-kit">
                   <p class="font-medium">UI Kit</p>
                   <img src="assets/images/icons/chevron-down.svg" alt="Chevron Down" class="size-4 shrink-0" />
                 </button>
-                <ul id="UiKitDropdown" class="hidden absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg z-10 font-medium">
+                <ul id="UiKitDropdown" class="absolute left-0 z-10 mt-2 hidden w-40 rounded border bg-white font-medium shadow-lg">
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">UI Kit 1</a></li>
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">UI Kit 2</a></li>
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">UI Kit 3</a></li>
                 </ul>
               </li>
-              <li class="relative group">
+              <li class="group relative">
                 <button type="button" class="flex items-center gap-2 focus:outline-none" data-dropdown="website">
                   <p class="font-medium">Website</p>
                   <img src="assets/images/icons/chevron-down.svg" alt="Chevron Down" class="size-4 shrink-0" />
                 </button>
-                <ul id="WebsiteDropdown" class="hidden absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg z-10 font-medium">
+                <ul id="WebsiteDropdown" class="absolute left-0 z-10 mt-2 hidden w-40 rounded border bg-white font-medium shadow-lg">
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Website 1</a></li>
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Website 2</a></li>
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Website 3</a></li>
                 </ul>
               </li>
-              <li class="relative group">
+              <li class="group relative">
                 <button type="button" class="flex items-center gap-2 focus:outline-none" data-dropdown="icon">
                   <p class="font-medium">Icon</p>
                   <img src="assets/images/icons/chevron-down.svg" alt="Chevron Down" class="size-4 shrink-0" />
                 </button>
-                <ul id="IconDropdown" class="hidden absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg z-10 font-medium">
+                <ul id="IconDropdown" class="absolute left-0 z-10 mt-2 hidden w-40 rounded border bg-white font-medium shadow-lg">
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Icon 1</a></li>
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Icon 2</a></li>
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Icon 3</a></li>
@@ -77,107 +78,312 @@
             </ul>
             <div class="flex items-center gap-1.5">
               <a href="#">
-                <div class="py-3 px-5 rounded-full">Login</div>
+                <div class="rounded-full px-5 py-3">Login</div>
               </a>
               <a href="#">
-                <div class="py-3 px-5 rounded-full bg-Lumira-Indigo-600 text-white border border-Lumira-Indigo-400 hover:ring-Lumira-Indigo-400 hover:ring-2 transition-all duration-300">Register</div>
+                <div class="bg-Lumira-Indigo-600 border-Lumira-Indigo-400 hover:ring-Lumira-Indigo-400 rounded-full border px-5 py-3 text-white transition-all duration-300 hover:ring-2">Register</div>
               </a>
             </div>
           </nav>
-          <div id="ACuratedLibrary" class="flex flex-col items-center max-w-[1022px] mx-auto w-full">
-            <span class="rounded-full bg-[#D8C1CE] font-medium py-1.5 px-5">Instant Solutions for Faster Design</span>
-            <h1 class="font-semibold text-[60px] text-center leading-[70px] mt-6 max-w-[810px]">A Curated Library of Ready to Use Design Templates</h1>
-            <p class="text-[20px] leading-[30px] text-center mt-[30px] max-w-[664px]">Kickstart your next project with our premium templates crafted for designers, developers, and modern creators.</p>
-            <div id="HeaderSearch" class="mt-10 max-w-[340px] w-full relative">
-              <img src="assets/images/icons/search-gray.svg" alt="search gray" class="absolute left-[14px] top-1/2 transform -translate-y-1/2 size-5" />
-              <input type="text" name="search" placeholder="search..." id="" class="w-full focus:outline-none rounded-full bg-white h-[44px] pl-[42px] pr-3.5 placeholder:text-Lumira-Gray-500 hover:ring-2 hover:ring-Lumira-Pink-400 focus:ring-2 focus:ring-Lumira-Pink-400 transition-all duration-300" />
+          <div id="ACuratedLibrary" class="mx-auto flex w-full max-w-[1022px] flex-col items-center">
+            <span class="rounded-full bg-[#D8C1CE] px-5 py-1.5 font-medium">Instant Solutions for Faster Design</span>
+            <h1 class="mt-6 max-w-[810px] text-center text-[60px] leading-[70px] font-semibold">A Curated Library of Ready to Use Design Templates</h1>
+            <p class="mt-[30px] max-w-[664px] text-center text-[20px] leading-[30px]">Kickstart your next project with our premium templates crafted for designers, developers, and modern creators.</p>
+            <div id="HeaderSearch" class="relative mt-10 w-full max-w-[340px]">
+              <img src="assets/images/icons/search-gray.svg" alt="search gray" class="absolute top-1/2 left-[14px] size-5 -translate-y-1/2 transform" />
+              <input type="text" name="search" placeholder="search..." id="" class="placeholder:text-Lumira-Gray-500 hover:ring-Lumira-Pink-400 focus:ring-Lumira-Pink-400 h-[44px] w-full rounded-full bg-white pr-3.5 pl-[42px] transition-all duration-300 hover:ring-2 focus:ring-2 focus:outline-none" />
             </div>
-            <div id="ResultHeaderSearch" class="max-w-[600px] w-full mt-5 px-[26.5px] flex flex-wrap gap-1.5 justify-center">
+            <div id="ResultHeaderSearch" class="mt-5 flex w-full max-w-[600px] flex-wrap justify-center gap-1.5 px-[26.5px]">
               <a href="">
-                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full hover:ring-2 hover:ring-Lumira-Pink-400 transition-all duration-300">
+                <div class="bg-Lumira-Pink-50 border-Lumira-Gray-200 hover:ring-Lumira-Pink-400 flex items-center gap-1.5 rounded-full border px-4 py-2.5 transition-all duration-300 hover:ring-2">
                   <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
-                  <p class="font-medium text-sm leading-5">Technology</p>
+                  <p class="text-sm leading-5 font-medium">Technology</p>
                 </div>
               </a>
               <a href="">
-                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full hover:ring-2 hover:ring-Lumira-Pink-400 transition-all duration-300">
+                <div class="bg-Lumira-Pink-50 border-Lumira-Gray-200 hover:ring-Lumira-Pink-400 flex items-center gap-1.5 rounded-full border px-4 py-2.5 transition-all duration-300 hover:ring-2">
                   <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
-                  <p class="font-medium text-sm leading-5">Startup</p>
+                  <p class="text-sm leading-5 font-medium">Startup</p>
                 </div>
               </a>
               <a href="">
-                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full hover:ring-2 hover:ring-Lumira-Pink-400 transition-all duration-300">
+                <div class="bg-Lumira-Pink-50 border-Lumira-Gray-200 hover:ring-Lumira-Pink-400 flex items-center gap-1.5 rounded-full border px-4 py-2.5 transition-all duration-300 hover:ring-2">
                   <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
-                  <p class="font-medium text-sm leading-5">Portfolio</p>
+                  <p class="text-sm leading-5 font-medium">Portfolio</p>
                 </div>
               </a>
               <a href="">
-                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full hover:ring-2 hover:ring-Lumira-Pink-400 transition-all duration-300">
+                <div class="bg-Lumira-Pink-50 border-Lumira-Gray-200 hover:ring-Lumira-Pink-400 flex items-center gap-1.5 rounded-full border px-4 py-2.5 transition-all duration-300 hover:ring-2">
                   <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
-                  <p class="font-medium text-sm leading-5">Store</p>
+                  <p class="text-sm leading-5 font-medium">Store</p>
                 </div>
               </a>
               <a href="">
-                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full hover:ring-2 hover:ring-Lumira-Pink-400 transition-all duration-300">
+                <div class="bg-Lumira-Pink-50 border-Lumira-Gray-200 hover:ring-Lumira-Pink-400 flex items-center gap-1.5 rounded-full border px-4 py-2.5 transition-all duration-300 hover:ring-2">
                   <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
-                  <p class="font-medium text-sm leading-5">POS</p>
+                  <p class="text-sm leading-5 font-medium">POS</p>
                 </div>
               </a>
               <a href="">
-                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full hover:ring-2 hover:ring-Lumira-Pink-400 transition-all duration-300">
+                <div class="bg-Lumira-Pink-50 border-Lumira-Gray-200 hover:ring-Lumira-Pink-400 flex items-center gap-1.5 rounded-full border px-4 py-2.5 transition-all duration-300 hover:ring-2">
                   <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
-                  <p class="font-medium text-sm leading-5">Sports</p>
+                  <p class="text-sm leading-5 font-medium">Sports</p>
                 </div>
               </a>
               <a href="">
-                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full hover:ring-2 hover:ring-Lumira-Pink-400 transition-all duration-300">
+                <div class="bg-Lumira-Pink-50 border-Lumira-Gray-200 hover:ring-Lumira-Pink-400 flex items-center gap-1.5 rounded-full border px-4 py-2.5 transition-all duration-300 hover:ring-2">
                   <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
-                  <p class="font-medium text-sm leading-5">Finance</p>
+                  <p class="text-sm leading-5 font-medium">Finance</p>
                 </div>
               </a>
               <a href="">
-                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full hover:ring-2 hover:ring-Lumira-Pink-400 transition-all duration-300">
+                <div class="bg-Lumira-Pink-50 border-Lumira-Gray-200 hover:ring-Lumira-Pink-400 flex items-center gap-1.5 rounded-full border px-4 py-2.5 transition-all duration-300 hover:ring-2">
                   <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
-                  <p class="font-medium text-sm leading-5">Health</p>
+                  <p class="text-sm leading-5 font-medium">Health</p>
                 </div>
               </a>
               <a href="">
-                <div class="flex items-center gap-1.5 px-4 py-2.5 bg-Lumira-Pink-50 border border-Lumira-Gray-200 rounded-full hover:ring-2 hover:ring-Lumira-Pink-400 transition-all duration-300">
+                <div class="bg-Lumira-Pink-50 border-Lumira-Gray-200 hover:ring-Lumira-Pink-400 flex items-center gap-1.5 rounded-full border px-4 py-2.5 transition-all duration-300 hover:ring-2">
                   <img src="assets/images/icons/hashtag.svg" alt="hashtag" class="size-4 shrink-0" />
-                  <p class="font-medium text-sm leading-5">Education</p>
+                  <p class="text-sm leading-5 font-medium">Education</p>
                 </div>
               </a>
             </div>
           </div>
         </div>
       </header>
-      <section id="Slider" class="relative mt-3.5 w-full bg-Lumira-Pink-700 overflow-x-hidden py-[27px] rounded-[18px]">
-        <span id="GradientSliderLeft" class="bg-gradient-to-r z-50 from-[#AE0D66] to-[rgba(174,13,102,0)] absolute left-0 top-0 h-full w-[268px]"></span>
-        <span id="GradientSliderRight" class="bg-gradient-to-l z-50 from-[#AE0D66] to-[rgba(174,13,102,0)] absolute right-0 top-0 h-full w-[268px]"></span>
+      <section id="Slider" class="bg-Lumira-Pink-700 relative mt-3.5 w-full overflow-x-hidden rounded-[18px] py-[27px]">
+        <span id="GradientSliderLeft" class="absolute top-0 left-0 z-50 h-full w-[268px] bg-gradient-to-r from-[#AE0D66] to-[rgba(174,13,102,0)]"></span>
+        <span id="GradientSliderRight" class="absolute top-0 right-0 z-50 h-full w-[268px] bg-gradient-to-l from-[#AE0D66] to-[rgba(174,13,102,0)]"></span>
         <div class="flex w-max flex-nowrap">
           <div class="slider w-max">
-            <div class="slider-left flex items-center gap-[44px] flex-nowrap pr-[44px]">
-              <p class="font-medium shrink-0 italic text-[20px] leading-[30px] text-white"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
-              <img src="assets/images/icons/subtract.svg" alt="subtract" class="shrink-0 size-6" />
-              <p class="font-medium shrink-0 italic text-[20px] leading-[30px] text-white"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
-              <img src="assets/images/icons/subtract.svg" alt="subtract" class="shrink-0 size-6" />
-              <p class="font-medium shrink-0 italic text-[20px] leading-[30px] text-white"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
-              <img src="assets/images/icons/subtract.svg" alt="subtract" class="shrink-0 size-6" />
+            <div class="slider-left flex flex-nowrap items-center gap-[44px] pr-[44px]">
+              <p class="shrink-0 text-[20px] leading-[30px] font-medium text-white italic"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
+              <img src="assets/images/icons/subtract.svg" alt="subtract" class="size-6 shrink-0" />
+              <p class="shrink-0 text-[20px] leading-[30px] font-medium text-white italic"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
+              <img src="assets/images/icons/subtract.svg" alt="subtract" class="size-6 shrink-0" />
+              <p class="shrink-0 text-[20px] leading-[30px] font-medium text-white italic"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
+              <img src="assets/images/icons/subtract.svg" alt="subtract" class="size-6 shrink-0" />
             </div>
           </div>
           <div class="slider w-max">
-            <div class="slider-left flex items-center gap-[44px] flex-nowrap pr-[44px]">
-              <p class="font-medium shrink-0 italic text-[20px] leading-[30px] text-white"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
-              <img src="assets/images/icons/subtract.svg" alt="subtract" class="shrink-0 size-6" />
-              <p class="font-medium shrink-0 italic text-[20px] leading-[30px] text-white"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
-              <img src="assets/images/icons/subtract.svg" alt="subtract" class="shrink-0 size-6" />
-              <p class="font-medium shrink-0 italic text-[20px] leading-[30px] text-white"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
-              <img src="assets/images/icons/subtract.svg" alt="subtract" class="shrink-0 size-6" />
+            <div class="slider-left flex flex-nowrap items-center gap-[44px] pr-[44px]">
+              <p class="shrink-0 text-[20px] leading-[30px] font-medium text-white italic"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
+              <img src="assets/images/icons/subtract.svg" alt="subtract" class="size-6 shrink-0" />
+              <p class="shrink-0 text-[20px] leading-[30px] font-medium text-white italic"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
+              <img src="assets/images/icons/subtract.svg" alt="subtract" class="size-6 shrink-0" />
+              <p class="shrink-0 text-[20px] leading-[30px] font-medium text-white italic"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
+              <img src="assets/images/icons/subtract.svg" alt="subtract" class="size-6 shrink-0" />
             </div>
           </div>
         </div>
       </section>
-      <section id="GrandOpeningDeals!" class="mt-3.5"></section>
+      <section id="GrandOpeningDeals!" class="bg-Lumira-Pink-50 mt-3.5 rounded-[18px] py-[72px]">
+        <div class="flex items-center gap-[32px] px-[90px]">
+          <div class="title-grand-open flex shrink-0 items-center gap-3">
+            <strong>
+              <div class="border-Lumira-Pink-400 bg-Lumira-Pink-200 flex items-center gap-1.5 rounded-full border px-5 py-2.5">
+                <img src="assets/images/icons/isicon-lightning-filled.svg" alt="lsicon:lightning-filled" class="size-5 shrink-0" />
+                <p class="text-Lumira-Pink-900 font-medium">12D 15:20:12</p>
+              </div>
+            </strong>
+            <h2 class="text-[36px] leading-[44px] font-medium">Grand Opening Deals!</h2>
+          </div>
+          <hr class="text-Lumira-Pink-200 flex-1" />
+          <a href="" class="shrink-0">
+            <div class="bg-Lumira-Pink-600 border-Lumira-Pink-400 flex items-center gap-1.5 rounded-full border px-5 py-2.5 hover:ring-Lumira-Pink-400 transition-all duration-300 hover:ring-2">
+              <p class="leading-[20px text-sm font-medium text-white">Browse All</p>
+              <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="size-4 shrink-0" />
+            </div>
+          </a>
+        </div>
+        <div id="Swiper" class="relative mt-[50px] w-full overflow-x-hidden">
+          <span id="GradientSwiperLeft" class="absolute top-0 left-0 z-50 h-full w-[246px] bg-gradient-to-r from-[#FDF2FA] to-[rgba(253,242,250,0)]"></span>
+          <span id="GradientSwiperRight" class="absolute top-0 right-0 z-50 h-full w-[246px] bg-gradient-to-l from-[#FDF2FA] to-[rgba(253,242,250,0)]"></span>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide !w-fit py-0.5">
+              <a href="" class="card">
+                <div class="border-Lumira-Pink-200 hover:ring-Lumira-Pink-400 flex w-[296px] flex-col gap-4 rounded-[12px] border bg-white px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                    <div class="flex items-center gap-2">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <p class="flex items-center gap-1 text-xs leading-[18px]">
+                        <span class="old-price text-Lumira-Gray-400 blink line-through">200000</span>
+                        <strong class="new-price text-Lumira-Pink-600 text-xs leading-[18px] font-semibold">100000</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide !w-fit py-0.5">
+              <a href="" class="card">
+                <div class="border-Lumira-Pink-200 hover:ring-Lumira-Pink-400 flex w-[296px] flex-col gap-4 rounded-[12px] border bg-white px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                    <div class="flex items-center gap-2">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <p class="flex items-center gap-1 text-xs leading-[18px]">
+                        <span class="old-price text-Lumira-Gray-400 blink line-through">200000</span>
+                        <strong class="new-price text-Lumira-Pink-600 text-xs leading-[18px] font-semibold">100000</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide !w-fit py-0.5">
+              <a href="" class="card">
+                <div class="border-Lumira-Pink-200 hover:ring-Lumira-Pink-400 flex w-[296px] flex-col gap-4 rounded-[12px] border bg-white px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                    <div class="flex items-center gap-2">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <p class="flex items-center gap-1 text-xs leading-[18px]">
+                        <span class="old-price text-Lumira-Gray-400 blink line-through">200000</span>
+                        <strong class="new-price text-Lumira-Pink-600 text-xs leading-[18px] font-semibold">100000</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide !w-fit py-0.5">
+              <a href="" class="card">
+                <div class="border-Lumira-Pink-200 hover:ring-Lumira-Pink-400 flex w-[296px] flex-col gap-4 rounded-[12px] border bg-white px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                    <div class="flex items-center gap-2">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <p class="flex items-center gap-1 text-xs leading-[18px]">
+                        <span class="old-price text-Lumira-Gray-400 blink line-through">200000</span>
+                        <strong class="new-price text-Lumira-Pink-600 text-xs leading-[18px] font-semibold">100000</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide !w-fit py-0.5">
+              <a href="" class="card">
+                <div class="border-Lumira-Pink-200 hover:ring-Lumira-Pink-400 flex w-[296px] flex-col gap-4 rounded-[12px] border bg-white px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                    <div class="flex items-center gap-2">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <p class="flex items-center gap-1 text-xs leading-[18px]">
+                        <span class="old-price text-Lumira-Gray-400 blink line-through">200000</span>
+                        <strong class="new-price text-Lumira-Pink-600 text-xs leading-[18px] font-semibold">100000</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide !w-fit py-0.5">
+              <a href="" class="card">
+                <div class="border-Lumira-Pink-200 hover:ring-Lumira-Pink-400 flex w-[296px] flex-col gap-4 rounded-[12px] border bg-white px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                    <div class="flex items-center gap-2">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <p class="flex items-center gap-1 text-xs leading-[18px]">
+                        <span class="old-price text-Lumira-Gray-400 blink line-through">200000</span>
+                        <strong class="new-price text-Lumira-Pink-600 text-xs leading-[18px] font-semibold">100000</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide !w-fit py-0.5">
+              <a href="" class="card">
+                <div class="border-Lumira-Pink-200 hover:ring-Lumira-Pink-400 flex w-[296px] flex-col gap-4 rounded-[12px] border bg-white px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                    <div class="flex items-center gap-2">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <p class="flex items-center gap-1 text-xs leading-[18px]">
+                        <span class="old-price text-Lumira-Gray-400 blink line-through">200000</span>
+                        <strong class="new-price text-Lumira-Pink-600 text-xs leading-[18px] font-semibold">100000</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide !w-fit py-0.5">
+              <a href="" class="card">
+                <div class="border-Lumira-Pink-200 hover:ring-Lumira-Pink-400 flex w-[296px] flex-col gap-4 rounded-[12px] border bg-white px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                    <div class="flex items-center gap-2">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <p class="flex items-center gap-1 text-xs leading-[18px]">
+                        <span class="old-price text-Lumira-Gray-400 blink line-through">200000</span>
+                        <strong class="new-price text-Lumira-Pink-600 text-xs leading-[18px] font-semibold">100000</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide !w-fit py-0.5">
+              <a href="" class="card">
+                <div class="border-Lumira-Pink-200 hover:ring-Lumira-Pink-400 flex w-[296px] flex-col gap-4 rounded-[12px] border bg-white px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                    <div class="flex items-center gap-2">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <p class="flex items-center gap-1 text-xs leading-[18px]">
+                        <span class="old-price text-Lumira-Gray-400 blink line-through">200000</span>
+                        <strong class="new-price text-Lumira-Pink-600 text-xs leading-[18px] font-semibold">100000</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="GoingViralCategories" class="mt-20"></section>
       <section id="KickstartProjectsInMinutes" class="mt-20"></section>
       <section id="FeaturedProducts" class="mt-28"></section>
@@ -189,66 +395,10 @@
       <section id="BecomeALumiraCreator"></section>
       <footer></footer>
     </main>
-    <script>
-      // Konfigurasi dropdown
-      const dropdowns = [
-        { buttonSelector: '[data-dropdown="ui-kit"]', id: "UiKitDropdown" },
-        { buttonSelector: '[data-dropdown="website"]', id: "WebsiteDropdown" },
-        { buttonSelector: '[data-dropdown="icon"]', id: "IconDropdown" },
-      ];
 
-      class DropdownManager {
-        constructor(dropdowns) {
-          this.dropdowns = dropdowns;
-          this.init();
-        }
-
-        init() {
-          // Inisialisasi setiap dropdown
-          this.dropdowns.forEach((dropdown) => {
-            const button = document.querySelector(dropdown.buttonSelector);
-            const menu = document.getElementById(dropdown.id);
-
-            if (button && menu) {
-              this.setupDropdown(button, menu);
-            }
-          });
-
-          // Click outside listener
-          document.addEventListener("click", () => this.closeAllDropdowns());
-        }
-
-        setupDropdown(button, menu) {
-          button.addEventListener("click", (e) => {
-            e.stopPropagation();
-            this.toggleDropdown(menu);
-          });
-
-          // Prevent dropdown menu clicks from closing
-          menu.addEventListener("click", (e) => e.stopPropagation());
-        }
-
-        toggleDropdown(menu) {
-          // Close all other dropdowns first
-          this.closeAllDropdowns();
-          // Toggle current dropdown
-          menu.classList.toggle("hidden");
-        }
-
-        closeAllDropdowns() {
-          this.dropdowns.forEach((dropdown) => {
-            const menu = document.getElementById(dropdown.id);
-            if (menu) {
-              menu.classList.add("hidden");
-            }
-          });
-        }
-      }
-
-      // Initialize dropdowns when DOM is loaded
-      document.addEventListener("DOMContentLoaded", () => {
-        new DropdownManager(dropdowns);
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/nav-dropdown.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/format-currency.js"></script>
   </body>
 </html>

@@ -13,10 +13,13 @@ body {
   --color-Lumira-Gray-50: #f9fafb;
   --color-Lumira-Gray-200: #eaecf0;
   --color-Lumira-Gray-300: #d0d5dd;
+  --color-Lumira-Gray-400: #475467;
   --color-Lumira-Gray-500: #667085;
   --color-Lumira-Gray-600: #475467;
   --color-Lumira-Gray-900: #101828;
+  --color-Lumira-Pink-200: #FCCEEE;
   --color-Lumira-Pink-700: #c11574;
+  --color-Lumira-Pink-900: #851651;
   --color-Lumira-Indigo-400: #8098f9;
   --color-Lumira-Indigo-600: #444ce7;
   --color-Lumira-Border-Gray: #e1e1e1;
@@ -38,4 +41,14 @@ body {
   100% {
     transform: translatex(-100%);
   }
+}
+
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.blink {
+  animation: blink 1s ease-in-out infinite;
 }
