@@ -6,6 +6,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-indigo-600: oklch(0.511 0.262 276.966);
     --color-gray-100: oklch(0.967 0.003 264.542);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -362,6 +363,9 @@
     width: fit-content;
     height: fit-content;
   }
+  .h-\[3px\] {
+    height: 3px;
+  }
   .h-\[44px\] {
     height: 44px;
   }
@@ -404,6 +408,9 @@
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
+  .w-\[12px\] {
+    width: 12px;
+  }
   .w-\[180px\] {
     width: 180px;
   }
@@ -430,18 +437,6 @@
   }
   .w-max {
     width: max-content;
-  }
-  .max-w-\[1\] {
-    max-width: 1;
-  }
-  .max-w-\[12\] {
-    max-width: 12;
-  }
-  .max-w-\[112\] {
-    max-width: 112;
-  }
-  .max-w-\[122px\] {
-    max-width: 122px;
   }
   .max-w-\[340px\] {
     max-width: 340px;
@@ -470,32 +465,14 @@
   .max-w-\[1050px\] {
     max-width: 1050px;
   }
-  .max-w-\[1128\] {
-    max-width: 1128;
-  }
   .max-w-\[1128px\] {
     max-width: 1128px;
   }
   .max-w-\[1212px\] {
     max-width: 1212px;
   }
-  .max-w-\[1222px\] {
-    max-width: 1222px;
-  }
   .max-w-\[1232px\] {
     max-width: 1232px;
-  }
-  .max-w-\[1242px\] {
-    max-width: 1242px;
-  }
-  .max-w-\[1252px\] {
-    max-width: 1252px;
-  }
-  .max-w-\[1262px\] {
-    max-width: 1262px;
-  }
-  .max-w-\[1282px\] {
-    max-width: 1282px;
   }
   .flex-1 {
     flex: 1;
@@ -538,9 +515,6 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -564,6 +538,12 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
+  .gap-0\.5 {
+    gap: calc(var(--spacing) * 0.5);
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
@@ -707,6 +687,9 @@
   .bg-\[\#F6369F\] {
     background-color: #F6369F;
   }
+  .bg-indigo-600 {
+    background-color: var(--color-indigo-600);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -775,12 +758,6 @@
   }
   .px-\[30px\] {
     padding-inline: 30px;
-  }
-  .px-\[90px\] {
-    padding-inline: 90px;
-  }
-  .px-\[142px\] {
-    padding-inline: 142px;
   }
   .px-\[191px\] {
     padding-inline: 191px;
@@ -967,6 +944,9 @@
   .text-Lumira-Pink-900 {
     color: var(--color-Lumira-Pink-900);
   }
+  .text-\[\#98A2B3\] {
+    color: #98A2B3;
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -978,6 +958,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-0 {
+    opacity: 0%;
   }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -1006,6 +989,20 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
+  }
+  .group-hover\:text-Lumira-Gray-900 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-Lumira-Gray-900);
+      }
+    }
+  }
+  .group-hover\:opacity-100 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
   }
   .placeholder\:text-Lumira-Gray-500 {
     &::placeholder {
@@ -1085,6 +1082,9 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   min-height: 100vh;
   color: var(--color-Lumira-Black);
+}
+.text-Lumira-Gray-900-important {
+  color: #101828 !important;
 }
 .gradient-slider {
   background: linear-gradient(270deg, rgba(174, 13, 102, 0) 0%, #ae0d66 100%);

@@ -22,25 +22,35 @@
     <title>Lumira | Homepage</title>
   </head>
   <body>
-    <main class="flex flex-col bg-white p-3.5 p-">
+    <main class="p- flex flex-col bg-white p-3.5">
       <header class="relative w-full">
         <img id="Bg-Image" src="assets/images/backgrounds/bg-header.png" alt="image" class="absolute left-0 h-full w-full rounded-[18px]" />
         <img src="assets/images/backgrounds/header-mask.png" alt="mask" class="absolute top-[160px] left-1/2 h-[464.43px] w-[815.59px] -translate-x-1/2 transform" />
-        <div class="relative flex flex-col items-center gap-[120px] max-w-[1128px] w-full mx-auto pt-[60px] pb-[80px]">
+        <div class="relative mx-auto flex w-full max-w-[1128px] flex-col items-center gap-[120px] pt-[60px] pb-[80px]">
           <nav class="border-Lumira-Border-Gray flex w-full items-center justify-between rounded-full border bg-white px-4 py-3.5">
             <a href="#">
               <img src="assets/images/logos/company.svg" alt="company logo" class="h-[48px] w-[180px] shrink-0" />
             </a>
             <ul class="text-Lumira-Gray-500 flex items-center gap-[18px]">
-              <li>
+              <li class="group">
                 <a href="">
-                  <p class="font-medium">Home</p>
+                  <div class="flex flex-col items-center gap-0.5">
+                    <p class="group-hover:text-Lumira-Gray-900 font-medium transition-all duration-300">Home</p>
+                    <span class="h-[3px] w-[12px] rounded-full bg-indigo-600 opacity-0 transition-all duration-300 group-hover:opacity-100"></span>
+                  </div>
                 </a>
               </li>
               <li class="group relative">
                 <button type="button" class="flex items-center gap-2 focus:outline-none" data-dropdown="ui-kit">
-                  <p class="font-medium">UI Kit</p>
-                  <img src="assets/images/icons/chevron-down.svg" alt="Chevron Down" class="size-4 shrink-0" />
+                  <div class="flex flex-col items-center gap-0.5">
+                    <p class="title-dropdown-nav group-hover:text-Lumira-Gray-900 font-medium transition-all duration-300">UI Kit</p>
+                    <span class="h-[3px] w-[12px] rounded-full bg-indigo-600 opacity-0 transition-all duration-300 group-hover:opacity-100"></span>
+                  </div>
+                  <div class="icon-chevron group-hover:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
                 </button>
                 <ul id="UiKitDropdown" class="absolute left-0 z-10 mt-2 hidden w-40 rounded border bg-white font-medium shadow-lg">
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">UI Kit 1</a></li>
@@ -50,8 +60,15 @@
               </li>
               <li class="group relative">
                 <button type="button" class="flex items-center gap-2 focus:outline-none" data-dropdown="website">
-                  <p class="font-medium">Website</p>
-                  <img src="assets/images/icons/chevron-down.svg" alt="Chevron Down" class="size-4 shrink-0" />
+                  <div class="flex flex-col items-center gap-0.5">
+                    <p class="title-dropdown-nav group-hover:text-Lumira-Gray-900 font-medium transition-all duration-300">Website</p>
+                    <span class="h-[3px] w-[12px] rounded-full bg-indigo-600 opacity-0 transition-all duration-300 group-hover:opacity-100"></span>
+                  </div>
+                  <div class="icon-chevron group-hover:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
                 </button>
                 <ul id="WebsiteDropdown" class="absolute left-0 z-10 mt-2 hidden w-40 rounded border bg-white font-medium shadow-lg">
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Website 1</a></li>
@@ -61,8 +78,15 @@
               </li>
               <li class="group relative">
                 <button type="button" class="flex items-center gap-2 focus:outline-none" data-dropdown="icon">
-                  <p class="font-medium">Icon</p>
-                  <img src="assets/images/icons/chevron-down.svg" alt="Chevron Down" class="size-4 shrink-0" />
+                  <div class="flex flex-col items-center gap-0.5">
+                    <p class="title-dropdown-nav group-hover:text-Lumira-Gray-900 font-medium transition-all duration-300">Icon</p>
+                    <span class="h-[3px] w-[12px] rounded-full bg-indigo-600 opacity-0 transition-all duration-300 group-hover:opacity-100"></span>
+                  </div>
+                  <div class="icon-chevron group-hover:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
                 </button>
                 <ul id="IconDropdown" class="absolute left-0 z-10 mt-2 hidden w-40 rounded border bg-white font-medium shadow-lg">
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Icon 1</a></li>
@@ -70,9 +94,12 @@
                   <li><a href="" class="block px-4 py-2 hover:bg-gray-100">Icon 3</a></li>
                 </ul>
               </li>
-              <li>
+              <li class="group">
                 <a href="#">
-                  <p class="font-medium">Freebies</p>
+                  <div class="flex flex-col items-center gap-0.5">
+                    <p class="group-hover:text-Lumira-Gray-900 font-medium transition-all duration-300">Freebies</p>
+                    <span class="h-[3px] w-[12px] rounded-full bg-indigo-600 opacity-0 transition-all duration-300 group-hover:opacity-100"></span>
+                  </div>
                 </a>
               </li>
             </ul>
@@ -81,12 +108,12 @@
                 <div class="rounded-full px-5 py-3 text-sm leading-[20px]">Login</div>
               </a>
               <a href="#">
-                <div class="text-sm leading-[20px] bg-Lumira-Indigo-600 border-Lumira-Indigo-400 hover:ring-Lumira-Indigo-400 rounded-full border px-5 py-3 text-white transition-all duration-300 hover:ring-2">Register</div>
+                <div class="bg-Lumira-Indigo-600 border-Lumira-Indigo-400 hover:ring-Lumira-Indigo-400 rounded-full border px-5 py-3 text-sm leading-[20px] text-white transition-all duration-300 hover:ring-2">Register</div>
               </a>
             </div>
           </nav>
           <div id="ACuratedLibrary" class="mx-auto flex w-full max-w-[1022px] flex-col items-center">
-            <span class="rounded-full bg-[#D8C1CE] px-5 py-1.5 text-center font-medium text-xs leading-[18px]">Instant Solutions for Faster Design</span>
+            <span class="rounded-full bg-[#D8C1CE] px-5 py-1.5 text-center text-xs leading-[18px] font-medium">Instant Solutions for Faster Design</span>
             <h1 class="mt-6 max-w-[810px] text-center text-[60px] leading-[70px] font-semibold">A Curated Library of Ready to Use Design Templates</h1>
             <p class="mt-[30px] max-w-[664px] text-center text-[20px] leading-[30px]">Kickstart your next project with our premium templates crafted for designers, developers, and modern creators.</p>
             <div id="HeaderSearch" class="relative mt-10 w-full max-w-[340px]">
@@ -155,10 +182,10 @@
       <section id="Slider" class="bg-Lumira-Pink-700 relative mt-3.5 w-full overflow-x-hidden rounded-[18px] py-[27px]">
         <span id="GradientSliderLeft" class="absolute top-0 left-0 z-50 h-full w-[268px] bg-gradient-to-r from-[#AE0D66] to-[rgba(174,13,102,0)]"></span>
         <span id="GradientSliderRight" class="absolute top-0 right-0 z-50 h-full w-[268px] bg-gradient-to-l from-[#AE0D66] to-[rgba(174,13,102,0)]"></span>
-        <span id="GradientCenter" class="absolute top-0 left-1/2 translate-x-[-50%] max-w-[812px] h-full w-full rounded-full bg-[#F6369F] blur-3xl bg-opacity-80"></span>
+        <span id="GradientCenter" class="bg-opacity-80 absolute top-0 left-1/2 h-full w-full max-w-[812px] translate-x-[-50%] rounded-full bg-[#F6369F] blur-3xl"></span>
         <div class="flex w-max flex-nowrap">
-          <div class="slider w-max">
-            <div class="slider-left flex flex-nowrap items-center gap-[44px] pr-[44px]">
+          <div class="slider w-max pr-[44px]">
+            <div class="slider-left flex flex-nowrap items-center gap-[44px]">
               <p class="shrink-0 text-[20px] leading-[30px] font-medium text-white italic"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
               <img src="assets/images/icons/subtract.svg" alt="subtract" class="size-6 shrink-0" />
               <p class="shrink-0 text-[20px] leading-[30px] font-medium text-white italic"><span class="font-bold">Grand opening deals!</span> Flat IDR 100k discount on selected items</p>
@@ -180,7 +207,7 @@
         </div>
       </section>
       <section id="GrandOpeningDeals!" class="bg-Lumira-Pink-50 mt-3.5 rounded-[18px] py-[72px]">
-        <div class="flex items-center gap-[32px] max-w-[1232px] w-full mx-auto">
+        <div class="mx-auto flex w-full max-w-[1232px] items-center gap-[32px]">
           <div class="title-grand-open flex shrink-0 items-center gap-3">
             <strong>
               <div class="border-Lumira-Pink-400 bg-Lumira-Pink-200 flex items-center gap-1.5 rounded-full border px-5 py-2.5">
@@ -203,8 +230,8 @@
           <span id="GradientSwiperLeft" class="absolute top-0 left-0 z-50 h-full w-[246px] bg-gradient-to-r from-[#FDF2FA] to-[rgba(253,242,250,0)]"></span>
           <span id="GradientSwiperRight" class="absolute top-0 right-0 z-50 h-full w-[246px] bg-gradient-to-l from-[#FDF2FA] to-[rgba(253,242,250,0)]"></span>
           <div class="slider-card flex w-max flex-nowrap">
-            <div class="slider w-max">
-              <div class="slider-left-card flex flex-nowrap items-center gap-[16px] py-0.5 pr-[16px]">
+            <div class="slider w-max pr-[16px]">
+              <div class="slider-left-card flex flex-nowrap items-center gap-[16px] py-0.5">
                 <a href="" class="card">
                   <div class="border-Lumira-Pink-200 hover:ring-Lumira-Pink-400 flex w-[296px] flex-col gap-4 rounded-[12px] border bg-white px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
                     <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
@@ -618,7 +645,7 @@
           </div>
         </div> -->
       </section>
-      <section id="GoingViralCategories" class="mt-20 flex flex-col gap-[52px] max-w-[1232px] w-full mx-auto py-[72px]">
+      <section id="GoingViralCategories" class="mx-auto mt-20 flex w-full max-w-[1232px] flex-col gap-[52px] py-[72px]">
         <div class="flex items-center gap-[32px]">
           <h2 class="shrink-0 text-[36px] leading-[44px] font-medium">Going Viral Categories</h2>
           <hr class="text-Lumira-Gray-200 flex-1" />
@@ -725,7 +752,7 @@
         </div>
       </section>
       <section id="KickstartProjectsInMinutes" class="bg-Lumira-Gray-50 mt-20 rounded-[18px] py-20">
-        <div class="flex flex-col items-center gap-10 px-6 max-w-[1212px] w-full mx-auto ">
+        <div class="mx-auto flex w-full max-w-[1212px] flex-col items-center gap-10 px-6">
           <div class="flex flex-col gap-[30px]">
             <h2 class="text-[60px] leading-[70px] font-semibold">Kickstart projects in minutes with premium templates <span class="text-radial-gradient inline-block">across all platforms.</span></h2>
             <p class="text-Lumira-Gray-500 text-[20px] leading-[30px]">Browse by platform to find the perfect starter kit:</p>
@@ -784,9 +811,9 @@
               <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Wordpress</p>
             </div>
           </div>
-      </div>
+        </div>
       </section>
-      <section id="FeaturedProducts" class="mt-28 flex flex-col gap-[52px] py-[40px] max-w-[1232px] w-full mx-auto ">
+      <section id="FeaturedProducts" class="mx-auto mt-28 flex w-full max-w-[1232px] flex-col gap-[52px] py-[40px]">
         <div class="flex items-center gap-[32px]">
           <h2 class="text-[36px] leading-[44px] font-medium">Featured Products</h2>
           <hr class="text-Lumira-Gray-200 flex-1" />
@@ -953,7 +980,7 @@
         </div>
       </section>
       <hr class="text-Lumira-Gray-200 mt-[52px] w-full" />
-      <section id="TrendingWebsiteTemplates" class="mt-[52px] flex flex-col gap-[52px] py-[40px] max-w-[1232px] w-full mx-auto ">
+      <section id="TrendingWebsiteTemplates" class="mx-auto mt-[52px] flex w-full max-w-[1232px] flex-col gap-[52px] py-[40px]">
         <div class="flex items-center gap-[32px]">
           <h2 class="text-[36px] leading-[44px] font-medium">Trending Website Templates</h2>
           <hr class="text-Lumira-Gray-200 flex-1" />
@@ -1128,7 +1155,7 @@
         </div>
       </section>
       <hr class="text-Lumira-Gray-200 mt-[52px] w-full" />
-      <section id="Trending3D&2DIconPack" class="mt-[52px] flex flex-col gap-[52px] pt-[40px] pb-[60px] max-w-[1232px] w-full mx-auto ">
+      <section id="Trending3D&2DIconPack" class="mx-auto mt-[52px] flex w-full max-w-[1232px] flex-col gap-[52px] pt-[40px] pb-[60px]">
         <div class="flex items-center gap-[32px]">
           <h2 class="text-[36px] leading-[44px] font-medium">Trending 3D & 2D Icon Pack</h2>
           <hr class="text-Lumira-Gray-200 flex-1" />
@@ -1142,13 +1169,13 @@
         <div class="flex flex-wrap justify-center gap-4">
           <a href="" class="card">
             <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px] bg-Lumira-Gray-100">
+              <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
                 <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                <div class="grid grid-cols-2 gap-[32px] py-[24px] px-[30px]">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
+                <div class="grid grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
                 </div>
               </div>
               <div class="desc flex flex-col gap-2 px-2">
@@ -1166,13 +1193,13 @@
           </a>
           <a href="" class="card">
             <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px] bg-Lumira-Gray-100">
+              <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
                 <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                <div class="grid grid-cols-2 gap-[32px] py-[24px] px-[30px]">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
+                <div class="grid grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
                 </div>
               </div>
               <div class="desc flex flex-col gap-2 px-2">
@@ -1190,13 +1217,13 @@
           </a>
           <a href="" class="card">
             <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px] bg-Lumira-Gray-100">
+              <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
                 <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                <div class="grid grid-cols-2 gap-[32px] py-[24px] px-[30px]">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
+                <div class="grid grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
                 </div>
               </div>
               <div class="desc flex flex-col gap-2 px-2">
@@ -1214,13 +1241,13 @@
           </a>
           <a href="" class="card">
             <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px] bg-Lumira-Gray-100">
+              <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
                 <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                <div class="grid grid-cols-2 gap-[32px] py-[24px] px-[30px]">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
+                <div class="grid grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
                 </div>
               </div>
               <div class="desc flex flex-col gap-2 px-2">
@@ -1238,13 +1265,13 @@
           </a>
           <a href="" class="card">
             <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px] bg-Lumira-Gray-100">
+              <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
                 <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                <div class="grid grid-cols-2 gap-[32px] py-[24px] px-[30px]">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
+                <div class="grid grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
                 </div>
               </div>
               <div class="desc flex flex-col gap-2 px-2">
@@ -1262,13 +1289,13 @@
           </a>
           <a href="" class="card">
             <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px] bg-Lumira-Gray-100">
+              <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
                 <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                <div class="grid grid-cols-2 gap-[32px] py-[24px] px-[30px]">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
+                <div class="grid grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
                 </div>
               </div>
               <div class="desc flex flex-col gap-2 px-2">
@@ -1286,13 +1313,13 @@
           </a>
           <a href="" class="card">
             <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px] bg-Lumira-Gray-100">
+              <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
                 <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                <div class="grid grid-cols-2 gap-[32px] py-[24px] px-[30px]">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
+                <div class="grid grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
                 </div>
               </div>
               <div class="desc flex flex-col gap-2 px-2">
@@ -1310,13 +1337,13 @@
           </a>
           <a href="" class="card">
             <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px] bg-Lumira-Gray-100">
+              <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
                 <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                <div class="grid grid-cols-2 gap-[32px] py-[24px] px-[30px]">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
-                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0">
+                <div class="grid grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
+                  <img src="assets/images/icons/trending/burder.svg" alt="icon" class="size-[96px] shrink-0" />
                 </div>
               </div>
               <div class="desc flex flex-col gap-2 px-2">
@@ -1334,175 +1361,175 @@
           </a>
         </div>
       </section>
-      <section id="FreebieProducts" class="bg-Lumira-Gray-50 mt-[104px]  rounded-[18px] py-[72px] ">
-        <div class="flex flex-col gap-[52px] max-w-[1232px] w-full mx-auto">
-        <div class="flex items-center gap-[32px]">
-          <h2 class="text-[36px] leading-[44px] font-medium">Featured Products</h2>
-          <hr class="text-Lumira-Gray-200 flex-1" />
-          <a href="" class="shrink-0">
-            <div class="bg-Lumira-BlackOpium flex items-center gap-1.5 rounded-full border border-[#090807] px-5 py-2.5 transition-all duration-300 hover:ring-2 hover:ring-[#090807]">
-              <p class="leading-[20px text-sm font-medium text-white">Browse All</p>
-              <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="size-4 shrink-0" />
-            </div>
-          </a>
+      <section id="FreebieProducts" class="bg-Lumira-Gray-50 mt-[104px] rounded-[18px] py-[72px]">
+        <div class="mx-auto flex w-full max-w-[1232px] flex-col gap-[52px]">
+          <div class="flex items-center gap-[32px]">
+            <h2 class="text-[36px] leading-[44px] font-medium">Featured Products</h2>
+            <hr class="text-Lumira-Gray-200 flex-1" />
+            <a href="" class="shrink-0">
+              <div class="bg-Lumira-BlackOpium flex items-center gap-1.5 rounded-full border border-[#090807] px-5 py-2.5 transition-all duration-300 hover:ring-2 hover:ring-[#090807]">
+                <p class="leading-[20px text-sm font-medium text-white">Browse All</p>
+                <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="size-4 shrink-0" />
+              </div>
+            </a>
+          </div>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="" class="card">
+              <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                  <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                  <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                </div>
+                <div class="desc flex flex-col gap-2 px-2">
+                  <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                  <div class="flex items-center gap-[6px]">
+                    <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                    <div class="flex items-center gap-2 text-xs leading-[18px]">
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                      <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="" class="card">
+              <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                  <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                  <img src="assets/images/thumbnails/thumb-mobile-2.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                </div>
+                <div class="desc flex flex-col gap-2 px-2">
+                  <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                  <div class="flex items-center gap-[6px]">
+                    <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                    <div class="flex items-center gap-2 text-xs leading-[18px]">
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                      <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="" class="card">
+              <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                  <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                  <img src="assets/images/thumbnails/thumb-mobile-3.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                </div>
+                <div class="desc flex flex-col gap-2 px-2">
+                  <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                  <div class="flex items-center gap-[6px]">
+                    <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                    <div class="flex items-center gap-2 text-xs leading-[18px]">
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                      <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="" class="card">
+              <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                  <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                  <img src="assets/images/thumbnails/thumb-mobile-4.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                </div>
+                <div class="desc flex flex-col gap-2 px-2">
+                  <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                  <div class="flex items-center gap-[6px]">
+                    <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                    <div class="flex items-center gap-2 text-xs leading-[18px]">
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                      <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="" class="card">
+              <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                  <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                  <img src="assets/images/thumbnails/thumb-mobile-3.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                </div>
+                <div class="desc flex flex-col gap-2 px-2">
+                  <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                  <div class="flex items-center gap-[6px]">
+                    <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                    <div class="flex items-center gap-2 text-xs leading-[18px]">
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                      <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="" class="card">
+              <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                  <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                  <img src="assets/images/thumbnails/thumb-mobile-4.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                </div>
+                <div class="desc flex flex-col gap-2 px-2">
+                  <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                  <div class="flex items-center gap-[6px]">
+                    <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                    <div class="flex items-center gap-2 text-xs leading-[18px]">
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                      <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="" class="card">
+              <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                  <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                  <img src="assets/images/thumbnails/thumb-mobile-2.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                </div>
+                <div class="desc flex flex-col gap-2 px-2">
+                  <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                  <div class="flex items-center gap-[6px]">
+                    <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                    <div class="flex items-center gap-2 text-xs leading-[18px]">
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                      <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="" class="card">
+              <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                  <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                  <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
+                </div>
+                <div class="desc flex flex-col gap-2 px-2">
+                  <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
+                  <div class="flex items-center gap-[6px]">
+                    <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                    <div class="flex items-center gap-2 text-xs leading-[18px]">
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                      <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                      <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a href="" class="card">
-            <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
-              </div>
-              <div class="desc flex flex-col gap-2 px-2">
-                <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
-                <div class="flex items-center gap-[6px]">
-                  <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                  <div class="flex items-center gap-2 text-xs leading-[18px]">
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                    <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="" class="card">
-            <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                <img src="assets/images/thumbnails/thumb-mobile-2.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
-              </div>
-              <div class="desc flex flex-col gap-2 px-2">
-                <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
-                <div class="flex items-center gap-[6px]">
-                  <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                  <div class="flex items-center gap-2 text-xs leading-[18px]">
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                    <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="" class="card">
-            <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                <img src="assets/images/thumbnails/thumb-mobile-3.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
-              </div>
-              <div class="desc flex flex-col gap-2 px-2">
-                <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
-                <div class="flex items-center gap-[6px]">
-                  <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                  <div class="flex items-center gap-2 text-xs leading-[18px]">
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                    <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="" class="card">
-            <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                <img src="assets/images/thumbnails/thumb-mobile-4.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
-              </div>
-              <div class="desc flex flex-col gap-2 px-2">
-                <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
-                <div class="flex items-center gap-[6px]">
-                  <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                  <div class="flex items-center gap-2 text-xs leading-[18px]">
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                    <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="" class="card">
-            <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                <img src="assets/images/thumbnails/thumb-mobile-3.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
-              </div>
-              <div class="desc flex flex-col gap-2 px-2">
-                <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
-                <div class="flex items-center gap-[6px]">
-                  <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                  <div class="flex items-center gap-2 text-xs leading-[18px]">
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                    <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="" class="card">
-            <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                <img src="assets/images/thumbnails/thumb-mobile-4.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
-              </div>
-              <div class="desc flex flex-col gap-2 px-2">
-                <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
-                <div class="flex items-center gap-[6px]">
-                  <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                  <div class="flex items-center gap-2 text-xs leading-[18px]">
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                    <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="" class="card">
-            <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                <img src="assets/images/thumbnails/thumb-mobile-2.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
-              </div>
-              <div class="desc flex flex-col gap-2 px-2">
-                <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
-                <div class="flex items-center gap-[6px]">
-                  <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                  <div class="flex items-center gap-2 text-xs leading-[18px]">
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                    <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="" class="card">
-            <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-              <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                <img src="assets/images/thumbnails/thumb-mobile-1.png" alt="thumb mobile 1" class="h-full w-full object-cover" loading="lazy" />
-              </div>
-              <div class="desc flex flex-col gap-2 px-2">
-                <h3 class="line-clamp-2 font-medium">Carta - Professional Services Website Template</h3>
-                <div class="flex items-center gap-[6px]">
-                  <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                  <div class="flex items-center gap-2 text-xs leading-[18px]">
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                    <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                    <p class="text-Lumira-Gray-600 text-xs leading-[18px]">FREE</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
       </section>
-      <section id="BecomeALumiraCreator" class="relative mt-[168px] h-[468px] rounded-[18px] overflow-hidden">
+      <section id="BecomeALumiraCreator" class="relative mt-[168px] h-[468px] overflow-hidden rounded-[18px]">
         <img src="assets/images/backgrounds/bg-become-a-lumira.png" alt="image" class="absolute top-0 bottom-0 left-0 h-full w-full rounded-[18px]" />
         <img src="assets/images/backgrounds/become-mask.png" alt="image" class="absolute top-0 left-0 z-10 h-full w-[815.59px]" />
         <div class="relative z-50 flex h-full flex-1 items-center justify-center gap-[32px] pr-[31px] pl-[90px]">
@@ -1523,13 +1550,13 @@
           </div>
         </div>
       </section>
-      <footer class="relative mt-[14px] rounded-[18px] overflow-hidden">
+      <footer class="relative mt-[14px] overflow-hidden rounded-[18px]">
         <img src="assets/images/backgrounds/bg-footer.png" alt="image" class="absolute top-0 bottom-0 left-0 h-full w-full" />
         <img src="assets/images/backgrounds/footer-mask.png" alt="mask" class="absolute top-0 left-1/2 h-[464.43px] w-[815.59px] -translate-x-1/2 transform" />
         <div class="relative z-20 flex flex-col gap-[48px] px-[191px] pt-[120px]">
-          <div class="flex justify-between max-w-[1232px] w-full mx-auto">
+          <div class="mx-auto flex w-full max-w-[1232px] justify-between">
             <div class="w-full max-w-[400px]">
-              <h3 class="font-semibold text-2xl leading-[32px] text-white">Lumira</h3>
+              <h3 class="text-2xl leading-[32px] font-semibold text-white">Lumira</h3>
               <p class="mt-2 text-sm leading-[20px] text-white">A complete solution for designers, developers, and creators all in one marketplace</p>
               <p class="mt-4 text-xs leading-[18px] text-white">© Copyright 2025 Lumira. All Rights Reserved.</p>
             </div>
@@ -1604,7 +1631,7 @@
               </div>
             </div>
           </div>
-          <img src="assets/images/icons/footer-logo.svg" alt="footer logo" class="self-center shrink-0" />
+          <img src="assets/images/icons/footer-logo.svg" alt="footer logo" class="shrink-0 self-center" />
         </div>
       </footer>
     </main>

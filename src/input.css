@@ -30,6 +30,12 @@ body {
   --color-Lumira-Green-600: #099250;
 }
 
+/* untuk mempertahankan chevron-bottom-active pada navtop*/
+.text-Lumira-Gray-900-important {
+  color: #101828 !important; /* Sesuaikan nilai HEX dengan Tailwind */
+}
+/* end untuk mempertahankan chevron-bottom-active pada navtop*/
+
 .gradient-slider {
   background: linear-gradient(270deg, rgba(174, 13, 102, 0) 0%, #ae0d66 100%);
 }
