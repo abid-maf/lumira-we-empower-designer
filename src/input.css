@@ -11,7 +11,7 @@ body {
   --color-Lumira-Pink-400: #f670c7;
   --color-Lumira-Pink-50: #fdf2fa;
   --color-Lumira-Gray-50: #f9fafb;
-  --color-Lumira-Gray-100: #F2F4F7;
+  --color-Lumira-Gray-100: #f2f4f7;
   --color-Lumira-Gray-200: #eaecf0;
   --color-Lumira-Gray-300: #d0d5dd;
   --color-Lumira-Gray-400: #475467;
@@ -22,18 +22,27 @@ body {
   --color-Lumira-Pink-200: #fcceee;
   --color-Lumira-Pink-700: #c11574;
   --color-Lumira-Pink-900: #851651;
-  --color-Lumira-Indigo-25: #F5F8FF;
-  --color-Lumira-Indigo-100: #E0EAFF;
-  --color-Lumira-Indigo-200: #C7D7FE;
+  --color-Lumira-Indigo-25: #f5f8ff;
+  --color-Lumira-Indigo-100: #e0eaff;
+  --color-Lumira-Indigo-200: #c7d7fe;
   --color-Lumira-Indigo-400: #8098f9;
+  --color-Lumira-Indigo-500: #6172F3;
   --color-Lumira-Indigo-600: #444ce7;
-  --color-Lumira-Indigo-700: #3538CD;
+  --color-Lumira-Indigo-700: #3538cd;
   --color-Lumira-Border-Gray: #e1e1e1;
   --color-Lumira-BlackOpium: #231f1d;
   --color-Lumira-Green-600: #099250;
 }
 
+.blur-custom {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px); /* penting untuk Safari */
+}
 
+.ini-blur {
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px); /* penting untuk Safari */
+}
 
 .gradient-slider {
   background: linear-gradient(270deg, rgba(174, 13, 102, 0) 0%, #ae0d66 100%);
