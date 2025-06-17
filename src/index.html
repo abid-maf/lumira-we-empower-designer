@@ -23,13 +23,1043 @@
   </head>
   <body>
     <main class="p- flex flex-col bg-white p-3.5">
+
+      <!-- on after header -->
+      <section id="NavTopContainerDark" class="fixed -z-50 top-[26px] right-0 left-0 transition-all duration-300">
+        <nav class="group/scroll scroll">
+          <div class="group/scroll border-Lumira-Border-Gray group-[&.scroll]/scroll:border-Lumira-Gray-700 relative mx-auto flex w-full max-w-[1128px] items-center justify-between rounded-full border bg-white px-4 py-3.5 transition-all duration-300 group-[&.scroll]/scroll:bg-[#0B1220D6] group-[&.scroll]/scroll:backdrop-blur-xl">
+            <!-- minify to other file -->
+            <a href="#" class="relative shrink-0">
+              <img src="assets/images/logos/company.svg" alt="company logo" class="h-[48px] w-[180px] shrink-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-0" />
+              <img src="assets/images/logos/company-dark.svg" alt="company logo" class="absolute top-0 h-[48px] w-[180px] shrink-0 opacity-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-100" />
+            </a>
+            <ul class="text-Lumira-Gray-500 flex items-center gap-[18px]">
+              <li class="group">
+                <a href="">
+                  <!-- bila ingin linknya active, tambahkan class "active" saja di bawah ini -->
+                  <div class="group/active active flex flex-col items-center gap-0.5">
+                    <p class="group-hover:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-[&.active]/active:text-Lumira-Gray-900 font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover:text-white group-[&.scroll]/scroll:group-[&.active]/active:text-white">Home</p>
+                    <span class="h-[3px] w-[12px] rounded-full bg-indigo-600 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]/active:opacity-100 group-[&.scroll]/scroll:bg-indigo-500"></span>
+                  </div>
+                </a>
+              </li>
+              <li class="group relative">
+                <!-- bila ingin linknya active, tambahkan class "active" saja di bawah ini -->
+                <button type="button" class="group/active flex items-center gap-2 focus:outline-none">
+                  <div class="flex flex-col items-center gap-0.5">
+                    <p class="group-hover:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-[&.active]/active:text-Lumira-Gray-900 font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover:text-white group-[&.scroll]/scroll:group-[&.active]/active:text-white">UI Kit</p>
+                    <span class="h-[3px] w-[12px] rounded-full bg-indigo-600 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]/active:opacity-100 group-[&.scroll]/scroll:bg-indigo-500"></span>
+                  </div>
+                  <div class="group-hover:text-Lumira-Gray-900 group-[&.active]/active:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300 group-hover:rotate-180 group-[&.scroll]/scroll:group-hover:text-white group-[&.scroll]/scroll:group-[&.active]/active:text-white">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </button>
+        
+                <div id="DropdownUIkit" class="absolute left-[-279px] z-10 pt-[30px]">
+                  <div class="border-Lumira-Gray-200 group-[&.scroll]/scroll:border-Lumira-Gray-700 hidden w-[620px] rounded-[18px] border bg-white p-1.5 transition-all duration-300 group-hover:block group-[&.scroll]/scroll:bg-[#303241]">
+                    <div class="flex gap-[6px]">
+                      <ul class="grid flex-1 grid-cols-2 gap-x-[6px] gap-y-[8px]">
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/device-iphone-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/device-iphone-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/device-iphone-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/device-iphone-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Mobile App</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/dashboard-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dashboard-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/dashboard-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/dashboard-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Dashboard</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/landing-page-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/landing-page-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/landing-page-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/landing-page-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Landing Page</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/pallete-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/pallete-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/pallete-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/pallete-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Design System</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/globe-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/globe-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/globe-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/globe-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Website</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/ruler-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/ruler-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/ruler-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/ruler-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Wireframe</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/pos-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/pos-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/post-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/post-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Point of Sale</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/component-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/component-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/components-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/components-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Components</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+        
+                      <ul class="bg-Lumira-Indigo-25 grid w-[220px] shrink-0 grid-cols-2 gap-[8px] rounded-xl p-1.5 group-[&.scroll]/scroll:bg-[#2C2F63]">
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/figma.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">Figma</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/sketch.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">Sketch</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/lunacy.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">Lunacy</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/penpot.svg" alt="icon" class="size-6 shrink-0 group-[&.scroll]/scroll:hidden" />
+                              <img src="assets/images/icons/penpot-white.svg" alt="icon" class="hidden size-6 shrink-0 group-[&.scroll]/scroll:block" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">Penpot</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="group relative">
+                <!-- bila ingin linknya active, tambahkan class "active" saja di bawah ini -->
+                <button type="button" class="group/active flex items-center gap-2 focus:outline-none">
+                  <div class="flex flex-col items-center gap-0.5">
+                    <p class="group-hover:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-[&.active]/active:text-Lumira-Gray-900 font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover:text-white group-[&.scroll]/scroll:group-[&.active]/active:text-white">Website</p>
+                    <span class="h-[3px] w-[12px] rounded-full bg-indigo-600 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]/active:opacity-100 group-[&.scroll]/scroll:bg-indigo-500"></span>
+                  </div>
+                  <div class="group-hover:text-Lumira-Gray-900 group-[&.active]/active:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300 group-hover:rotate-180 group-[&.scroll]/scroll:group-hover:text-white group-[&.scroll]/scroll:group-[&.active]/active:text-white">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </button>
+        
+                <div id="DropdownWebsite" class="absolute left-[-270px] z-10 pt-[30px]">
+                  <div class="border-Lumira-Gray-200 group-[&.scroll]/scroll:border-Lumira-Gray-700 hidden w-[620px] rounded-[18px] border bg-white p-1.5 transition-all duration-300 group-hover:block group-[&.scroll]/scroll:bg-[#303241]">
+                    <div class="flex gap-[6px]">
+                      <ul class="grid flex-1 grid-cols-2 gap-x-[6px] gap-y-[8px]">
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/landing-page-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/landing-page-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/landing-page-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/landing-page-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Landing Page</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/cap-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/cap-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/cap-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/cap-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Education</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/user-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/user-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/user-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/user-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Portfolio</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/food-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/food-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/food-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/food-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Food</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/device-laptop-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/device-laptop-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/device-laptop-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/device-laptop-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">SaaS</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/chat-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/chat-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/chat-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/chat-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Social</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/cart-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/cart-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/cart-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/cart-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Ecommerce</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/healtcare-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/healtcare-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/healthcare-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/healthcare-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Healthcare</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/home-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/home-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/home-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/home-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Real Estate</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/tech-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/tech-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/tech-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/tech-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Technology</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/plane-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/plane-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/plane-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/plane-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Travel</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/other-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/other-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/other-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/other-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Others</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+        
+                      <ul class="bg-Lumira-Indigo-25 grid w-[220px] shrink-0 grid-cols-2 gap-[8px] rounded-xl p-1.5 group-[&.scroll]/scroll:bg-[#2C2F63]">
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/framer.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">Framer</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/webflow.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">Webflow</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/elementor.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">Elementor</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/bricks.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">Bricks</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/react.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">React</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/vue.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">Vue</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="group relative">
+                <!-- bila ingin linknya active, tambahkan class "active" saja di bawah ini -->
+                <button type="button" class="group/active flex items-center gap-2 focus:outline-none">
+                  <div class="flex flex-col items-center gap-0.5">
+                    <p class="group-hover:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-[&.active]/active:text-Lumira-Gray-900 font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover:text-white group-[&.scroll]/scroll:group-[&.active]/active:text-white">Icon</p>
+                    <span class="h-[3px] w-[12px] rounded-full bg-indigo-600 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]/active:opacity-100 group-[&.scroll]/scroll:bg-indigo-500"></span>
+                  </div>
+                  <div class="group-hover:text-Lumira-Gray-900 group-[&.active]/active:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300 group-hover:rotate-180 group-[&.scroll]/scroll:group-hover:text-white group-[&.scroll]/scroll:group-[&.active]/active:text-white">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </button>
+        
+                <div id="DropdownIcon" class="absolute left-[-285px] z-10 pt-[30px]">
+                  <div class="border-Lumira-Gray-200 group-[&.scroll]/scroll:border-Lumira-Gray-700 hidden w-[620px] rounded-[18px] border bg-white p-1.5 transition-all duration-300 group-hover:block group-[&.scroll]/scroll:bg-[#303241]">
+                    <div class="flex gap-[6px]">
+                      <ul class="grid flex-1 grid-cols-2 gap-x-[6px] gap-y-[8px]">
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/3d-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/3d-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/3d-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/3d-gray-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">3D Icon</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/beach-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/beach-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/beach-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/beach-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Holiday</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/2d-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/2d-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/2d-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/2d-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">2D Icon</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/running-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/running-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/running-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/running-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Sports</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/tech-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/tech-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/tech-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/tech-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Technology</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/culinary-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/culinary-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/culinary-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/culinary-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Culinary</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/hand-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/hand-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/hand-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/hand-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Business</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/healtcare-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/healtcare-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/healthcare-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/healthcare-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Healthcare</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/bitcoin-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/bitcoin-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/bitcoin-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/bitcoin-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Crypto</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/bag-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/bag-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/bag-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/bag-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Shopping</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/money-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/money-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/money-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/money-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Finance</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-first">
+                          <a href="">
+                            <div class="group-hover/child-first:bg-Lumira-Gray-50 group-hover/child-first:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/child-first:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/child-first:border group-[&.scroll]/scroll:group-hover/child-first:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/other-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/other-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/other-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/child-first:opacity-0" />
+                                  <img src="assets/images/icons/dark/other-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-first:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/child-first:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-first:text-white">Others</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+        
+                      <ul class="bg-Lumira-Indigo-25 grid w-[220px] shrink-0 grid-cols-2 gap-[8px] rounded-xl p-1.5 group-[&.scroll]/scroll:bg-[#2C2F63]">
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/blender.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">Blender</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/obj.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">OBJ</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/glb.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">GLB</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/fbx.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">FBX</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/png.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">PNG</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/child-second">
+                          <a href="">
+                            <div class="group-hover/child-second:bg-Lumira-Indigo-100 group-[&.scroll]/scroll:group-hover/child-second:border-Lumira-Indigo-600 group-hover/child-second:border-Lumira-Indigo-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-second:border group-[&.scroll]/scroll:group-hover/child-second:bg-[#2D3098]">
+                              <img src="assets/images/icons/svg.svg" alt="icon" class="size-6 shrink-0" />
+                              <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-hover/child-second:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/child-second:text-white">SVG</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="group">
+                <a href="#">
+                  <!-- bila ingin linknya active, tambahkan class "active" saja di bawah ini -->
+                  <div class="group/active flex flex-col items-center gap-0.5">
+                    <p class="group-hover:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-[&.active]/active:text-Lumira-Gray-900 font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover:text-white group-[&.scroll]/scroll:group-[&.active]/active:text-white">Freebies</p>
+                    <span class="h-[3px] w-[12px] rounded-full bg-indigo-600 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]/active:opacity-100 group-[&.scroll]/scroll:bg-indigo-500"></span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- tinggal beri class login di bawah ini bila ingin tampilin template login -->
+            <div class="group/login login">
+              <div class="before-login flex items-center gap-1.5 group-[&.login]/login:hidden">
+                <div class="">
+                  <a href="" class="relative shrink-0 transition-all duration-300 group-[&.scroll]/scroll:hidden">
+                    <img src="assets/images/icons/search-nav-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
+                    <img src="assets/images/icons/search-nav-black.svg" alt="icon" class="absolute top-0 size-5 shrink-0 opacity-0 transition-all duration-300 hover:opacity-100" />
+                  </a>
+                  <a href="" class="relative hidden shrink-0 transition-all duration-300 group-[&.scroll]/scroll:block">
+                    <img src="assets/images/icons/dark/search-nav-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
+                    <img src="assets/images/icons/dark/search-nav-white.svg" alt="icon" class="absolute top-0 size-5 shrink-0 opacity-0 transition-all duration-300 hover:opacity-100" />
+                  </a>
+                </div>
+                <a href="#">
+                  <div class="rounded-full px-5 py-3 text-sm leading-[20px] group-[&.scroll]/scroll:text-white">Login</div>
+                </a>
+                <a href="#">
+                  <div class="bg-Lumira-Indigo-600 border-Lumira-Indigo-400 hover:ring-Lumira-Indigo-400 rounded-full border px-5 py-3 text-sm leading-[20px] text-white transition-all duration-300 hover:ring-2">Register</div>
+                </a>
+              </div>
+
+              <div class="after-login hidden items-center gap-2 group-[&.login]/login:flex">
+                <div class="search-nav">
+                  <a href="" class="shrink-0 transition-all duration-300 group-[&.scroll]/scroll:hidden">
+                    <div class="relative flex size-[48px] items-center justify-center">
+                      <img src="assets/images/icons/search-nav-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
+                      <img src="assets/images/icons/search-nav-black.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
+                    </div>
+                  </a>
+                  <a href="" class="relative hidden shrink-0 transition-all duration-300 group-[&.scroll]/scroll:block">
+                    <div class="relative flex size-[48px] items-center justify-center">
+                      <img src="assets/images/icons/dark/search-nav-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
+                      <img src="assets/images/icons/dark/search-nav-white.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
+                    </div>
+                  </a>
+                </div>
+
+                <div class="bookmark-nav">
+                  <a href="" class="shrink-0 transition-all duration-300 group-[&.scroll]/scroll:hidden">
+                    <div class="relative flex size-[48px] items-center justify-center">
+                      <img src="assets/images/icons/bookmark-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
+                      <img src="assets/images/icons/bookmark-blue.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
+                    </div>
+                  </a>
+                  <a href="" class="relative hidden shrink-0 transition-all duration-300 group-[&.scroll]/scroll:block">
+                    <div class="relative flex size-[48px] items-center justify-center">
+                      <img src="assets/images/icons/dark/bookmark-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
+                      <img src="assets/images/icons/dark/bookmark-blue.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
+                    </div>
+                  </a>
+                </div>
+
+                <div class="notifcation-nav">
+                  <div>
+                  <a href="" class="shrink-0 transition-all duration-300 group-[&.scroll]/scroll:hidden">
+                    <div class="relative flex size-[48px] items-center justify-center">
+                      <img src="assets/images/icons/notification-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
+                      <img src="assets/images/icons/notification-blue.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
+                    </div>
+                  </a>
+                  <a href="" class="relative hidden shrink-0 transition-all duration-300 group-[&.scroll]/scroll:block">
+                    <div class="relative flex size-[48px] items-center justify-center">
+                      <img src="assets/images/icons/dark/notification-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
+                      <img src="assets/images/icons/dark/notification-blue.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
+                    </div>
+                  </a>
+                </div>
+                <div id="DropdownProfile" class="absolute left-[-152px] z-10 pt-[20px]">
+                  <div class="border-Lumira-Gray-200 group-[&.scroll]/scroll:border-Lumira-Gray-700 hidden w-[212px] rounded-[18px] border bg-white p-1.5 transition-all duration-300 group-hover:block group-[&.scroll]/scroll:bg-[#303241]">
+                    <nav id="DropdownProfileNav" class="flex flex-col gap-2">
+                      <div class="flex flex-col gap-0.5 px-3 pt-3">
+                        <h5 class="font-medium group-[&.scroll]/scroll:text-white">Rafiq</h5>
+                        <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-xs leading-[18px]">john.doe@email.com</p>
+                      </div>
+                      <ul class="flex flex-col gap-2">
+                        <li class="group/profile-link">
+                          <a href="">
+                            <div class="group-hover/profile-link:bg-Lumira-Gray-50 group-hover/profile-link:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/profile-link:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/profile-link:border group-[&.scroll]/scroll:group-hover/profile-link:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/user-profile-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                  <img src="assets/images/icons/user-profile-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/user-profile-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                  <img src="assets/images/icons/dark/user-profile-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/profile-link:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/profile-link:text-white">Profile</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/profile-link">
+                          <a href="">
+                            <div class="group-hover/profile-link:bg-Lumira-Gray-50 group-hover/profile-link:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/profile-link:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/profile-link:border group-[&.scroll]/scroll:group-hover/profile-link:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/shopping-bag-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                  <img src="assets/images/icons/shopping-bag-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/shopping-bag-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                  <img src="assets/images/icons/dark/shopping-bag-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/profile-link:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/profile-link:text-white">Purchases</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/profile-link">
+                          <a href="">
+                            <div class="group-hover/profile-link:bg-Lumira-Gray-50 group-hover/profile-link:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/profile-link:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/profile-link:border group-[&.scroll]/scroll:group-hover/profile-link:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/setting-alt-line-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                  <img src="assets/images/icons/setting-alt-line-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/setting-alt-line-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                  <img src="assets/images/icons/dark/setting-alt-line-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/profile-link:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/profile-link:text-white">Settings</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="group/profile-link">
+                          <a href="">
+                            <div class="group-hover/profile-link:bg-Lumira-Gray-50 group-hover/profile-link:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/profile-link:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/profile-link:border group-[&.scroll]/scroll:group-hover/profile-link:bg-[#191F2F]">
+                              <div class="relative">
+                                <div class="group-[&.scroll]/scroll:hidden">
+                                  <img src="assets/images/icons/image-grid-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                  <img src="assets/images/icons/image-grid-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                </div>
+                                <div class="hidden group-[&.scroll]/scroll:block">
+                                  <img src="assets/images/icons/dark/image-grid-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                  <img src="assets/images/icons/dark/image-grid-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                </div>
+                              </div>
+                              <p class="text-Lumira-Gray-500 group-hover/profile-link:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/profile-link:text-white">Dashboard</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <a href="" class="ml-3">
+                        <p class="bg-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-900 hover:ring-Lumira-Gray-500 group-[&.scroll]/scroll:hover:ring-Lumira-Gray-500 group-[&.scroll]/scroll:border-Lumira-Gray-400 w-fit rounded-full border border-[#090807] px-5 py-2.5 text-center text-xs leading-[18px] font-medium text-white transition-all duration-300 group-[&.scroll]/scroll:bg-[#EAEAEB] hover:ring-2 group-[&.scroll]/scroll:hover:ring-2">Sign out</p>
+                      </a>
+                    </nav>
+                  </div>
+                </div>
+
+                </div>
+
+                <div class="profile-nav group relative">
+                  <div class="border-Lumira-Gray-400 group-[&.scroll]/scroll:border-Lumira-Gray-600 group-[&.scroll]/scroll:group-hover:border-Lumira-Indigo-500 shrink-0 rounded-full border p-1 transition-all duration-300 group-hover:border-[#444CE7]">
+                    <button type="button" class="profile-active flex size-10 items-center justify-center overflow-hidden rounded-full">
+                      <img src="assets/images/thumbnails/profile.png" alt="image" class="size-full object-cover" />
+                    </button>
+                  </div>
+                  <div id="DropdownProfile" class="absolute left-[-152px] z-10 pt-[20px]">
+                    <div class="border-Lumira-Gray-200 group-[&.scroll]/scroll:border-Lumira-Gray-700 hidden w-[212px] rounded-[18px] border bg-white p-1.5 transition-all duration-300 group-hover:block group-[&.scroll]/scroll:bg-[#303241]">
+                      <nav id="DropdownProfileNav" class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-0.5 px-3 pt-3">
+                          <h5 class="font-medium group-[&.scroll]/scroll:text-white">Rafiq</h5>
+                          <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-xs leading-[18px]">john.doe@email.com</p>
+                        </div>
+                        <ul class="flex flex-col gap-2">
+                          <li class="group/profile-link">
+                            <a href="">
+                              <div class="group-hover/profile-link:bg-Lumira-Gray-50 group-hover/profile-link:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/profile-link:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/profile-link:border group-[&.scroll]/scroll:group-hover/profile-link:bg-[#191F2F]">
+                                <div class="relative">
+                                  <div class="group-[&.scroll]/scroll:hidden">
+                                    <img src="assets/images/icons/user-profile-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                    <img src="assets/images/icons/user-profile-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                  </div>
+                                  <div class="hidden group-[&.scroll]/scroll:block">
+                                    <img src="assets/images/icons/dark/user-profile-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                    <img src="assets/images/icons/dark/user-profile-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                  </div>
+                                </div>
+                                <p class="text-Lumira-Gray-500 group-hover/profile-link:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/profile-link:text-white">Profile</p>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="group/profile-link">
+                            <a href="">
+                              <div class="group-hover/profile-link:bg-Lumira-Gray-50 group-hover/profile-link:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/profile-link:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/profile-link:border group-[&.scroll]/scroll:group-hover/profile-link:bg-[#191F2F]">
+                                <div class="relative">
+                                  <div class="group-[&.scroll]/scroll:hidden">
+                                    <img src="assets/images/icons/shopping-bag-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                    <img src="assets/images/icons/shopping-bag-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                  </div>
+                                  <div class="hidden group-[&.scroll]/scroll:block">
+                                    <img src="assets/images/icons/dark/shopping-bag-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                    <img src="assets/images/icons/dark/shopping-bag-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                  </div>
+                                </div>
+                                <p class="text-Lumira-Gray-500 group-hover/profile-link:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/profile-link:text-white">Purchases</p>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="group/profile-link">
+                            <a href="">
+                              <div class="group-hover/profile-link:bg-Lumira-Gray-50 group-hover/profile-link:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/profile-link:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/profile-link:border group-[&.scroll]/scroll:group-hover/profile-link:bg-[#191F2F]">
+                                <div class="relative">
+                                  <div class="group-[&.scroll]/scroll:hidden">
+                                    <img src="assets/images/icons/setting-alt-line-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                    <img src="assets/images/icons/setting-alt-line-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                  </div>
+                                  <div class="hidden group-[&.scroll]/scroll:block">
+                                    <img src="assets/images/icons/dark/setting-alt-line-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                    <img src="assets/images/icons/dark/setting-alt-line-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                  </div>
+                                </div>
+                                <p class="text-Lumira-Gray-500 group-hover/profile-link:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/profile-link:text-white">Settings</p>
+                              </div>
+                            </a>
+                          </li>
+                          <li class="group/profile-link">
+                            <a href="">
+                              <div class="group-hover/profile-link:bg-Lumira-Gray-50 group-hover/profile-link:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/profile-link:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/profile-link:border group-[&.scroll]/scroll:group-hover/profile-link:bg-[#191F2F]">
+                                <div class="relative">
+                                  <div class="group-[&.scroll]/scroll:hidden">
+                                    <img src="assets/images/icons/image-grid-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                    <img src="assets/images/icons/image-grid-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                  </div>
+                                  <div class="hidden group-[&.scroll]/scroll:block">
+                                    <img src="assets/images/icons/dark/image-grid-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                    <img src="assets/images/icons/dark/image-grid-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                  </div>
+                                </div>
+                                <p class="text-Lumira-Gray-500 group-hover/profile-link:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/profile-link:text-white">Dashboard</p>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                        <a href="" class="ml-3">
+                          <p class="bg-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-900 hover:ring-Lumira-Gray-500 group-[&.scroll]/scroll:hover:ring-Lumira-Gray-500 group-[&.scroll]/scroll:border-Lumira-Gray-400 w-fit rounded-full border border-[#090807] px-5 py-2.5 text-center text-xs leading-[18px] font-medium text-white transition-all duration-300 group-[&.scroll]/scroll:bg-[#EAEAEB] hover:ring-2 group-[&.scroll]/scroll:hover:ring-2">Sign out</p>
+                        </a>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- on after header -->
+
       <header class="relative w-full">
         <img id="Bg-Image" src="assets/images/backgrounds/bg-header.png" alt="image" class="absolute left-0 h-full w-full rounded-[18px]" />
         <img src="assets/images/backgrounds/header-mask.png" alt="mask" class="absolute top-[160px] left-1/2 h-[464.43px] w-[815.59px] -translate-x-1/2 transform" />
-        <div class="relative mx-auto flex w-full max-w-[1128px] flex-col items-center gap-[120px] pt-[256px] pb-[80px]">
-          <section id="NavTopContainer" class="fixed top-[60px] right-0 left-0 z-50 transition-all duration-300">
-            <nav id="NavTop" class="group/scroll">
-              <div class="group/scroll border-Lumira-Border-Gray group-[&.scroll]/scroll:border-Lumira-Gray-700 relative mx-auto flex w-full max-w-[1128px] items-center justify-between rounded-full border bg-white px-4 py-3.5 transition-all duration-300 group-[&.scroll]/scroll:bg-[#0B1220D6] group-[&.scroll]/scroll:backdrop-blur-xl">
+        <div class="relative mx-auto flex w-full max-w-[1128px] flex-col items-center gap-[120px] pt-[60px] pb-[80px]">
+            <nav id="NavTopContainerLight" class="group/scroll w-full">
+              <div class="group/scroll border-Lumira-Border-Gray group-[&.scroll]/scroll:border-Lumira-Gray-700 relative flex w-full items-center justify-between rounded-full border bg-white px-4 py-3.5 transition-all duration-300 group-[&.scroll]/scroll:bg-[#0B1220D6] group-[&.scroll]/scroll:backdrop-blur-xl">
                 <!-- minify to other file -->
                 <a href="#" class="relative shrink-0">
                   <img src="assets/images/logos/company.svg" alt="company logo" class="h-[48px] w-[180px] shrink-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-0" />
@@ -859,6 +1889,7 @@
                     </div>
 
                     <div class="notifcation-nav">
+                      <div>
                       <a href="" class="shrink-0 transition-all duration-300 group-[&.scroll]/scroll:hidden">
                         <div class="relative flex size-[48px] items-center justify-center">
                           <img src="assets/images/icons/notification-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
@@ -871,6 +1902,91 @@
                           <img src="assets/images/icons/dark/notification-blue.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
                         </div>
                       </a>
+                    </div>
+                    <div id="DropdownProfile" class="absolute left-[-152px] z-10 pt-[20px]">
+                      <div class="border-Lumira-Gray-200 group-[&.scroll]/scroll:border-Lumira-Gray-700 hidden w-[212px] rounded-[18px] border bg-white p-1.5 transition-all duration-300 group-hover:block group-[&.scroll]/scroll:bg-[#303241]">
+                        <nav id="DropdownProfileNav" class="flex flex-col gap-2">
+                          <div class="flex flex-col gap-0.5 px-3 pt-3">
+                            <h5 class="font-medium group-[&.scroll]/scroll:text-white">Rafiq</h5>
+                            <p class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-xs leading-[18px]">john.doe@email.com</p>
+                          </div>
+                          <ul class="flex flex-col gap-2">
+                            <li class="group/profile-link">
+                              <a href="">
+                                <div class="group-hover/profile-link:bg-Lumira-Gray-50 group-hover/profile-link:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/profile-link:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/profile-link:border group-[&.scroll]/scroll:group-hover/profile-link:bg-[#191F2F]">
+                                  <div class="relative">
+                                    <div class="group-[&.scroll]/scroll:hidden">
+                                      <img src="assets/images/icons/user-profile-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                      <img src="assets/images/icons/user-profile-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                    </div>
+                                    <div class="hidden group-[&.scroll]/scroll:block">
+                                      <img src="assets/images/icons/dark/user-profile-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                      <img src="assets/images/icons/dark/user-profile-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                    </div>
+                                  </div>
+                                  <p class="text-Lumira-Gray-500 group-hover/profile-link:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/profile-link:text-white">Profile</p>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="group/profile-link">
+                              <a href="">
+                                <div class="group-hover/profile-link:bg-Lumira-Gray-50 group-hover/profile-link:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/profile-link:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/profile-link:border group-[&.scroll]/scroll:group-hover/profile-link:bg-[#191F2F]">
+                                  <div class="relative">
+                                    <div class="group-[&.scroll]/scroll:hidden">
+                                      <img src="assets/images/icons/shopping-bag-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                      <img src="assets/images/icons/shopping-bag-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                    </div>
+                                    <div class="hidden group-[&.scroll]/scroll:block">
+                                      <img src="assets/images/icons/dark/shopping-bag-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                      <img src="assets/images/icons/dark/shopping-bag-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                    </div>
+                                  </div>
+                                  <p class="text-Lumira-Gray-500 group-hover/profile-link:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/profile-link:text-white">Purchases</p>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="group/profile-link">
+                              <a href="">
+                                <div class="group-hover/profile-link:bg-Lumira-Gray-50 group-hover/profile-link:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/profile-link:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/profile-link:border group-[&.scroll]/scroll:group-hover/profile-link:bg-[#191F2F]">
+                                  <div class="relative">
+                                    <div class="group-[&.scroll]/scroll:hidden">
+                                      <img src="assets/images/icons/setting-alt-line-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                      <img src="assets/images/icons/setting-alt-line-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                    </div>
+                                    <div class="hidden group-[&.scroll]/scroll:block">
+                                      <img src="assets/images/icons/dark/setting-alt-line-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                      <img src="assets/images/icons/dark/setting-alt-line-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                    </div>
+                                  </div>
+                                  <p class="text-Lumira-Gray-500 group-hover/profile-link:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/profile-link:text-white">Settings</p>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="group/profile-link">
+                              <a href="">
+                                <div class="group-hover/profile-link:bg-Lumira-Gray-50 group-hover/profile-link:border-Lumira-Gray-200 group-[&.scroll]/scroll:group-hover/profile-link:border-Lumira-Gray-700 flex items-center gap-2 rounded-xl border border-transparent px-5 py-3.5 transition-all duration-300 group-hover/profile-link:border group-[&.scroll]/scroll:group-hover/profile-link:bg-[#191F2F]">
+                                  <div class="relative">
+                                    <div class="group-[&.scroll]/scroll:hidden">
+                                      <img src="assets/images/icons/image-grid-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                      <img src="assets/images/icons/image-grid-black.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                    </div>
+                                    <div class="hidden group-[&.scroll]/scroll:block">
+                                      <img src="assets/images/icons/dark/image-grid-gray.svg" alt="icon" class="size-[22px] shrink-0 opacity-100 transition-all duration-300 group-hover/profile-link:opacity-0" />
+                                      <img src="assets/images/icons/dark/image-grid-white.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/profile-link:opacity-100" />
+                                    </div>
+                                  </div>
+                                  <p class="text-Lumira-Gray-500 group-hover/profile-link:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover/profile-link:text-white">Dashboard</p>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                          <a href="" class="ml-3">
+                            <p class="bg-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-900 hover:ring-Lumira-Gray-500 group-[&.scroll]/scroll:hover:ring-Lumira-Gray-500 group-[&.scroll]/scroll:border-Lumira-Gray-400 w-fit rounded-full border border-[#090807] px-5 py-2.5 text-center text-xs leading-[18px] font-medium text-white transition-all duration-300 group-[&.scroll]/scroll:bg-[#EAEAEB] hover:ring-2 group-[&.scroll]/scroll:hover:ring-2">Sign out</p>
+                          </a>
+                        </nav>
+                      </div>
+                    </div>
+
                     </div>
 
                     <div class="profile-nav group relative">
@@ -967,7 +2083,6 @@
                 </div>
               </div>
             </nav>
-          </section>
           <div id="ACuratedLibrary" class="mx-auto flex w-full max-w-[1022px] flex-col items-center">
             <span class="rounded-full bg-[#D8C1CE] px-5 py-1.5 text-center text-xs leading-[18px] font-medium">Instant Solutions for Faster Design</span>
             <h1 class="mt-6 max-w-[810px] text-center text-[60px] leading-[70px] font-semibold">A Curated Library of Ready to Use Design Templates</h1>
@@ -1036,8 +2151,8 @@
         </div>
       </header>
       <section id="Slider" class="bg-Lumira-Pink-700 relative mt-3.5 w-full overflow-x-hidden rounded-[18px] py-[27px]">
-        <span id="GradientSliderLeft" class="absolute top-0 left-0 z-50 h-full w-[268px] bg-gradient-to-r from-[#AE0D66] to-[rgba(174,13,102,0)]"></span>
-        <span id="GradientSliderRight" class="absolute top-0 right-0 z-50 h-full w-[268px] bg-gradient-to-l from-[#AE0D66] to-[rgba(174,13,102,0)]"></span>
+        <span id="GradientSliderLeft" class="absolute top-0 left-0 z-30 h-full w-[268px] bg-gradient-to-r from-[#AE0D66] to-[rgba(174,13,102,0)]"></span>
+        <span id="GradientSliderRight" class="absolute top-0 right-0 z-30 h-full w-[268px] bg-gradient-to-l from-[#AE0D66] to-[rgba(174,13,102,0)]"></span>
         <span id="GradientCenter" class="bg-opacity-80 absolute top-0 left-1/2 h-full w-full max-w-[812px] translate-x-[-50%] rounded-full bg-[#F6369F] blur-3xl"></span>
         <div class="flex w-max flex-nowrap">
           <div class="slider w-max pr-[44px]">

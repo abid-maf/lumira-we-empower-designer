@@ -1,14 +1,13 @@
 window.addEventListener("scroll", function () {
-  const nav = document.getElementById("NavTop");
-  const navContainer = document.getElementById("NavTopContainer");
+  const navContainerDark = document.getElementById("NavTopContainerDark");
 
   if (window.scrollY > 814) {
-    nav.classList.add("scroll");
-    navContainer.classList.remove("top-[60px]");
-    navContainer.classList.add("top-[12px]");
+    navContainerDark.classList.remove("opacity-0");
+    navContainerDark.classList.remove("-z-50");
+    navContainerDark.classList.add("z-50");
   } else {
-    nav.classList.remove("scroll");
-    navContainer.classList.add("top-[60px]");
-    navContainer.classList.remove("top-[12px]");
+    navContainerDark.classList.add("opacity-0");
+    navContainerDark.classList.add("-z-50");
+    navContainerDark.classList.remove("z-50");
   }
 });
