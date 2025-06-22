@@ -4,3 +4,9 @@ var categoriesSwiper = new Swiper("#Swiper", {
   slidesOffsetAfter: 16,
   slidesOffsetBefore: 16,
 });
+
+var categoriesSwiper = new Swiper("#BrowseAllSwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 6,
+  slidesOffsetAfter: 16,
+});
