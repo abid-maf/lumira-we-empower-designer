@@ -54,6 +54,9 @@ body {
 .slider-left {
   animation: slide-left 20s infinite linear;
 }
+.slider-right {
+  animation: slide-right 20s infinite linear;
+}
 
 @keyframes slide-left {
   0% {
@@ -61,6 +64,14 @@ body {
   }
   100% {
     transform: translatex(-100%);
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatex(100%);
   }
 }
 

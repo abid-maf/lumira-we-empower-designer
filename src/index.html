@@ -22,15 +22,15 @@
     <title>Lumira | Homepage</title>
   </head>
   <body>
-    <main class="flex flex-col bg-white px-2 pb-2 pt-[84px] tablet:p-3.5">
+    <main class="flex overflow-hidden flex-col bg-white px-2 pb-2 pt-[84px] tablet:p-3.5">
       <header class="relative w-full">
         <img id="Bg-Image" src="assets/images/backgrounds/bg-header.png" alt="image" class="absolute left-0 top-0 h-full w-full rounded-[14px] tablet:rounded-[18px]" />
         <img src="assets/images/backgrounds/header-mask.png" alt="mask" class="absolute top-[160px] left-1/2 h-[464.43px] w-[815.59px] -translate-x-1/2 transform" />
         <div class="relative mx-auto flex w-full max-w-[1128px] flex-col items-center gap-[120px] pt-[60px] pb-[80px]">
-          <!-- navbar light > 900px -->
+          <!-- navbar light above mobile  -->
           <nav id="NavTopContainerLight" class="group/scroll w-full hidden tablet:block">
             <div class="group/scroll border-Lumira-Border-Gray group-[&.scroll]/scroll:border-Lumira-Gray-700 relative flex w-full items-center justify-between rounded-full border bg-white px-4 py-3.5 transition-all duration-300 group-[&.scroll]/scroll:bg-[#0B1220D6] group-[&.scroll]/scroll:backdrop-blur-xl">
-              <a href="#" class="relative shrink-0">
+              <a href="" class="relative shrink-0">
                 <img src="assets/images/logos/company.svg" alt="company logo" class="h-[48px] w-[180px] shrink-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-0" />
                 <img src="assets/images/logos/company-dark.svg" alt="company logo" class="absolute top-0 h-[48px] w-[180px] shrink-0 opacity-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-100" />
               </a>
@@ -796,7 +796,7 @@
                   </div>
                 </li>
                 <li class="group">
-                  <a href="#">
+                  <a href="">
                     <!-- bila ingin linknya active, tambahkan class "active" saja di bawah ini -->
                     <div class="group/active flex flex-col items-center gap-0.5">
                       <p class="group-hover:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-[&.active]/active:text-Lumira-Gray-900 font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover:text-white group-[&.scroll]/scroll:group-[&.active]/active:text-white">Freebies</p>
@@ -818,10 +818,10 @@
                       <img src="assets/images/icons/dark/search-nav-white.svg" alt="icon" class="absolute top-0 size-5 shrink-0 opacity-0 transition-all duration-300 hover:opacity-100" />
                     </a>
                   </div>
-                  <a href="#">
+                  <a href="">
                     <div class="rounded-full px-5 py-3 text-sm leading-[20px] font-medium group-[&.scroll]/scroll:text-white">Login</div>
                   </a>
-                  <a href="#">
+                  <a href="">
                     <div class="bg-Lumira-Indigo-600 border-Lumira-Indigo-400 hover:ring-Lumira-Indigo-400 rounded-full border px-5 py-3 text-sm leading-[20px] text-white transition-all duration-300 hover:ring-2">Register</div>
                   </a>
                 </div>
@@ -1127,11 +1127,11 @@
               </div>
             </div>
           </nav>
-          <!-- navbar Dark > 900px -->
+          <!-- navbar Dark above mobile -->
           <section id="NavTopContainerDark" class="hidden tablet:block fixed top-[-85px] right-0 left-0 z-50 transition-all duration-300 [&.dark-show]:top-[26px]">
             <nav class="group/scroll scroll">
               <div class="group/scroll border-Lumira-Border-Gray group-[&.scroll]/scroll:border-Lumira-Gray-700 relative mx-auto flex w-full max-w-[1128px] items-center justify-between rounded-full border bg-white px-4 py-3.5 transition-all duration-300 group-[&.scroll]/scroll:bg-[#0B1220D6] group-[&.scroll]/scroll:backdrop-blur-xl">
-                <a href="#" class="relative shrink-0">
+                <a href="" class="relative shrink-0">
                   <img src="assets/images/logos/company.svg" alt="company logo" class="h-[48px] w-[180px] shrink-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-0" />
                   <img src="assets/images/logos/company-dark.svg" alt="company logo" class="absolute top-0 h-[48px] w-[180px] shrink-0 opacity-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-100" />
                 </a>
@@ -1897,7 +1897,7 @@
                     </div>
                   </li>
                   <li class="group">
-                    <a href="#">
+                    <a href="">
                       <!-- bila ingin linknya active, tambahkan class "active" saja di bawah ini -->
                       <div class="group/active flex flex-col items-center gap-0.5">
                         <p class="group-hover:text-Lumira-Gray-900 group-[&.scroll]/scroll:text-Lumira-Gray-300 group-[&.active]/active:text-Lumira-Gray-900 font-medium transition-all duration-300 group-[&.scroll]/scroll:group-hover:text-white group-[&.scroll]/scroll:group-[&.active]/active:text-white">Freebies</p>
@@ -1919,10 +1919,10 @@
                         <img src="assets/images/icons/dark/search-nav-white.svg" alt="icon" class="absolute top-0 size-5 shrink-0 opacity-0 transition-all duration-300 hover:opacity-100" />
                       </a>
                     </div>
-                    <a href="#">
+                    <a href="">
                       <div class="rounded-full px-5 py-3 text-sm leading-[20px] font-medium group-[&.scroll]/scroll:text-white">Login</div>
                     </a>
-                    <a href="#">
+                    <a href="">
                       <div class="bg-Lumira-Indigo-600 border-Lumira-Indigo-400 hover:ring-Lumira-Indigo-400 rounded-full border px-5 py-3 text-sm leading-[20px] text-white transition-all duration-300 hover:ring-2">Register</div>
                     </a>
                   </div>
@@ -2229,20 +2229,38 @@
               </div>
             </nav>
           </section>
-          <!-- navbar Dark (mobile) < 900px -->
-          <section id="NavTopContainerDarkMobile" class="tablet:hidden px-2 fixed top-2 right-0 left-0 z-50 transition-all duration-300">
+          <!-- navbar Dark mobile -->
+          <section id="NavTopContainerDarkMobile" class="group/hamburger-mobile-toggle hamburger-mobile-toggle tablet:hidden px-2 fixed top-2 right-0 left-0 z-50 transition-all duration-300">
             <nav class="group/scroll scroll">
-              <div class="group/scroll border-Lumira-Border-Gray group-[&.scroll]/scroll:border-Lumira-Gray-700 relative mx-auto flex w-full items-center justify-between rounded-full border bg-white px-2 py-2 transition-all duration-300 group-[&.scroll]/scroll:bg-[#0B1220D6] group-[&.scroll]/scroll:backdrop-blur-xl">
-                <a href="#" class="relative shrink-0">
-                  <img src="assets/images/logos/company-mobile.svg" alt="company logo" class="w-[107.48px] h-[36px] tablet:h-[48px] tablet:w-[180px] shrink-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-0" />
-                  <img src="assets/images/logos/company-mobile.svg" alt="company logo" class="w-[107.48px] h-[36px] absolute top-0 tablet:h-[48px] tablet:w-[180px] shrink-0 opacity-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-100" />
-                </a>
-                <a href="" class="shrink-0">
-                  <div class="p-[12px] rounded-full bg-[#101828B2] border border-Lumira-Gray-700">
-                  <img src="assets/images/icons/menu-two-line.svg" alt="menu" class="size-6 shrink-0" />
+              <div class="group/scroll border-Lumira-Border-Gray group-[&.scroll]/scroll:border-Lumira-Gray-700 relative mx-auto w-full rounded-full group-[.hamburger-mobile-toggle]/hamburger-mobile-toggle:rounded-[14px] group-[.hamburger-mobile-toggle]/hamburger-mobile-toggle:h-[662px] border bg-white px-2 py-2 transition-all duration-300 group-[&.scroll]/scroll:bg-[#0B1220D6] group-[&.scroll]/scroll:backdrop-blur-xl">
+                <div class="flex items-center justify-between w-full">
+                  <a href="" class="relative shrink-0">
+                    <img src="assets/images/logos/company-mobile.svg" alt="company logo" class="w-[107.48px] h-[36px] tablet:h-[48px] tablet:w-[180px] shrink-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-0" />
+                    <img src="assets/images/logos/company-mobile.svg" alt="company logo" class="w-[107.48px] h-[36px] absolute top-0 tablet:h-[48px] tablet:w-[180px] shrink-0 opacity-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-100" />
+                  </a>
+                  <div class="flex items-center gap-1">
+                  <a href="" class="shrink-0">
+                    <div class="p-[12px]">
+                    <img src="assets/images/icons/search-mobile.svg" alt="icon" class="size-6 shrink-0" />
+                  </div>
+                  </a>
+                  <a href="" class="shrink-0">
+                    <div class="p-[12px]">
+                    <img src="assets/images/icons/notification-mobile.svg" alt="icon" class="size-6 shrink-0" />
+                  </div>
+                  </a>
+                  <a href="" class="shrink-0">
+                    <div class="p-[12px] rounded-full bg-[#101828B2] border border-Lumira-Gray-700">
+                    <img src="assets/images/icons/menu-two-line.svg" alt="menu" class="size-6 shrink-0" />
+                  </div>
+                  </a>
                 </div>
-                </a>
-              </div>
+                </div>
+                <hr class="text-[#FFFFFF1A] flex-1 mt-[24px] hidden group-[.hamburger-mobile-toggle]/hamburger-mobile-toggle:block" />
+                <div class="hidden group-[.hamburger-mobile-toggle]/hamburger-mobile-toggle:block w-full">
+                  
+                </div>
+            </div>
             </nav>
           </section>
 
@@ -2790,7 +2808,8 @@
             <h2 class="text-[36px] leading-[44px] tablet:text-[60px] tablet:leading-[70px] font-semibold">Kickstart projects in minutes with premium templates <span class="text-radial-gradient inline-block">across all platforms.</span></h2>
             <p class="text-Lumira-Gray-500 text-base tablet:text-[20px] tablet:leading-[30px] pr-[28px] tablet:pr-0">Browse by platform to find the perfect starter kit:</p>
           </div>
-          <div class="mx-auto flex w-full max-w-[1050px] flex-wrap items-center justify-center gap-1.5">
+          <!-- above mobile -->
+          <div class="hidden tablet:flex mx-auto w-full max-w-[1050px] flex-wrap items-center justify-center gap-1.5">
             <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
               <img src="assets/images/icons/kickstart-figma.svg" alt="icon" class="size-5 shrink-0" />
               <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Figma</p>
@@ -2856,12 +2875,434 @@
               <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">SVG</p>
             </div>
           </div>
+          <!-- mobile -->
+           <div id="AnimationTools" class="tablet:hidden overflow-x-hidden py-0.5">
+            <!-- slider left -->
+            <div class="flex w-max flex-nowrap">
+              <div class="slider w-max pr-[6px]">
+                <div class="slider-left flex flex-nowrap items-center gap-[6px]">
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-figma.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Figma</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-sketch.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Sketch</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-lunacy.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Lunacy</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/penpot.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Penpot</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-framer.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Framer</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-webflow.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Webflow</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-elementor.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Elementor</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/bricks.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Bricks</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/react.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">React</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/vue.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Vue</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/blender.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Blender</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/obj.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">OBJ</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/glb.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">GLB</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/fbx.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">FBX</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/png.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">PNG</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/svg.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">SVG</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider w-max">
+                <div class="slider-left flex flex-nowrap items-center gap-[6px]">
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-figma.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Figma</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-sketch.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Sketch</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-lunacy.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Lunacy</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/penpot.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Penpot</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-framer.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Framer</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-webflow.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Webflow</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-elementor.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Elementor</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/bricks.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Bricks</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/react.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">React</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/vue.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Vue</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/blender.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Blender</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/obj.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">OBJ</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/glb.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">GLB</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/fbx.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">FBX</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/png.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">PNG</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/svg.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">SVG</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider right -->
+            <div class="flex w-max flex-nowrap mt-[6px]">
+              <div class="slider w-max pr-[6px]">
+                <div class="slider-right flex flex-nowrap items-center gap-[6px]">
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-figma.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Figma</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-sketch.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Sketch</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-lunacy.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Lunacy</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/penpot.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Penpot</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-framer.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Framer</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-webflow.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Webflow</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-elementor.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Elementor</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/bricks.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Bricks</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/react.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">React</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/vue.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Vue</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/blender.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Blender</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/obj.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">OBJ</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/glb.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">GLB</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/fbx.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">FBX</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/png.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">PNG</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/svg.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">SVG</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider w-max">
+                <div class="slider-right flex flex-nowrap items-center gap-[6px]">
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-figma.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Figma</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-sketch.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Sketch</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-lunacy.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Lunacy</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/penpot.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Penpot</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-framer.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Framer</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-webflow.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Webflow</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-elementor.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Elementor</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/bricks.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Bricks</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/react.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">React</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/vue.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Vue</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/blender.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Blender</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/obj.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">OBJ</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/glb.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">GLB</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/fbx.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">FBX</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/png.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">PNG</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/svg.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">SVG</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider left -->
+            <div class="flex w-max flex-nowrap mt-[6px]">
+              <div class="slider w-max pr-[6px]">
+                <div class="slider-left flex flex-nowrap items-center gap-[6px]">
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/react.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">React</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/vue.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Vue</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/blender.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Blender</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/obj.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">OBJ</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/glb.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">GLB</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/fbx.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">FBX</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/png.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">PNG</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/svg.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">SVG</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-figma.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Figma</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-sketch.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Sketch</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-lunacy.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Lunacy</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/penpot.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Penpot</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-framer.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Framer</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-webflow.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Webflow</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-elementor.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Elementor</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/bricks.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Bricks</p>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="slider w-max">
+                <div class="slider-left flex flex-nowrap items-center gap-[6px]">
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/react.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">React</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/vue.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Vue</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/blender.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Blender</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/obj.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">OBJ</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/glb.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">GLB</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/fbx.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">FBX</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/png.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">PNG</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/svg.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">SVG</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-figma.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Figma</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-sketch.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Sketch</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-lunacy.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Lunacy</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/penpot.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Penpot</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-framer.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Framer</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-webflow.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Webflow</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/kickstart-elementor.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Elementor</p>
+                  </div>
+                  <div class="kickstart-logo border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-5 py-3 transition-all duration-300 hover:ring">
+                    <img src="assets/images/icons/bricks.svg" alt="icon" class="size-5 shrink-0" />
+                    <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">Bricks</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+           </div>
         </div>
       </section>
       <section id="FeaturedProducts" class="mx-auto mt-[96px] px-[12px] tablet:px-0 tablet:mt-28 flex w-full max-w-[1232px] flex-col gap-[32px] tablet:gap-[52px] tablet:py-[40px]">
         <div class="flex items-center gap-[12px] tablet:gap-[32px]">
           <h2 class="text-[20px] leading-[30px] tablet:text-[36px] tablet:leading-[44px] font-medium">Featured Products</h2>
-          <hr class="text-Lumira-Gray-200 flex-1" />
+          <hr class="text-Lumira-Gray-200 flex-1 min-w-[19px] shrink-0" />
           <a href="browse-all-uikit.html" class="shrink-0">
             <div class="bg-Lumira-BlackOpium flex items-center gap-2 tablet:gap-1.5 rounded-full border border-[#090807] px-4 tablet:px-5 py-2 tablet:py-2.5 transition-all duration-300 hover:ring-2 hover:ring-[#090807]">
               <p class="tablet:leading-[20px] leading-[18px] text-xs tablet:text-sm font-medium text-white">Browse All</p>
@@ -3025,10 +3466,10 @@
         </div>
       </section>
       <hr class="text-Lumira-Gray-200 mt-[80px] tablet:mt-[52px] w-full" />
-      <section id="TrendingWebsiteTemplates" class="mx-auto mt-[80px] tablet:mt-[52px] flex w-full max-w-[1232px] flex-col gap-[32px] tablet:gap-[52px] tablet:py-[40px]">
+      <section id="TrendingWebsiteTemplates" class="mx-auto mt-[80px] tablet:mt-[52px] flex w-full max-w-[1232px] flex-col gap-[32px] tablet:gap-[52px] tablet:py-[40px] px-[12px] tablet:px-0">
         <div class="flex items-center gap-[12px] tablet:gap-[32px]">
           <h2 class="text-[20px] leading-[30px] tablet:text-[36px] tablet:leading-[44px] font-medium">Trending Website Templates</h2>
-          <hr class="text-Lumira-Gray-200 flex-1" />
+          <hr class="text-Lumira-Gray-200 flex-1 min-w-[19px] shrink-0" />
           <a href="" class="shrink-0">
             <div class="bg-Lumira-BlackOpium flex items-center gap-2 tablet:gap-1.5 rounded-full border border-[#090807] px-4 tablet:px-5 py-2 tablet:py-2.5 transition-all duration-300 hover:ring-2 hover:ring-[#090807]">
               <p class="tablet:leading-[20px] leading-[18px] text-xs tablet:text-sm font-medium text-white">Browse All</p>
@@ -3204,7 +3645,7 @@
       <section id="Trending3D&2DIconPack" class="mx-auto mt-[80px] tablet:mt-[52px] flex w-full max-w-[1232px] flex-col gap-[32px] tablet:gap-[52px] tablet:pt-[40px] tablet:pb-[60px]">
         <div class="flex items-center gap-[12px] tablet:gap-[32px]">
           <h2 class="text-[20px] leading-[30px] tablet:text-[36px] tablet:leading-[44px] font-medium">Trending 3D & 2D Icon Pack</h2>
-          <hr class="text-Lumira-Gray-200 flex-1" />
+          <hr class="text-Lumira-Gray-200 flex-1 min-w-[19px] shrink-0" />
           <a href="" class="shrink-0">
             <div class="bg-Lumira-BlackOpium flex items-center gap-2 tablet:gap-1.5 rounded-full border border-[#090807] px-4 tablet:px-5 py-2 tablet:py-2.5 transition-all duration-300 hover:ring-2 hover:ring-[#090807]">
               <p class="tablet:leading-[20px leading-[18px] text-xs tablet:text-sm font-medium text-white">Browse All</p>
@@ -3411,7 +3852,7 @@
         <div class="mx-auto flex w-full max-w-[1232px] flex-col gap-[32px] tablet:gap-[52px]">
           <div class="flex items-center gap-[12px] tablet:gap-[32px]">
             <h2 class="text-[20px] leading-[30px] tablet:text-[36px] tablet:leading-[44px] font-medium">Freebie Products</h2>
-            <hr class="text-Lumira-Gray-200 flex-1" />
+            <hr class="text-Lumira-Gray-200 flex-1 min-w-[19px] shrink-0" />
             <a href="" class="shrink-0">
               <div class="bg-Lumira-BlackOpium flex items-center gap-2 tablet:gap-1.5 rounded-full border border-[#090807] px-4 tablet:px-5 py-2 tablet:py-2.5 transition-all duration-300 hover:ring-2 hover:ring-[#090807]">
                 <p class="tablet:leading-[20px leading-[18px] text-xs tablet:text-sm font-medium text-white">Browse All</p>
@@ -3578,14 +4019,14 @@
       <section id="BecomeALumiraCreator" class="relative mt-[100px] tablet:mt-[168px] h-[620px] tablet:h-[468px] overflow-hidden rounded-[14px] tablet:rounded-[18px]">
         <img src="assets/images/backgrounds/bg-become-a-lumira.png" alt="image" class="absolute top-0 bottom-0 left-0 h-full w-full rounded-[14px] tablet:rounded-[18px]" />
         <img src="assets/images/backgrounds/become-mask.png" alt="image" class="absolute top-0 left-0 z-10 h-full w-[815.59px]" />
-        <div class="relative z-30 flex flex-col tablet:flex-row h-full flex-1 mx-auto items-center tablet:justify-center pt-[44px] tablet:pt-0 px-[32px] tablet:px-0 gap-[16.48px] tablet:gap-[111px] tablet:pr-[89.7px] tablet:pl-[90px]">
+        <div class="relative z-30 flex flex-col tablet:flex-row h-full flex-1 mx-auto items-center tablet:justify-center pt-[44px] tablet:pt-0 px-[25px] tablet:px-0 gap-[16.48px] tablet:gap-[111px] tablet:pr-[89.7px] tablet:pl-[90px]">
           <div class="flex w-full max-w-[720px] flex-col gap-[24px] tablet:gap-[40px]">
             <div class="relative z-20 flex flex-col gap-4 tablet:gap-6">
               <h2 class="text-[36px] leading-[44px] tablet:text-[60px] tablet:leading-[70px] font-semibold text-white">Become a Lumira creator & earn on every sale!</h2>
               <p class="text-Lumira-Indigo-100 text-base leading-[24px] tablet:text-[20px] tablet:leading-[30px]">Sell your UI/UX templates, code kits, and design assets in one marketplace. Set your price and reach thousands of professionals.</p>
             </div>
             <a href="" class="w-fit shrink-0">
-              <div class="bg-Lumira-BlackOpium flex w-fit items-center gap-2 tablet:gap-1.5 rounded-full border border-[#090807] px-4 tablet:px-5 py-2 tablet:py-2.5 transition-all duration-300 hover:ring-2 hover:ring-[#090807]">
+              <div class="bg-Lumira-Gray-900 flex w-fit items-center gap-2 tablet:gap-1.5 rounded-full border border-[#090807] px-4 tablet:px-5 py-2 tablet:py-2.5 transition-all duration-300 hover:ring-2 hover:ring-[#090807]">
                 <p class="leading-[20px] text-xs tablet:text-sm font-medium text-white">Get started</p>
                 <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="tablet:size-4 size-[14px] shrink-0" />
               </div>
@@ -3616,16 +4057,16 @@
                 <h4 class="text-xs leading-[18px] font-bold text-white">UI Kit</h4>
                 <ul class="grid grid-cols-2 tablet:flex tablet:flex-col gap-2 tablet:gap-[10px]">
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Mobile Apps</a>
+                    <a href="" class="hover:underline text-xs leading-[18px] font-extralight text-white">Mobile Apps</a>
                   </li>
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Landing Page</a>
+                    <a href="" class="hover:underline text-xs leading-[18px] font-extralight text-white">Landing Page</a>
                   </li>
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Design System</a>
+                    <a href="" class="hover:underline text-xs leading-[18px] font-extralight text-white">Design System</a>
                   </li>
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Dashboard</a>
+                    <a href="" class="hover:underline text-xs leading-[18px] font-extralight text-white">Dashboard</a>
                   </li>
                 </ul>
               </div>
@@ -3633,16 +4074,16 @@
                 <h4 class="text-xs leading-[18px] font-bold text-white">Website</h4>
                 <ul class="grid grid-cols-2 tablet:flex tablet:flex-col gap-2 tablet:gap-[10px]">
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Elementor</a>
+                    <a href="" class="hover:underline text-xs leading-[18px] font-extralight text-white">Elementor</a>
                   </li>
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Framer</a>
+                    <a href="" class="hover:underline text-xs leading-[18px] font-extralight text-white">Framer</a>
                   </li>
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Bricks Builder</a>
+                    <a href="" class="hover:underline text-xs leading-[18px] font-extralight text-white">Bricks Builder</a>
                   </li>
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Coded</a>
+                    <a href="" class="hover:underline text-xs leading-[18px] font-extralight text-white">Coded</a>
                   </li>
                 </ul>
               </div>
@@ -3650,30 +4091,33 @@
                 <h4 class="text-xs leading-[18px] font-bold text-white">Icon</h4>
                 <ul class="grid grid-cols-2 tablet:flex tablet:flex-col gap-2 tablet:gap-[10px]">
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Business</a>
+                    <a href="" class="hover:underline text-xs leading-[18px] font-extralight text-white">Business</a>
                   </li>
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Cryptocurrency</a>
+                    <a href="" class="hover:underline text-xs leading-[18px] font-extralight text-white">Cryptocurrency</a>
                   </li>
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Technology</a>
+                    <a href="" class="hover:underline text-xs leading-[18px] font-extralight text-white">Technology</a>
                   </li>
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Healthcare</a>
+                    <a href="" class="hover:underline text-xs leading-[18px] font-extralight text-white">Healthcare</a>
                   </li>
                 </ul>
               </div>
               <div class="flex flex-col gap-[12px] tablet:gap-[10px] tablet:p-[10px]">
-                <h4 class="text-xs leading-[18px] font-bold text-white">Legal</h4>
+                <h4 class="text-xs leading-[18px] font-bold text-white">Legal & Support</h4>
                 <ul class="grid grid-cols-2 tablet:flex tablet:flex-col gap-2 tablet:gap-[10px]">
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Terms of License</a>
+                    <a href="https://lumirakit.notion.site/license-terms" class="hover:underline text-xs leading-[18px] font-extralight text-white">License Terms</a>
                   </li>
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Privacy Policy</a>
+                    <a href="https://lumirakit.notion.site/author-terms" class="hover:underline text-xs leading-[18px] font-extralight text-white">Author Terms</a>
                   </li>
                   <li>
-                    <a href="" class="text-xs leading-[18px] font-extralight text-white">Cookie Policy</a>
+                    <a href="https://lumirakit.notion.site/refund-policy" class="hover:underline text-xs leading-[18px] font-extralight text-white">Refund Policy</a>
+                  </li>
+                  <li>
+                    <a href="https://lumirakit.notion.site/faq" class="hover:underline text-xs leading-[18px] font-extralight text-white">FAQ</a>
                   </li>
                 </ul>
               </div>
