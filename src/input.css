@@ -6,7 +6,7 @@ body {
 }
 
 @theme {
-  --breakpoint-tablet: 900px;
+  --breakpoint-tablet: 640px;
 
   --color-Lumira-Black: #000000;
   --color-Lumira-Pink-600: #dd2590;
