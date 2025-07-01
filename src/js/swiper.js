@@ -8,5 +8,5 @@ var categoriesSwiper = new Swiper("#Swiper", {
 var categoriesSwiper = new Swiper("#BrowseAllSwiper", {
   slidesPerView: "auto",
   spaceBetween: 6,
-  slidesOffsetAfter: 16,
+  slidesOffsetAfter: 92,
 });
