@@ -282,6 +282,9 @@
   .left-\[-57px\] {
     left: -57px;
   }
+  .left-\[-108px\] {
+    left: -108px;
+  }
   .left-\[-140px\] {
     left: -140px;
   }
@@ -577,9 +580,6 @@
   .w-\[12px\] {
     width: 12px;
   }
-  .w-\[32\] {
-    width: 32;
-  }
   .w-\[60px\] {
     width: 60px;
   }
@@ -625,9 +625,6 @@
   .w-\[296px\] {
     width: 296px;
   }
-  .w-\[328\] {
-    width: 328;
-  }
   .w-\[328px\] {
     width: 328px;
   }
@@ -643,9 +640,6 @@
   .w-\[815\.59px\] {
     width: 815.59px;
   }
-  .w-\[855px\] {
-    width: 855px;
-  }
   .w-fit {
     width: fit-content;
   }
@@ -654,9 +648,6 @@
   }
   .w-max {
     width: max-content;
-  }
-  .max-w-\[85px\] {
-    max-width: 85px;
   }
   .max-w-\[320px\] {
     max-width: 320px;
@@ -684,9 +675,6 @@
   }
   .max-w-\[855px\] {
     max-width: 855px;
-  }
-  .max-w-\[856px\] {
-    max-width: 856px;
   }
   .max-w-\[1022px\] {
     max-width: 1022px;
@@ -1098,9 +1086,6 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
-  }
-  .px-\[6\] {
-    padding-inline: 6;
   }
   .px-\[6px\] {
     padding-inline: 6px;
