@@ -6,23 +6,25 @@ function updateGradientVisibility() {
   const scrollLeft = container.scrollLeft;
   const maxScrollLeft = container.scrollWidth - container.clientWidth;
 
+  // Toleransi kecil untuk memastikan ujung kanan terdeteksi
+  const tolerance = 1;
+
   // Jika scroll di paling kiri, sembunyikan gradient kiri
   if (scrollLeft <= 0) {
-    gradLeft.style.opacity = '0';
+    gradLeft.style.visibility = 'hidden';
   } else {
-    gradLeft.style.opacity = '1';
+    gradLeft.style.visibility = 'visible';
   }
 
-  // Jika scroll di paling kanan, sembunyikan gradient kanan
-  if (scrollLeft >= maxScrollLeft) {
-    gradRight.style.opacity = '0';
+  // Jika scroll di paling kanan (dengan toleransi), sembunyikan gradient kanan
+  if (scrollLeft >= maxScrollLeft - tolerance) {
+    // Menggunakan visibility: hidden
+    gradRight.style.visibility = 'hidden';
   } else {
-    gradRight.style.opacity = '1';
+    gradRight.style.visibility = 'visible';
   }
 }
 
-// Initial check
 updateGradientVisibility();
 
-// Event listener saat scroll
 container.addEventListener('scroll', updateGradientVisibility);
