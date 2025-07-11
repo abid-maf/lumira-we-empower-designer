@@ -10,6 +10,7 @@ body {
 
   --color-Lumira-Black: #000000;
   --color-Lumira-Pink-600: #dd2590;
+  --color-Lumira-Pink-300: #FAA7E0;
   --color-Lumira-Pink-400: #f670c7;
   --color-Lumira-Pink-50: #fdf2fa;
   --color-Lumira-Gray-50: #f9fafb;
@@ -118,8 +119,18 @@ body {
   }
 }
 
-.blink {
-  animation: blink 1s ease-in-out infinite;
+@keyframes blink-grand {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.blink-grand {
+  animation: blink-grand 1s ease-in-out infinite;
 }
 
 /* text gradient */
