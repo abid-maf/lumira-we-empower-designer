@@ -6,7 +6,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(0.637 0.237 25.331);
     --color-indigo-500: oklch(0.585 0.233 277.117);
     --color-indigo-600: oklch(0.511 0.262 276.966);
     --color-black: #000;
@@ -48,6 +47,9 @@
       --font-mono--font-variation-settings
     );
     --color-Lumira-Black: #000000;
+    --color-Lumira-Rose-25: #FFF5F6;
+    --color-Lumira-Rose-200: #FECDD6;
+    --color-Lumira-Rose-600: #E31B54;
     --color-Lumira-Pink-600: #dd2590;
     --color-Lumira-Pink-300: #FAA7E0;
     --color-Lumira-Pink-400: #f670c7;
@@ -248,35 +250,23 @@
   .top-3 {
     top: calc(var(--spacing) * 3);
   }
-  .top-\[-60\] {
-    top: -60;
-  }
-  .top-\[-60px\] {
-    top: -60px;
-  }
   .top-\[-85px\] {
     top: -85px;
-  }
-  .top-\[-112\] {
-    top: -112;
-  }
-  .top-\[-112px\] {
-    top: -112px;
-  }
-  .top-\[-122px\] {
-    top: -122px;
-  }
-  .top-\[-\] {
-    top: -;
   }
   .top-\[14px\] {
     top: 14px;
   }
+  .top-\[15PX\] {
+    top: 15PX;
+  }
+  .top-\[15\] {
+    top: 15;
+  }
+  .top-\[15px\] {
+    top: 15px;
+  }
   .top-\[20px\] {
     top: 20px;
-  }
-  .top-\[60px\] {
-    top: 60px;
   }
   .top-\[122px\] {
     top: 122px;
@@ -359,6 +349,9 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .col-span-3 {
+    grid-column: span 3 / span 3;
+  }
   .row-span-2 {
     grid-row: span 2 / span 2;
   }
@@ -424,12 +417,6 @@
   }
   .mt-\[32px\] {
     margin-top: 32px;
-  }
-  .mt-\[60\] {
-    margin-top: 60;
-  }
-  .mt-\[60px\] {
-    margin-top: 60px;
   }
   .mt-\[80px\] {
     margin-top: 80px;
@@ -625,9 +612,6 @@
   .\!w-fit {
     width: fit-content !important;
   }
-  .w-\[1\] {
-    width: 1;
-  }
   .w-\[1px\] {
     width: 1px;
   }
@@ -648,9 +632,6 @@
   }
   .w-\[107\.48px\] {
     width: 107.48px;
-  }
-  .w-\[140\] {
-    width: 140;
   }
   .w-\[140px\] {
     width: 140px;
@@ -715,12 +696,6 @@
   .w-max {
     width: max-content;
   }
-  .max-w-\[1\] {
-    max-width: 1;
-  }
-  .max-w-\[134px\] {
-    max-width: 134px;
-  }
   .max-w-\[320px\] {
     max-width: 320px;
   }
@@ -736,11 +711,17 @@
   .max-w-\[664px\] {
     max-width: 664px;
   }
+  .max-w-\[684px\] {
+    max-width: 684px;
+  }
   .max-w-\[700px\] {
     max-width: 700px;
   }
   .max-w-\[720px\] {
     max-width: 720px;
+  }
+  .max-w-\[764px\] {
+    max-width: 764px;
   }
   .max-w-\[810px\] {
     max-width: 810px;
@@ -997,10 +978,6 @@
     border-right-style: var(--tw-border-style);
     border-right-width: 0.5px;
   }
-  .border-b {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 1px;
-  }
   .border-b-\[0\.5px\] {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 0.5px;
@@ -1042,17 +1019,14 @@
   .border-Lumira-Pink-400 {
     border-color: var(--color-Lumira-Pink-400);
   }
+  .border-Lumira-Rose-200 {
+    border-color: var(--color-Lumira-Rose-200);
+  }
   .border-\[\#090807\] {
     border-color: #090807;
   }
   .border-transparent {
     border-color: transparent;
-  }
-  .border-b-\[0\.5\] {
-    border-bottom-color: 0.5;
-  }
-  .border-b-\[0\] {
-    border-bottom-color: 0;
   }
   .bg-Lumira-BlackOpium {
     background-color: var(--color-Lumira-BlackOpium);
@@ -1090,6 +1064,9 @@
   .bg-Lumira-Pink-700 {
     background-color: var(--color-Lumira-Pink-700);
   }
+  .bg-Lumira-Rose-25 {
+    background-color: var(--color-Lumira-Rose-25);
+  }
   .bg-\[\#4D31E7\] {
     background-color: #4D31E7;
   }
@@ -1111,9 +1088,6 @@
   .bg-\[\#F2D4E2\] {
     background-color: #F2D4E2;
   }
-  .bg-\[\#F9FAFBCC\] {
-    background-color: #F9FAFBCC;
-  }
   .bg-\[\#F339AB\] {
     background-color: #F339AB;
   }
@@ -1126,9 +1100,6 @@
   .bg-\[\#FFFFFFE5\] {
     background-color: #FFFFFFE5;
   }
-  .bg-\[\#\] {
-    background-color: #;
-  }
   .bg-\[\#f9fafb7e\] {
     background-color: #f9fafb7e;
   }
@@ -1137,9 +1108,6 @@
   }
   .bg-indigo-600 {
     background-color: var(--color-indigo-600);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -1315,6 +1283,9 @@
   .py-\[6px\] {
     padding-block: 6px;
   }
+  .py-\[9px\] {
+    padding-block: 9px;
+  }
   .py-\[12px\] {
     padding-block: 12px;
   }
@@ -1377,6 +1348,12 @@
   }
   .pt-\[120px\] {
     padding-top: 120px;
+  }
+  .pr-1 {
+    padding-right: calc(var(--spacing) * 1);
+  }
+  .pr-1\.5 {
+    padding-right: calc(var(--spacing) * 1.5);
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
@@ -1494,6 +1471,10 @@
   .text-\[60px\] {
     font-size: 60px;
   }
+  .leading-0 {
+    --tw-leading: calc(var(--spacing) * 0);
+    line-height: calc(var(--spacing) * 0);
+  }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
     line-height: calc(var(--spacing) * 5);
@@ -1562,6 +1543,9 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-Lumira-Gray-50 {
+    color: var(--color-Lumira-Gray-50);
+  }
   .text-Lumira-Gray-200 {
     color: var(--color-Lumira-Gray-200);
   }
@@ -1586,9 +1570,6 @@
   .text-Lumira-Indigo-100 {
     color: var(--color-Lumira-Indigo-100);
   }
-  .text-Lumira-Indigo-400 {
-    color: var(--color-Lumira-Indigo-400);
-  }
   .text-Lumira-Indigo-600 {
     color: var(--color-Lumira-Indigo-600);
   }
@@ -1600,6 +1581,9 @@
   }
   .text-Lumira-Pink-900 {
     color: var(--color-Lumira-Pink-900);
+  }
+  .text-Lumira-Rose-600 {
+    color: var(--color-Lumira-Rose-600);
   }
   .text-\[\#98A2B3\] {
     color: #98A2B3;
@@ -1743,6 +1727,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         border-color: #444CE7;
+      }
+    }
+  }
+  .group-hover\:bg-Lumira-Indigo-500 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: var(--color-Lumira-Indigo-500);
       }
     }
   }
@@ -1982,6 +1973,11 @@
   .group-\[\&\.active\]\:border-Lumira-Pink-200 {
     &:is(:where(.group).active *) {
       border-color: var(--color-Lumira-Pink-200);
+    }
+  }
+  .group-\[\&\.active\]\:bg-Lumira-Indigo-500 {
+    &:is(:where(.group).active *) {
+      background-color: var(--color-Lumira-Indigo-500);
     }
   }
   .group-\[\&\.active\]\:bg-Lumira-Indigo-600 {
@@ -2384,6 +2380,13 @@
       }
     }
   }
+  .hover\:ring-Lumira-Gray-200 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-ring-color: var(--color-Lumira-Gray-200);
+      }
+    }
+  }
   .hover\:ring-Lumira-Gray-300 {
     &:hover {
       @media (hover: hover) {
@@ -2437,6 +2440,20 @@
     &:hover {
       @media (hover: hover) {
         --tw-ring-color: var(--color-Lumira-Pink-400);
+      }
+    }
+  }
+  .hover\:ring-Lumira-Pink-600 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-ring-color: var(--color-Lumira-Pink-600);
+      }
+    }
+  }
+  .hover\:ring-Lumira-Rose-200 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-ring-color: var(--color-Lumira-Rose-200);
       }
     }
   }
@@ -2967,12 +2984,6 @@
   .\[\.scroll\]\:top-\[14px\] {
     &:is(.scroll) {
       top: 14px;
-    }
-  }
-  .\[\.size-sticky\]\:size-\[80\] {
-    &:is(.size-sticky) {
-      width: 80;
-      height: 80;
     }
   }
   .\[\.size-sticky\]\:size-\[80px\] {

@@ -19,7 +19,7 @@
     <link href="./output.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>Lumira | Grand Opening Deals</title>
+    <title>Lumira | User Profile</title>
   </head>
   <body>
     <main class="fleco flex flex-col bg-white p-3.5">
@@ -1124,16 +1124,15 @@
         </div>
       </nav>
       <!-- header -->
-      <header class="relative mt-[90px] w-full overflow-hidden bg-[#F2D4E2] rounded-[18px] h-[320px]">
+      <header class="relative mt-[90px] h-[320px] w-full overflow-hidden rounded-[18px] bg-[#F2D4E2]">
         <img id="Bg-Image" src="assets/images/backgrounds/bg-header-user-profile.webp" alt="image" class="absolute bottom-0 left-0 h-full w-full rounded-[18px]" />
-        
       </header>
 
-      <div class="flex gap-[32px] max-w-[1232px] mx-auto">
+      <div class="mx-auto flex max-w-[1232px] gap-[32px]">
         <section id="UserProfile" class="w-[280px] shrink-0">
-          <div class="flex flex-col gap-6 sticky top-[122px] mt-[-60px]">
+          <div class="sticky top-[122px] mt-[-60px] flex flex-col gap-6">
             <div class="header-user-profile flex flex-col gap-[28px]">
-              <div id="userProfileImageWrapper" class="flex size-[120px] [.size-sticky]:size-[80px] transition-all duration-300 shrink-0 items-center justify-center overflow-hidden rounded-full bg-Lumira-Gray-200 ring-[5px] ring-white">
+              <div id="userProfileImageWrapper" class="bg-Lumira-Gray-200 flex size-[120px] shrink-0 items-center justify-center overflow-hidden rounded-full ring-[5px] ring-white transition-all duration-300 [.size-sticky]:size-[80px]">
                 <img src="assets/images/profile/profile-4.png" alt="profile" class="size-full shrink-0 object-cover" />
               </div>
               <div class="flex flex-col gap-2">
@@ -1142,8 +1141,12 @@
               </div>
             </div>
             <div class="list-user-profile flex flex-col gap-[12px]">
-              <button type="button" class="w-[140px] rounded-full bg-black py-[12px] text-white">Follow</button>
-              <div class="border-Lumira-Gray-200 bg-Lumira-Gray-50 grid grid-cols-2 rounded-xl p-1.5 border">
+              <div id="ButtonsFollow">
+                <button type="button" class="hover:ring-Lumira-Gray-700 w-[140px] rounded-full bg-black py-[12px] text-white transition-all duration-300 hover:ring-2">Follow</button>
+                <button type="button" class="bg-Lumira-Gray-50 border-Lumira-Gray-200 text-Lumira-Gray-900 hover:ring-Lumira-Gray-200 hidden w-[140px] rounded-full border py-[12px] transition-all duration-300 hover:ring-2">Following</button>
+                <button type="button" class="bg-Lumira-Rose-25 border-Lumira-Rose-200 text-Lumira-Rose-600 hover:ring-Lumira-Rose-200 hidden w-[140px] rounded-full border py-[12px] transition-all duration-300 hover:ring-2">Unfollow</button>
+              </div>
+              <div class="border-Lumira-Gray-200 bg-Lumira-Gray-50 grid grid-cols-2 rounded-xl border p-1.5">
                 <div class="border-Lumira-Gray-200 flex size-full flex-col gap-1 border-r-[0.5px] border-b-[0.5px] p-6">
                   <p class="text-Lumira-Gray-900 font-medium">77</p>
                   <h5 class="text-Lumira-Gray-500 text-xs leading-[18px]">Products</h5>
@@ -1168,617 +1171,622 @@
                 <p class="text-Lumira-Gray-900">Padang, Indonesia</p>
               </div>
               <div class="group flex items-center gap-2">
-                <img src="assets/images/icons/mail.svg" alt="icon" class="size-4 shrink-0">
-                <p class="group-hover:underline text-Lumira-Indigo-600">amanda@email.com</p>
+                <img src="assets/images/icons/mail.svg" alt="icon" class="size-4 shrink-0" />
+                <p class="text-Lumira-Indigo-600 group-hover:underline">amanda@email.com</p>
               </div>
               <div class="group flex items-center gap-2">
-                <img src="assets/images/icons/x.svg" alt="icon" class="size-4 shrink-0">
-                <p class="group-hover:underline text-Lumira-Indigo-600">amanda.white</p>
+                <img src="assets/images/icons/x.svg" alt="icon" class="size-4 shrink-0" />
+                <p class="text-Lumira-Indigo-600 group-hover:underline">amanda.white</p>
               </div>
               <div class="group flex items-center gap-2">
-                <img src="assets/images/icons/instagram.svg" alt="icon" class="size-4 shrink-0">
-                <p class="group-hover:underline text-Lumira-Indigo-600">amanda.white</p>
+                <img src="assets/images/icons/instagram.svg" alt="icon" class="size-4 shrink-0" />
+                <p class="text-Lumira-Indigo-600 group-hover:underline">amanda.white</p>
               </div>
               <div class="group flex items-center gap-2">
-                <img src="assets/images/icons/web-link.svg" alt="icon" class="size-4 shrink-0">
-                <p class="group-hover:underline text-Lumira-Indigo-600">loremipsum.com</p>
+                <img src="assets/images/icons/web-link.svg" alt="icon" class="size-4 shrink-0" />
+                <p class="text-Lumira-Indigo-600 group-hover:underline">loremipsum.com</p>
               </div>
             </div>
           </div>
         </section>
-      <section id="ListProducts" class="flex w-full flex-col gap-[32px]">
-        <div class="flex w-full items-center justify-between gap-5">
-          <div id="BrowseAllSwiper" class="tag-wrapper relative w-full max-w-[855px] min-w-0">
-            <div id="TabButtons" class="tag-container flex flex-nowrap items-center gap-[6px] overflow-x-auto [&::-webkit-scrollbar]:hidden">
-              <div class="swiper-slide group tab-btn active !w-fit" data-content="tab1">
-                <button type="button">
-                  <div class="group-hover:bg-Lumira-Indigo-600 group-hover:border-Lumira-Indigo-400 group-[&.active]:bg-Lumira-Indigo-600 group-[&.active]:border-Lumira-Indigo-400 bg-Lumira-Gray-50 border-Lumira-Gray-200 flex items-center gap-2 rounded-full border px-5 py-[15px] transition-all duration-300">
-                    <div class="relative">
-                      <img src="assets/images/icons/all-products-gray.svg" alt="icon" class="size-[22px] shrink-0 transition-all duration-300 group-hover:opacity-0 group-[&.active]:opacity-0" />
-                      <img src="assets/images/icons/all-products-blue.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]:opacity-100" />
+        <section id="ListProducts" class="mt-[32px] flex w-full flex-col gap-[32px]">
+          <div class="flex w-full items-center justify-between gap-5">
+            <div id="BrowseAllSwiper" class="tag-wrapper relative w-full max-w-[855px] min-w-0">
+              <div id="TabButtons" class="tag-container flex flex-nowrap items-center gap-[6px] overflow-x-auto [&::-webkit-scrollbar]:hidden">
+                <div class="swiper-slide group tab-btn active !w-fit" data-content="tab1">
+                  <button type="button">
+                    <div class="group-hover:bg-Lumira-Indigo-600 group-hover:border-Lumira-Indigo-400 group-[&.active]:bg-Lumira-Indigo-600 group-[&.active]:border-Lumira-Indigo-400 bg-Lumira-Gray-50 border-Lumira-Gray-200 flex items-center gap-3 rounded-full border py-1.5 pr-1.5 pl-5 transition-all duration-300">
+                      <div class="flex items-center gap-2">
+                        <div class="relative">
+                          <img src="assets/images/icons/device-iphone-gray.svg" alt="icon" class="size-[22px] shrink-0 transition-all duration-300 group-hover:opacity-0 group-[&.active]:opacity-0" />
+                          <img src="assets/images/icons/device-iphone-blue.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]:opacity-100" />
+                        </div>
+                        <h2 class="text-Lumira-Gray-500 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">UI Kit</h2>
+                      </div>
+                      <div class="group-hover:bg-Lumira-Indigo-500 group-[&.active]:bg-Lumira-Indigo-500 bg-Lumira-Gray-200 flex rounded-full px-5 py-[9px] transition-all duration-300">
+                        <p class="text-Lumira-Gray-500 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">50</p>
+                      </div>
                     </div>
-                    <h2 class="text-Lumira-Gray-500 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">UI Kit</h2>
-                  </div>
-                </button>
+                  </button>
+                </div>
+                <div class="swiper-slide group tab-btn !w-fit" data-content="tab2">
+                  <button type="button">
+                    <div class="group-hover:bg-Lumira-Indigo-600 group-hover:border-Lumira-Indigo-400 group-[&.active]:bg-Lumira-Indigo-600 group-[&.active]:border-Lumira-Indigo-400 bg-Lumira-Gray-50 border-Lumira-Gray-200 flex items-center gap-3 rounded-full border py-1.5 pr-1.5 pl-5 transition-all duration-300">
+                      <div class="flex items-center gap-2">
+                        <div class="relative">
+                          <img src="assets/images/icons/globe-gray.svg" alt="icon" class="size-[22px] shrink-0 transition-all duration-300 group-hover:opacity-0 group-[&.active]:opacity-0" />
+                          <img src="assets/images/icons/globe-blue.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]:opacity-100" />
+                        </div>
+                        <h2 class="text-Lumira-Gray-500 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">Website</h2>
+                      </div>
+                      <div class="group-hover:bg-Lumira-Indigo-500 group-[&.active]:bg-Lumira-Indigo-500 bg-Lumira-Gray-200 flex rounded-full px-5 py-[9px] transition-all duration-300">
+                        <p class="text-Lumira-Gray-500 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">38</p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div class="swiper-slide group tab-btn !w-fit" data-content="tab3">
+                  <button type="button">
+                    <div class="group-hover:bg-Lumira-Indigo-600 group-hover:border-Lumira-Indigo-400 group-[&.active]:bg-Lumira-Indigo-600 group-[&.active]:border-Lumira-Indigo-400 bg-Lumira-Gray-50 border-Lumira-Gray-200 flex items-center gap-3 rounded-full border py-1.5 pr-1.5 pl-5 transition-all duration-300">
+                      <div class="flex items-center gap-2">
+                        <div class="relative">
+                          <img src="assets/images/icons/2d-gray.svg" alt="icon" class="size-[22px] shrink-0 transition-all duration-300 group-hover:opacity-0 group-[&.active]:opacity-0" />
+                          <img src="assets/images/icons/2d-blue.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]:opacity-100" />
+                        </div>
+                        <h2 class="text-Lumira-Gray-500 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">Icon</h2>
+                      </div>
+                      <div class="group-hover:bg-Lumira-Indigo-500 group-[&.active]:bg-Lumira-Indigo-500 bg-Lumira-Gray-200 flex rounded-full px-5 py-[9px] transition-all duration-300">
+                        <p class="text-Lumira-Gray-500 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">7</p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
               </div>
-              <div class="swiper-slide group tab-btn !w-fit" data-content="tab2">
-                <button type="button">
-                  <div class="group-hover:bg-Lumira-Indigo-600 group-hover:border-Lumira-Indigo-400 group-[&.active]:bg-Lumira-Indigo-600 group-[&.active]:border-Lumira-Indigo-400 bg-Lumira-Gray-50 border-Lumira-Gray-200 flex items-center gap-2 rounded-full border px-5 py-[15px] transition-all duration-300">
-                    <div class="relative">
-                      <img src="assets/images/icons/globe-gray.svg" alt="icon" class="size-[22px] shrink-0 transition-all duration-300 group-hover:opacity-0 group-[&.active]:opacity-0" />
-                      <img src="assets/images/icons/globe-blue.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]:opacity-100" />
+              <span class="gradient-left absolute top-0 left-0 z-30 h-full w-[92px] bg-gradient-to-r from-[#FFFFFF] to-[rgba(255,255,255,0.02)] transition-all duration-300"></span>
+              <span class="gradient-right absolute top-0 right-0 z-30 h-full w-[92px] bg-gradient-to-l from-[#FFFFFF] to-[rgba(255,255,255,0.02)] transition-all duration-300"></span>
+            </div>
+          </div>
+          <!-- tab content -->
+          <div id="Tabs-Content">
+            <div id="tab1">
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://www.figma.com/community/file/1455493105157156091/kasa-furniture-ecommerce-mobile-app-ui-kit" class="card">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/KASA.png" alt="KASA" class="h-full w-full object-cover" loading="lazy" />
                     </div>
-                    <h2 class="text-Lumira-Gray-500 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">Website</h2>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">KASA - Furniture Ecommerce Mobile App UI Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">200000</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </button>
+                </a>
+                <a href="https://www.figma.com/community/file/1380891060285447462/tassty-premium-food-delivery-mobile-app-ui-kit" class="card">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/TASSTY.png" alt="TASSTY" class="h-full w-full object-cover" loading="lazy" />
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Tassty! - Premium Food Delivery Mobile App UI Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">240000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://www.figma.com/community/file/1380531859386970168/inap-hotel-booking-mobile-app-ui-kit" class="card">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/INAP.png" alt="INAP" class="h-full w-full object-cover" loading="lazy" />
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Inap - Premium Hotel Booking Mobile App UI Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">220000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://www.figma.com/community/file/1317084027181462462/lifefit-healthy-diet-planner-premium-app-ui-kit" class="card">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/LIFEFIT.png" alt="LIFEFIT" class="h-full w-full object-cover" loading="lazy" />
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Lifefit - Healthy Diet Planner & Calory Counter App UI Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">200000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://www.figma.com/community/file/1345366719769609992/theserve-home-service-premium-app-ui-kit" class="card">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/THESERVE.png" alt="THESERVE" class="h-full w-full object-cover" loading="lazy" />
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Theserve - Premium Home Service Mobile App UI Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">200000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://www.figma.com/community/file/1394651131948824604/greeyo-real-estate-mobile-app-ui-kit" class="card">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/GREEYO.png" alt="GREEYO" class="h-full w-full object-cover" loading="lazy" />
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Greeyo - Premium Real Estate Mobile App UI Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">300000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://www.figma.com/community/file/1347899947979139814/parkcar-find-parking-spot-app-ui-kit" class="card">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/PARKCAR.png" alt="PARKCAR" class="h-full w-full object-cover" loading="lazy" />
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Parkcar - Find Parking Spot Mobile App UI Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">50000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://www.figma.com/community/file/1506257387598986882/natriv-river-guard-community-mobile-app-ui-kit" class="card">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/NATRIV.png" alt="NATRIV" class="h-full w-full object-cover" loading="lazy" />
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Natriv - River Guard Community Mobile App UI Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">220000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </div>
-              <div class="swiper-slide group tab-btn !w-fit" data-content="tab3">
-                <button type="button">
-                  <div class="group-hover:bg-Lumira-Indigo-600 group-hover:border-Lumira-Indigo-400 group-[&.active]:bg-Lumira-Indigo-600 group-[&.active]:border-Lumira-Indigo-400 bg-Lumira-Gray-50 border-Lumira-Gray-200 flex items-center gap-2 rounded-full border px-5 py-[15px] transition-all duration-300">
-                    <div class="relative">
-                      <img src="assets/images/icons/2d-gray.svg" alt="icon" class="size-[22px] shrink-0 transition-all duration-300 group-hover:opacity-0 group-[&.active]:opacity-0" />
-                      <img src="assets/images/icons/2d-blue.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]:opacity-100" />
+            </div>
+            <div id="tab2" class="hidden">
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://themeforest.net/item/craftword-creative-agency-copywiting-portfolio-elementor-template-kit/58027271" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/CRAFTWORD.jpg" alt="CRAFTWORD" class="h-full w-full object-cover" />
+                      <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
                     </div>
-                    <h2 class="text-Lumira-Gray-500 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">Icon</h2>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Craftword - Creative Agency & Copywriting Portfolio Elementor Template Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </button>
+                </a>
+                <a href="https://dongan.lemonsqueezy.com/buy/c16c26ee-6682-4216-b60a-3ba2d02a5219" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/DONGAN.jpg" alt="DONGAN" class="h-full w-full object-cover" />
+                      <div class="category-alert bg-Lumira-Indigo-700 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Framer</div>
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Dongan - Digital Agency Website Framer Template</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">270000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://themeforest.net/item/castrade-live-streaming-room-rental-elementor-template-kit/58468345" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/CASTRADE.jpg" alt="CASTRADE" class="h-full w-full object-cover" />
+                      <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Castrade - Live Streaming Room Rental Elementor Template Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://themeforest.net/item/sellbiz-startup-and-business-marketplace-elementor-template-kit/57817097" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/SELLBIZ.jpg" alt="SELLBIZ" class="h-full w-full object-cover" />
+                      <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Sellbiz - Startup & Business Marketplace Elementor Template Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://dongan.lemonsqueezy.com/buy/a6cc77fc-e84e-4fc0-8db1-f91b787d6829" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/CHEMICLY.jpg" alt="CHEMICLY" class="h-full w-full object-cover" />
+                      <div class="category-alert bg-Lumira-Indigo-700 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Framer</div>
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Chemicly - SaaS & Startup AI Framer Template</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">500000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://themeforest.net/item/finbank-digital-banking-fintech-elementor-template-kit/51974592" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/FINBANK.jpg" alt="FINBANK" class="h-full w-full object-cover" />
+                      <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Finbank - Digital Banking & Fintech Elementor Template Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">150000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://themeforest.net/item/oranx-product-designer-personal-portfolio-elementor-template-kit/58139829" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/ORANX.jpg" alt="ORANX" class="h-full w-full object-cover" />
+                      <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Oranx - Product Designer Personal Portfolio Elementor Template Kit</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://dongan.lemonsqueezy.com/buy/df40ff56-e59b-4985-9b85-0ab6443ccf2c" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                      <img src="assets/images/thumbnails/SANTO.jpg" alt="SANTO" class="h-full w-full object-cover" />
+                      <div class="category-alert bg-Lumira-Indigo-700 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Framer</div>
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Santo - Personal Portfolio Framer Template</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">300000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
-            <span class="gradient-left absolute top-0 left-0 z-30 h-full w-[92px] bg-gradient-to-r from-[#FFFFFF] to-[rgba(255,255,255,0.02)] transition-all duration-300"></span>
-            <span class="gradient-right absolute top-0 right-0 z-30 h-full w-[92px] bg-gradient-to-l from-[#FFFFFF] to-[rgba(255,255,255,0.02)] transition-all duration-300"></span>
-          </div>
 
-          
-        </div>
-        <!-- tab content -->
-        <div id="Tabs-Content">
-          <div id="tab1">
-            <div class="flex flex-wrap justify-center gap-4">
-              <a href="https://www.figma.com/community/file/1455493105157156091/kasa-furniture-ecommerce-mobile-app-ui-kit" class="card">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/KASA.png" alt="KASA" class="h-full w-full object-cover" loading="lazy" />
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">KASA - Furniture Ecommerce Mobile App UI Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">200000</p>
+            <div id="tab3" class="hidden">
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://www.figma.com/community/file/1375353868005632012/western-asian-foods-3d-icon-pack" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                        <img src="assets/images/icons/trending/1.svg" alt="icon1" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/2.svg" alt="icon2" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/3.svg" alt="icon3" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/4.svg" alt="icon4" class="mx-auto size-[96px] shrink-0" />
+                      </div>
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Western & Asian Foods - Premium 3D Icon Pack</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">60000</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1380891060285447462/tassty-premium-food-delivery-mobile-app-ui-kit" class="card">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/TASSTY.png" alt="TASSTY" class="h-full w-full object-cover" loading="lazy" />
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Tassty! - Premium Food Delivery Mobile App UI Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">240000</p>
+                </a>
+                <a href="https://www.figma.com/community/file/1391031822974522181/sports-equipment-premium-3d-icon-pack" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                      <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                        <img src="assets/images/icons/trending/5.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/6.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/7.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/8.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                      </div>
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Sports Equipment - Premium 3D Icon Pack</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">60000</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1380531859386970168/inap-hotel-booking-mobile-app-ui-kit" class="card">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/INAP.png" alt="INAP" class="h-full w-full object-cover" loading="lazy" />
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Inap - Premium Hotel Booking Mobile App UI Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">220000</p>
+                </a>
+                <a href="https://www.figma.com/community/file/1471482748964172709/business-finance-premium-3d-icon-pack" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                        <img src="assets/images/icons/trending/9.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/10.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/11.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/12.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                      </div>
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Business & Finance - Premium 3D Icon Pack</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">60000</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1317084027181462462/lifefit-healthy-diet-planner-premium-app-ui-kit" class="card">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/LIFEFIT.png" alt="LIFEFIT" class="h-full w-full object-cover" loading="lazy" />
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Lifefit - Healthy Diet Planner & Calory Counter App UI Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">200000</p>
+                </a>
+                <a href="https://www.figma.com/community/file/1461711061507976696/travel-tourism-premium-3d-icon-pack" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                      <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                        <img src="assets/images/icons/trending/13.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/14.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/15.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/16.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                      </div>
+                    </div>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Travel & Tourism - Premium 3D Icon Pack</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">50000</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1345366719769609992/theserve-home-service-premium-app-ui-kit" class="card">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/THESERVE.png" alt="THESERVE" class="h-full w-full object-cover" loading="lazy" />
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Theserve - Premium Home Service Mobile App UI Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">200000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1394651131948824604/greeyo-real-estate-mobile-app-ui-kit" class="card">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/GREEYO.png" alt="GREEYO" class="h-full w-full object-cover" loading="lazy" />
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Greeyo - Premium Real Estate Mobile App UI Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">300000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1347899947979139814/parkcar-find-parking-spot-app-ui-kit" class="card">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/PARKCAR.png" alt="PARKCAR" class="h-full w-full object-cover" loading="lazy" />
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Parkcar - Find Parking Spot Mobile App UI Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">50000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1506257387598986882/natriv-river-guard-community-mobile-app-ui-kit" class="card">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/NATRIV.png" alt="NATRIV" class="h-full w-full object-cover" loading="lazy" />
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Natriv - River Guard Community Mobile App UI Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">220000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div id="tab2" class="hidden">
-            <div class="flex flex-wrap justify-center gap-4">
-              <a href="https://themeforest.net/item/craftword-creative-agency-copywiting-portfolio-elementor-template-kit/58027271" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/CRAFTWORD.jpg" alt="CRAFTWORD" class="h-full w-full object-cover" />
-                    <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Craftword - Creative Agency & Copywriting Portfolio Elementor Template Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://dongan.lemonsqueezy.com/buy/c16c26ee-6682-4216-b60a-3ba2d02a5219" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/DONGAN.jpg" alt="DONGAN" class="h-full w-full object-cover" />
-                    <div class="category-alert bg-Lumira-Indigo-700 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Framer</div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Dongan - Digital Agency Website Framer Template</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">270000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://themeforest.net/item/castrade-live-streaming-room-rental-elementor-template-kit/58468345" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/CASTRADE.jpg" alt="CASTRADE" class="h-full w-full object-cover" />
-                    <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Castrade - Live Streaming Room Rental Elementor Template Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://themeforest.net/item/sellbiz-startup-and-business-marketplace-elementor-template-kit/57817097" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/SELLBIZ.jpg" alt="SELLBIZ" class="h-full w-full object-cover" />
-                    <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Sellbiz - Startup & Business Marketplace Elementor Template Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://dongan.lemonsqueezy.com/buy/a6cc77fc-e84e-4fc0-8db1-f91b787d6829" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/CHEMICLY.jpg" alt="CHEMICLY" class="h-full w-full object-cover" />
-                    <div class="category-alert bg-Lumira-Indigo-700 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Framer</div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Chemicly - SaaS & Startup AI Framer Template</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">500000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://themeforest.net/item/finbank-digital-banking-fintech-elementor-template-kit/51974592" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/FINBANK.jpg" alt="FINBANK" class="h-full w-full object-cover" />
-                    <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Finbank - Digital Banking & Fintech Elementor Template Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">150000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://themeforest.net/item/oranx-product-designer-personal-portfolio-elementor-template-kit/58139829" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/ORANX.jpg" alt="ORANX" class="h-full w-full object-cover" />
-                    <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Oranx - Product Designer Personal Portfolio Elementor Template Kit</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://dongan.lemonsqueezy.com/buy/df40ff56-e59b-4985-9b85-0ab6443ccf2c" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                    <img src="assets/images/thumbnails/SANTO.jpg" alt="SANTO" class="h-full w-full object-cover" />
-                    <div class="category-alert bg-Lumira-Indigo-700 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Framer</div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Santo - Personal Portfolio Framer Template</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">300000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+                </a>
 
-          <div id="tab3" class="hidden">
-            <div class="flex flex-wrap justify-center gap-4">
-              <a href="https://www.figma.com/community/file/1375353868005632012/western-asian-foods-3d-icon-pack" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
-                      <img src="assets/images/icons/trending/1.svg" alt="icon1" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/2.svg" alt="icon2" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/3.svg" alt="icon3" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/4.svg" alt="icon4" class="mx-auto size-[96px] shrink-0" />
+                <a href="https://www.figma.com/community/file/1470002980966346785/deal-partnership-premium-3d-icon-pack" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                        <img src="assets/images/icons/trending/17.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/18.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/19.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/20.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Western & Asian Foods - Premium 3D Icon Pack</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">60000</p>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Deal & Partnership - Premium 3D Icon Pack</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">60000</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1391031822974522181/sports-equipment-premium-3d-icon-pack" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                    <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
-                      <img src="assets/images/icons/trending/5.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/6.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/7.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/8.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                </a>
+                <a href="https://www.figma.com/community/file/1475107342517717259/environmental-awareness-premium-3d-icon-pack" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                      <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                        <img src="assets/images/icons/trending/21.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/22.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/23.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/24.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Sports Equipment - Premium 3D Icon Pack</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">60000</p>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Environmental Awareness - Premium 3D Icon Pack</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">50000</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1471482748964172709/business-finance-premium-3d-icon-pack" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
-                      <img src="assets/images/icons/trending/9.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/10.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/11.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/12.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                    </div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Business & Finance - Premium 3D Icon Pack</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">60000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1461711061507976696/travel-tourism-premium-3d-icon-pack" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                    <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
-                      <img src="assets/images/icons/trending/13.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/14.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/15.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/16.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                    </div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Travel & Tourism - Premium 3D Icon Pack</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">50000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+                </a>
 
-              <a href="https://www.figma.com/community/file/1470002980966346785/deal-partnership-premium-3d-icon-pack" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
-                      <img src="assets/images/icons/trending/17.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/18.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/19.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/20.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                <a href="https://www.figma.com/community/file/1368583895856896482/school-education-3d-icon-pack" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                      <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                        <img src="assets/images/icons/trending/25.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/26.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/27.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/28.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Deal & Partnership - Premium 3D Icon Pack</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">60000</p>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">School & Education - Premium 3D Icon Pack</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">90000</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1475107342517717259/environmental-awareness-premium-3d-icon-pack" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                    <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
-                      <img src="assets/images/icons/trending/21.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/22.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/23.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/24.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                </a>
+                <a href="https://www.figma.com/community/file/1372563575477604106/online-shopping-3d-icon-pack" class="card tablet:w-[296px] w-full">
+                  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                    <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                      <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
+                        <img src="assets/images/icons/trending/29.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/30.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/31.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                        <img src="assets/images/icons/trending/32.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Environmental Awareness - Premium 3D Icon Pack</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">50000</p>
+                    <div class="desc flex flex-col gap-2 px-2">
+                      <h3 class="line-clamp-2 h-[48px] font-medium">Online Shopping - Premium 3D Icon Pack</h3>
+                      <div class="flex items-center gap-[6px]">
+                        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                        <div class="flex items-center gap-2 text-xs leading-[18px]">
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">60000</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
-
-              <a href="https://www.figma.com/community/file/1368583895856896482/school-education-3d-icon-pack" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-                    <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
-                      <img src="assets/images/icons/trending/25.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/26.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/27.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/28.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                    </div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">School & Education - Premium 3D Icon Pack</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">90000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1372563575477604106/online-shopping-3d-icon-pack" class="card tablet:w-[296px] w-full">
-                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-300 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-                  <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-                    <div class="grid w-full grid-cols-2 gap-[32px] px-[30px] py-[24px]">
-                      <img src="assets/images/icons/trending/29.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/30.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/31.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                      <img src="assets/images/icons/trending/32.svg" alt="icon" class="mx-auto size-[96px] shrink-0" />
-                    </div>
-                  </div>
-                  <div class="desc flex flex-col gap-2 px-2">
-                    <h3 class="line-clamp-2 h-[48px] font-medium">Online Shopping - Premium 3D Icon Pack</h3>
-                    <div class="flex items-center gap-[6px]">
-                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-                      <div class="flex items-center gap-2 text-xs leading-[18px]">
-                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">60000</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- bila not found -->
-        <section id="NotFound" class="grid hidden w-full grid-cols-4 gap-4">
-          <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
-          <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
-          <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
-          <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
-          <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
-          <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 col-span-2 h-[314px] rounded-[12px] border">
-            <div class="flex flex-col items-center gap-4 px-[72px] py-[69px]">
-              <img src="assets/images/icons/browse-all/no-match.svg" alt="icon" class="h-[64px] w-[64px] shrink-0" />
-              <div class="flex flex-col items-center gap-[12px]">
-                <h2 class="text-Lumira-Gray-900 text-center text-[24px] leading-[32px] font-medium">Oops, no match!</h2>
-                <p class="text-Lumira-Gray-500 text-center text-lg leading-[28px]">We couldn’t find results for your search. Try tweaking your keywords or filter and try again.</p>
+                </a>
               </div>
             </div>
           </div>
-          <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
-          <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
-          <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
-          <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
-          <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
+          <!-- bila not found -->
+          <section id="NotFound" class="grid w-full grid-cols-3 gap-4">
+            <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
+            <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
+            <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
+            <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 col-span-3 h-[314px] rounded-[12px] border">
+              <div class="flex flex-col items-center gap-4 px-[72px] py-[69px]">
+                <img src="assets/images/icons/browse-all/no-match.svg" alt="icon" class="h-[64px] w-[64px] shrink-0" />
+                <div class="flex flex-col items-center gap-[12px]">
+                  <h2 class="text-Lumira-Gray-900 text-center text-[24px] leading-[32px] font-medium">This user hasn’t uploaded any products yet</h2>
+                  <p class="text-Lumira-Gray-500 text-center text-lg leading-[28px] max-w-[400px]">Check back later to see their templates, or explore other creators’ work in the meantime.</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
+            <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
+            <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
+          </section>
         </section>
-        <button type="button" class="hover:ring-Lumira-Gray-700 mx-auto mt-[30px] flex w-fit items-center gap-[6px] rounded-full bg-black px-5 py-[14px] text-white transition-all duration-300 hover:ring-2">
-          <p class="text-sm leading-[20px] font-medium">Load more</p>
-          <img src="assets/images/icons/browse-all/arrow-down-white.svg" alt="icon" class="size-4 shrink-0" />
-        </button>
-      </section>
       </div>
 
       <section id="Return" class="mx-auto mt-[94px] flex w-full max-w-[1232px] justify-end pr-[90px]">
