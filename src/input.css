@@ -9,8 +9,12 @@ body {
   --breakpoint-tablet: 640px;
 
   --color-Lumira-Black: #000000;
+  --color-Lumira-Warning-200: #FEDF89;
+  --color-Lumira-Warning-500: #F79009;
+  --color-Lumira-Warning-600: #DC6803;
   --color-Lumira-Rose-25: #FFF5F6;
   --color-Lumira-Rose-200: #FECDD6;
+  --color-Lumira-Rose-500: #F63D68;
   --color-Lumira-Rose-600: #E31B54;
   --color-Lumira-Pink-600: #dd2590;
   --color-Lumira-Pink-300: #FAA7E0;

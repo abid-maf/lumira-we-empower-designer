@@ -22,12 +22,58 @@
     <title>Lumira | Grand Opening Deals</title>
   </head>
   <body>
-    <a href="">
-      <div class="flex items-center justify-between px-5 py-3 bg-Lumira-Gray-50 border border-Lumira-Gray-200 hover:ring-2 hover:ring-Lumira-Gray-300 transition-all duration-300 rounded-full">
-        <span class="size-4 shrink-0"></span>
-        <p class="font-medium text-sm leading-5 text-Lumira-Gray-900">Edit Profile</p>
-        <img src="assets/images/icons/edit-pen.svg" alt="icon" class="size-4 shrink-0">
-      </div>
-    </a>
+    <div class="flex flex-col gap-[40px]">
+      <header class="mx-auto flex items-end w-full max-w-[1232px] justify-between pt-[60px]">
+        <div class="titleContainer flex w-full max-w-[732px] flex-col gap-4">
+          <div class="path flex items-center gap-3">
+            <div class="flex items-center gap-1.5">
+              <div class="flex size-5 items-center justify-center overflow-hidden rounded-full">
+                <img src="assets/images/profile/profile.png" alt="image" class="h-full w-full object-cover" />
+              </div>
+              <p class="text-Lumira-Gray-900 text-xs">Rafiq</p>
+            </div>
+            <img src="assets/images/icons/polygon.svg" alt="icon" class="h-[6px] w-[5px] shrink-0" />
+            <p class="text-Lumira-Gray-900 text-xs">UI Kit</p>
+            <img src="assets/images/icons/polygon.svg" alt="icon" class="h-[6px] w-[5px] shrink-0" />
+            <p class="text-Lumira-Gray-900 text-xs">Mobile App</p>
+          </div>
+          <div class="title flex flex-col gap-3">
+            <h1 class="text-Lumira-Gray-900 text-[48px] leading-[60px] font-semibold">Kasa - Furniture Ecommerce Mobile App UI Kit</h1>
+            <p class="text-Lumira-Gray-500">Modern mobile UI kit for furniture ecommerce with seamless checkout.</p>
+          </div>
+        </div>
+        <div class="buttons flex items-center gap-1.5">
+          <div class="group tab-btn !w-fit" data-content="tab1">
+            <button type="button">
+              <div class="group-hover:bg-Lumira-Warning-600 group-hover:border-Lumira-Warning-200 group-[&.active]:bg-Lumira-Warning-600 group-[&.active]:border-Lumira-Warning-200 bg-Lumira-Gray-50 border-Lumira-Gray-200 flex items-center gap-3 rounded-full border py-1.5 pr-1.5 pl-5 transition-all duration-300">
+                <div class="relative shrink-0">
+                  <img src="assets/images/icons/bookmark-gray.svg" alt="icon" class="size-[22px] shrink-0 transition-all duration-300 group-hover:opacity-0 group-[&.active]:opacity-0" />
+                  <img src="assets/images/icons/bookmark-fill.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]:opacity-100" />
+                </div>
+                <div class="group-hover:bg-Lumira-Warning-500 group-[&.active]:bg-Lumira-Warning-500 bg-Lumira-Gray-200 flex rounded-full px-5 py-[9px] transition-all duration-300">
+                  <p class="text-Lumira-Gray-900 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">85</p>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="group tab-btn !w-fit" data-content="tab2">
+            <button type="button">
+              <div class="group-hover:bg-Lumira-Rose-600 group-hover:border-Lumira-Rose-200 group-[&.active]:bg-Lumira-Rose-600 group-[&.active]:border-Lumira-Rose-200 bg-Lumira-Gray-50 border-Lumira-Gray-200 flex items-center gap-3 rounded-full border py-1.5 pr-1.5 pl-5 transition-all duration-300">
+                <div class="relative shrink-0">
+                  <img src="assets/images/icons/action-favourite-3-gray.svg" alt="icon" class="size-[22px] shrink-0 transition-all duration-300 group-hover:opacity-0 group-[&.active]:opacity-0" />
+                  <img src="assets/images/icons/action-favourite-3-fill.svg" alt="icon" class="size-[22px] absolute top-0 shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]:opacity-100" />
+                </div>
+                <div class="group-hover:bg-Lumira-Rose-500 group-[&.active]:bg-Lumira-Warning-500 bg-Lumira-Gray-200 flex rounded-full px-5 py-[9px] transition-all duration-300">
+                  <p class="text-Lumira-Gray-900 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">5</p>
+                </div>
+              </div>
+            </button>
+          </div>
+          <button type="button" class="preview-btn text-center py-[15px] px-[32px] rounded-full font-medium text-sm leading-[20px] text-Lumira-Gray-900 border border-Lumira-Gray-200 bg-Lumira-Gray-50 hover:ring-2 hover:ring-Lumira-Gray-300  transition-all duration-300">Preview</button>
+        </div>
+      </header>
+      <section id="ProductDetailImages"></section>
+      <section id="ProductDetailDescription"></section>
+    </div>
   </body>
 </html>
