@@ -19,7 +19,7 @@
     <link href="./output.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>Lumira | Featured Products</title>
+    <title>Lumira | Grand Opening Deals</title>
   </head>
   <body>
     <main class="fleco flex flex-col bg-white p-3.5">
@@ -1124,21 +1124,69 @@
         </div>
       </nav>
       <!-- header -->
-      <header class="relative mt-[90px] w-full overflow-hidden bg-[#4D31E7] rounded-[18px]">
-        <img id="Bg-Image" src="assets/images/backgrounds/bg-header-featured.png" alt="image" class="absolute bottom-0 left-0 h-full w-full rounded-[18px]" />
-        <img id="Bg-Image" src="assets/images/backgrounds/mask-featured.svg" alt="icon" class="absolute bottom-0 left-0 h-full w-full rounded-[18px]" />
-        <div class="relative mx-auto flex w-full max-w-[1128px] flex-col items-center gap-[120px] py-[62px]">
-          <div id="HeaderText" class="tablet:px-0 mx-auto flex w-full max-w-[1022px] flex-col items-center px-[12px]">
-            <div class="flex mt-6 items-center gap-[12px]">
-            <h1 class="max-w-[810px] bg-gradient-to-t from-white/70 to-white bg-clip-text text-center text-[60px] leading-[70px] font-semibold text-transparent">Featured Products</h1>
-            <img src="assets/images/icons/popular-header.svg" alt="icon" class="size-[48px] shrink-0" />
-            </div>
-            <p class="mt-[24px] max-w-[700px] text-center text-[20px] leading-[30px] text-white">Carefully curated by the Lumira team, these featured products represent the best quality and design. Only the finest make the cut.</p>
-          </div>
-        </div>
+      <header class="relative mt-[90px] w-full overflow-hidden bg-[#F2D4E2] rounded-[18px] h-[320px]">
+        <img id="Bg-Image" src="assets/images/backgrounds/bg-header-user-profile.webp" alt="image" class="absolute bottom-0 left-0 h-full w-full rounded-[18px]" />
+        
       </header>
 
-      <section id="ListProducts" class="mx-auto mt-[14px] flex w-full max-w-[1232px] flex-col gap-[32px] pt-[52px]">
+      <div class="flex gap-[32px] max-w-[1232px] mx-auto">
+        <section id="UserProfile" class="w-[280px] shrink-0">
+          <div class="flex flex-col gap-6 sticky top-[122px] mt-[-60px]">
+            <div class="header-user-profile flex flex-col gap-[28px]">
+              <div id="userProfileImageWrapper" class="flex size-[120px] [.size-sticky]:size-[80px] transition-all duration-300 shrink-0 items-center justify-center overflow-hidden rounded-full bg-Lumira-Gray-200 ring-[5px] ring-white">
+                <img src="assets/images/profile/profile-4.png" alt="profile" class="size-full shrink-0 object-cover" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <h1 class="text-Lumira-Gray-900 text-[30px] leading-[38px] font-semibold">Amanda</h1>
+                <p class="text-Lumira-Gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </div>
+            </div>
+            <div class="list-user-profile flex flex-col gap-[12px]">
+              <button type="button" class="w-[140px] rounded-full bg-black py-[12px] text-white">Follow</button>
+              <div class="border-Lumira-Gray-200 bg-Lumira-Gray-50 grid grid-cols-2 rounded-xl p-1.5 border">
+                <div class="border-Lumira-Gray-200 flex size-full flex-col gap-1 border-r-[0.5px] border-b-[0.5px] p-6">
+                  <p class="text-Lumira-Gray-900 font-medium">77</p>
+                  <h5 class="text-Lumira-Gray-500 text-xs leading-[18px]">Products</h5>
+                </div>
+                <div class="border-Lumira-Gray-200 flex size-full flex-col gap-1 border-b-[0.5px] border-l-[0.5px] p-6">
+                  <p class="text-Lumira-Gray-900 font-medium">680</p>
+                  <h5 class="text-Lumira-Gray-500 text-xs leading-[18px]">likes</h5>
+                </div>
+                <div class="border-Lumira-Gray-200 flex size-full flex-col gap-1 border-t-[0.5px] border-r-[0.5px] p-6">
+                  <p class="text-Lumira-Gray-900 font-medium">2.560</p>
+                  <h5 class="text-Lumira-Gray-500 text-xs leading-[18px]">Followers</h5>
+                </div>
+                <div class="border-Lumira-Gray-200 flex size-full flex-col gap-1 border-t-[0.5px] border-l-[0.5px] p-6">
+                  <p class="text-Lumira-Gray-900 font-medium">32</p>
+                  <h5 class="text-Lumira-Gray-500 text-xs leading-[18px]">Following</h5>
+                </div>
+              </div>
+            </div>
+            <div class="links-user-profile flex flex-col gap-3">
+              <div class="flex items-center gap-2">
+                <span>🏴</span>
+                <p class="text-Lumira-Gray-900">Padang, Indonesia</p>
+              </div>
+              <div class="group flex items-center gap-2">
+                <img src="assets/images/icons/mail.svg" alt="icon" class="size-4 shrink-0">
+                <p class="group-hover:underline text-Lumira-Indigo-600">amanda@email.com</p>
+              </div>
+              <div class="group flex items-center gap-2">
+                <img src="assets/images/icons/x.svg" alt="icon" class="size-4 shrink-0">
+                <p class="group-hover:underline text-Lumira-Indigo-600">amanda.white</p>
+              </div>
+              <div class="group flex items-center gap-2">
+                <img src="assets/images/icons/instagram.svg" alt="icon" class="size-4 shrink-0">
+                <p class="group-hover:underline text-Lumira-Indigo-600">amanda.white</p>
+              </div>
+              <div class="group flex items-center gap-2">
+                <img src="assets/images/icons/web-link.svg" alt="icon" class="size-4 shrink-0">
+                <p class="group-hover:underline text-Lumira-Indigo-600">loremipsum.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      <section id="ListProducts" class="flex w-full flex-col gap-[32px]">
         <div class="flex w-full items-center justify-between gap-5">
           <div id="BrowseAllSwiper" class="tag-wrapper relative w-full max-w-[855px] min-w-0">
             <div id="TabButtons" class="tag-container flex flex-nowrap items-center gap-[6px] overflow-x-auto [&::-webkit-scrollbar]:hidden">
@@ -1180,159 +1228,7 @@
             <span class="gradient-right absolute top-0 right-0 z-30 h-full w-[92px] bg-gradient-to-l from-[#FFFFFF] to-[rgba(255,255,255,0.02)] transition-all duration-300"></span>
           </div>
 
-          <div class="flex shrink-0 items-center gap-1.5 filter">
-            <div class="container-dropdown group relative">
-              <button type="button" class="button-dropdown bg-Lumira-Gray-50 border-Lumira-Gray-200 group-hover:border-Lumira-Gray-400 flex items-center gap-2 rounded-full border px-[20px] py-[15px] transition-all duration-300 focus:outline-none">
-                <p class="button-dropdown-title group-hover:text-Lumira-Gray-900 text-Lumira-Gray-500 text-sm leading-[20px] font-medium transition-all duration-300">Format</p>
-                <div class="button-dropdown-icon group-hover:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300">
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              </button>
-
-              <div class="dropdown-content absolute right-0 z-50 hidden pt-2">
-                <div class="border-Lumira-Gray-200 flex w-[436px] flex-col gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-xl">
-                  <button type="button" class="dropdown-content-list group/child-format hover:border-Lumira-Gray-200 flex items-center justify-center gap-[12px] rounded-[8px] border border-transparent px-[40px] py-6 transition-all duration-300 hover:bg-white">
-                    <img src="assets/images/icons/browse-all/all.svg" alt="icon" class="size-6 shrink-0" />
-                    <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Any format</p>
-                  </button>
-                  <div class="grid grid-cols-4 gap-[8px]">
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/figma.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Figma</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/sketch.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Sketch</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/lunacy.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Lunacy</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/penpot.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Penpot</p>
-                        </div>
-                      </button>
-                    </div>
-
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/framer.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Framer</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/webflow.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Webflow</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/elementor.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Elementor</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/bricks.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Bricks</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/react.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">React</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/vue.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Vue</p>
-                        </div>
-                      </button>
-                    </div>
-
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/blender.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Blender</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/obj.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">OBJ</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/glb.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">GLB</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/fbx.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">FBX</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/png.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">PNG</p>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="group/child-dropdown">
-                      <button class="dropdown-content-list w-full" type="button">
-                        <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex flex-col items-center gap-3 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
-                          <img src="assets/images/icons/svg.svg" alt="icon" class="size-6 shrink-0" />
-                          <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">SVG</p>
-                        </div>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
         <!-- tab content -->
         <div id="Tabs-Content">
@@ -1883,6 +1779,7 @@
           <img src="assets/images/icons/browse-all/arrow-down-white.svg" alt="icon" class="size-4 shrink-0" />
         </button>
       </section>
+      </div>
 
       <section id="Return" class="mx-auto mt-[94px] flex w-full max-w-[1232px] justify-end pr-[90px]">
         <a href="">
@@ -2006,5 +1903,6 @@
     <script src="js/nav-top-dark.js"></script>
     <script src="js/browse-all-tabs.js"></script>
     <script src="js/browse-all-horizontal-scroll.js"></script>
+    <script src="js/size-sticky.js"></script>
   </body>
 </html>

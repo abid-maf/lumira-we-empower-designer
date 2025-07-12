@@ -23,12 +23,12 @@
   </head>
   <body>
     <main class="tablet:p-3.5 flex flex-col overflow-hidden bg-white px-2 pt-[84px] pb-2">
-      <header class="relative w-full">
+      <header class="relative w-full bg-[#F2D4E2] rounded-[18px]">
         <img id="Bg-Image" src="assets/images/backgrounds/bg-header.webp" alt="image" class="tablet:rounded-[18px] absolute top-0 left-0 h-full w-full rounded-[14px]" />
         <img src="assets/images/icons/header-mask.svg" alt="mask" class="absolute top-[160px] left-1/2 h-[464.43px] w-[815.59px] -translate-x-1/2 transform" />
         <div class="relative mx-auto flex w-full max-w-[1128px] flex-col items-center gap-[120px] pb-[80px]">
           <!-- navbar above mobile  -->
-          <nav id="NavTopContainerDekstop" class="group/scroll peer tablet:block hidden w-full [.fixed]:max-w-[1128px] [.scroll]:top-[14px] pt-[60px] z-1000">
+          <nav id="NavTopContainerDekstop" class="group/scroll peer tablet:block z-1000 hidden w-full pt-[60px] [.fixed]:max-w-[1128px] [.scroll]:top-[14px]">
             <div class="group/scroll border-Lumira-Border-Gray group-[&.scroll]/scroll:border-Lumira-Gray-700 relative flex w-full items-center justify-between rounded-full border bg-white px-4 py-3.5 transition-all duration-300 group-[&.scroll]/scroll:bg-[#0B1220D6] group-[&.scroll]/scroll:backdrop-blur-xl">
               <a href="" class="relative shrink-0">
                 <img src="assets/images/logos/company.svg" alt="company logo" class="h-[48px] w-[180px] shrink-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-0" />
@@ -819,7 +819,7 @@
                     </a>
                   </div>
                   <a href="">
-                    <div class="rounded-full px-5 py-3 text-sm leading-[20px] font-medium group-[&.scroll]/scroll:text-white transition-all duration-300">Login</div>
+                    <div class="rounded-full px-5 py-3 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:text-white">Login</div>
                   </a>
                   <a href="">
                     <div class="bg-Lumira-Indigo-600 border-Lumira-Indigo-400 hover:ring-Lumira-Indigo-400 rounded-full border px-5 py-3 text-sm leading-[20px] text-white transition-all duration-300 hover:ring-2">Register</div>
@@ -1127,7 +1127,6 @@
               </div>
             </div>
           </nav>
-          
 
           <!-- navbar Dark mobile -->
           <section id="NavTopContainerDarkMobile" class="group/mobile-toggle tablet:hidden fixed top-2 right-0 left-0 z-50 px-2 transition-all duration-300">
@@ -1869,7 +1868,7 @@
             </nav>
           </section>
 
-          <div id="HeaderText" class="tablet:px-0 mx-auto flex w-full max-w-[1022px] flex-col items-center peer-[&.fixed]:mt-[256px] px-[12px]">
+          <div id="HeaderText" class="tablet:px-0 mx-auto flex w-full max-w-[1022px] flex-col items-center px-[12px] peer-[&.fixed]:mt-[256px]">
             <span class="tablet:bg-[#D8C1CE] rounded-full bg-[#D7BDE0] px-5 py-1.5 text-center text-xs leading-[18px] font-medium">Instant Solutions for Faster Design</span>
             <h1 class="tablet:mt-6 tablet:text-[60px] tablet:leading-[70px] mt-5 max-w-[810px] text-center text-[36px] leading-[44px] font-semibold">A Curated Library of Ready to Use Design Templates</h1>
             <p class="tablet:mt-[30px] tablet:text-[20px] tablet:leading-[30px] tablet:pr-0 mt-4 max-w-[664px] pr-2 text-center text-base leading-[24px]">Kickstart your next project with our premium templates crafted for designers, developers, and modern creators.</p>
@@ -3636,32 +3635,34 @@
           </div>
         </div>
       </section>
-      <section id="BecomeALumiraCreator" class="tablet:mt-[168px] tablet:h-[468px] tablet:rounded-[18px] relative mt-[100px] h-[620px] overflow-hidden rounded-[14px]">
-        <img src="assets/images/backgrounds/bg-become-a-lumira.png" alt="image" class="tablet:rounded-[18px] absolute top-0 bottom-0 left-0 h-full w-full rounded-[14px]" />
-        <img src="assets/images/backgrounds/become-mask.png" alt="image" class="absolute top-0 left-0 z-10 h-[464.43px] w-[815.59px]" />
-        <div class="tablet:flex-row tablet:justify-center tablet:pt-0 tablet:px-0 tablet:max-w-[1232px] relative z-30 mx-auto flex h-full flex-1 flex-col items-center gap-[16.48px] px-[25px] pt-[44px]">
-          <div class="tablet:gap-[40px] flex w-full max-w-[720px] flex-col gap-[24px]">
-            <div class="tablet:gap-6 relative z-20 flex flex-col gap-4">
-              <h2 class="tablet:text-[60px] tablet:leading-[70px] text-[36px] leading-[44px] font-semibold text-white">Become a Lumira creator & earn on every sale!</h2>
-              <p class="text-Lumira-Indigo-100 tablet:text-[20px] tablet:leading-[30px] text-base leading-[24px]">Sell your UI/UX templates, code kits, and design assets in one marketplace. Set your price and reach thousands of professionals.</p>
-            </div>
-            <a href="" class="w-fit shrink-0">
-              <div class="bg-Lumira-Gray-900 tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex w-fit items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-[#090807]">
-                <p class="tablet:text-sm text-xs leading-[20px] font-medium text-white">Get started</p>
-                <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="tablet:size-4 size-[14px] shrink-0" />
+      <div class="tablet:mt-[168px] mt-[100px]">
+        <section id="BecomeALumiraCreator" class="tablet:h-[468px] tablet:rounded-[18px] relative h-[620px] overflow-hidden rounded-[14px] bg-[#444CE7]">
+          <img src="assets/images/backgrounds/bg-become-a-lumira.png" alt="image" class="tablet:rounded-[18px] absolute top-0 bottom-0 left-0 h-full w-full rounded-[14px]" />
+          <img src="assets/images/backgrounds/become-mask.png" alt="image" class="absolute top-0 left-0 z-10 h-[464.43px] w-[815.59px]" />
+          <div class="tablet:flex-row tablet:justify-center tablet:pt-0 tablet:px-0 tablet:max-w-[1232px] relative z-30 mx-auto flex h-full flex-1 flex-col items-center gap-[16.48px] px-[25px] pt-[44px]">
+            <div class="tablet:gap-[40px] flex w-full max-w-[720px] flex-col gap-[24px]">
+              <div class="tablet:gap-6 relative z-20 flex flex-col gap-4">
+                <h2 class="tablet:text-[60px] tablet:leading-[70px] text-[36px] leading-[44px] font-semibold text-white">Become a Lumira creator & earn on every sale!</h2>
+                <p class="text-Lumira-Indigo-100 tablet:text-[20px] tablet:leading-[30px] text-base leading-[24px]">Sell your UI/UX templates, code kits, and design assets in one marketplace. Set your price and reach thousands of professionals.</p>
               </div>
-            </a>
-          </div>
-          <div class="tablet:h-full tablet:justify-end flex flex-1 items-end">
-            <div class="tablet:pt-[61px] tablet:pr-[21px] tablet:ml-auto tablet:mr-0 relative mx-auto shrink-0 pt-[40px] pr-[23px]">
-              <img src="assets/images/backgrounds/hero-become-a-lumira-website.png" alt="image" class="tablet:block hidden h-[343px] w-[380px] shrink-0 shadow-2xl shadow-[#383CBC]" />
-              <img src="assets/images/backgrounds/hero-become-a-lumira-website-mobile-first.png" alt="image" class="tablet:hidden h-[250px] w-[273px] shrink-0 shadow-2xl shadow-[#383CBC]" />
-              <img src="assets/images/backgrounds/hero-become-a-lumira-mobile.png" alt="image" class="tablet:w-[117.3px] tablet:h-[270px] absolute top-0 right-0 h-[231px] w-[99px] shrink-0 shadow shadow-[#383CBC]" />
+              <a href="" class="w-fit shrink-0">
+                <div class="bg-Lumira-Gray-900 tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex w-fit items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-[#090807]">
+                  <p class="tablet:text-sm text-xs leading-[20px] font-medium text-white">Get started</p>
+                  <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="tablet:size-4 size-[14px] shrink-0" />
+                </div>
+              </a>
+            </div>
+            <div class="tablet:h-full tablet:justify-end flex flex-1 items-end">
+              <div class="tablet:pt-[61px] tablet:pr-[21px] tablet:ml-auto tablet:mr-0 relative mx-auto shrink-0 pt-[40px] pr-[23px]">
+                <img src="assets/images/backgrounds/hero-become-a-lumira-website.png" alt="image" class="tablet:block hidden h-[343px] w-[380px] shrink-0 shadow-2xl shadow-[#383CBC]" />
+                <img src="assets/images/backgrounds/hero-become-a-lumira-website-mobile-first.png" alt="image" class="tablet:hidden h-[250px] w-[273px] shrink-0 shadow-2xl shadow-[#383CBC]" />
+                <img src="assets/images/backgrounds/hero-become-a-lumira-mobile.png" alt="image" class="tablet:w-[117.3px] tablet:h-[270px] absolute top-0 right-0 h-[231px] w-[99px] shrink-0 shadow shadow-[#383CBC]" />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <footer class="tablet:mt-[14px] tablet:rounded-[18px] relative mt-2 overflow-hidden rounded-[14px]">
+        </section>
+      </div>
+      <footer class="tablet:mt-[14px] tablet:rounded-[18px] relative mt-2 overflow-hidden rounded-[14px] bg-[#02012F]">
         <img src="assets/images/backgrounds/bg-footer.png" alt="image" class="absolute top-0 bottom-0 left-0 h-full w-full" />
         <img src="assets/images/backgrounds/footer-mask.png" alt="mask" class="absolute top-0 left-1/2 h-[464.43px] w-[815.59px] -translate-x-1/2 transform" />
         <div class="tablet:px-[191px] tablet:pt-[120px] relative z-20 flex flex-col gap-[48px] px-0 pt-[44px]">
