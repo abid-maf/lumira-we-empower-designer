@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#1B4DFF" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/logos/company-tab.svg" />
+    <link rel="apple-touch-icon" href="./assets/images/logos/company-tab.svg" />
+
+    <!-- Preload key resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+    <!-- Stylesheets -->
+    <link href="./output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Lumira | Grand Opening Deals</title>
+    
+  </head>
+  <body>
+    <div class="flex flex-col gap-[40px]">
+      <header class="mx-auto flex w-full max-w-[1232px] items-end justify-between pt-[60px]">
+        <div class="titleContainer flex w-full max-w-[732px] flex-col gap-4">
+          <div class="path flex items-center gap-3">
+            <div class="flex items-center gap-1.5">
+              <div class="flex size-5 items-center justify-center overflow-hidden rounded-full">
+                <img src="assets/images/profile/profile.png" alt="image" class="h-full w-full object-cover" />
+              </div>
+              <p class="text-Lumira-Gray-900 text-xs">Rafiq</p>
+            </div>
+            <img src="assets/images/icons/polygon.svg" alt="icon" class="h-[6px] w-[5px] shrink-0" />
+            <p class="text-Lumira-Gray-900 text-xs">UI Kit</p>
+            <img src="assets/images/icons/polygon.svg" alt="icon" class="h-[6px] w-[5px] shrink-0" />
+            <p class="text-Lumira-Gray-900 text-xs">Mobile App</p>
+          </div>
+          <div class="title flex flex-col gap-3">
+            <h1 class="text-Lumira-Gray-900 text-[48px] leading-[60px] font-semibold">Kasa - Furniture Ecommerce Mobile App UI Kit</h1>
+            <p class="text-Lumira-Gray-500">Modern mobile UI kit for furniture ecommerce with seamless checkout.</p>
+          </div>
+        </div>
+        <div class="buttons flex items-center gap-1.5">
+          <div class="group tab-btn !w-fit" data-content="tab1">
+            <button type="button">
+              <div class="group-hover:bg-Lumira-Warning-600 group-hover:border-Lumira-Warning-200 group-[&.active]:bg-Lumira-Warning-600 group-[&.active]:border-Lumira-Warning-200 bg-Lumira-Gray-50 border-Lumira-Gray-200 flex items-center gap-3 rounded-full border py-1.5 pr-1.5 pl-5 transition-all duration-300">
+                <div class="relative shrink-0">
+                  <img src="assets/images/icons/bookmark-gray.svg" alt="icon" class="size-[22px] shrink-0 transition-all duration-300 group-hover:opacity-0 group-[&.active]:opacity-0" />
+                  <img src="assets/images/icons/bookmark-fill.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]:opacity-100" />
+                </div>
+                <div class="group-hover:bg-Lumira-Warning-500 group-[&.active]:bg-Lumira-Warning-500 bg-Lumira-Gray-200 flex rounded-full px-5 py-[9px] transition-all duration-300">
+                  <p class="text-Lumira-Gray-900 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">85</p>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="group tab-btn !w-fit" data-content="tab2">
+            <button type="button">
+              <div class="group-hover:bg-Lumira-Rose-600 group-hover:border-Lumira-Rose-200 group-[&.active]:bg-Lumira-Rose-600 group-[&.active]:border-Lumira-Rose-200 bg-Lumira-Gray-50 border-Lumira-Gray-200 flex items-center gap-3 rounded-full border py-1.5 pr-1.5 pl-5 transition-all duration-300">
+                <div class="relative shrink-0">
+                  <img src="assets/images/icons/action-favourite-3-gray.svg" alt="icon" class="size-[22px] shrink-0 transition-all duration-300 group-hover:opacity-0 group-[&.active]:opacity-0" />
+                  <img src="assets/images/icons/action-favourite-3-fill.svg" alt="icon" class="absolute top-0 size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover:opacity-100 group-[&.active]:opacity-100" />
+                </div>
+                <div class="group-hover:bg-Lumira-Rose-500 group-[&.active]:bg-Lumira-Warning-500 bg-Lumira-Gray-200 flex rounded-full px-5 py-[9px] transition-all duration-300">
+                  <p class="text-Lumira-Gray-900 text-sm leading-5 font-medium transition-all duration-300 group-hover:text-white group-[&.active]:text-white">5</p>
+                </div>
+              </div>
+            </button>
+          </div>
+          <button type="button" id="PreviewBtn" class="preview-btn text-Lumira-Gray-900 border-Lumira-Gray-200 bg-Lumira-Gray-50 hover:ring-Lumira-Gray-300 rounded-full border px-[32px] py-[15px] text-center text-sm leading-[20px] font-medium transition-all duration-300 hover:ring-2 hover:ring-offset-1">Preview</button>
+        </div>
+      </header>
+      <section id="ProductDetailImages" class="grid grid-cols-2 gap-[14px]">
+        <div class="border-Lumira-Gray-200 flex h-[419px] items-center justify-center overflow-hidden rounded-[18px] border">
+          <img src="assets/images/thumbnails/product-detail-1.png" alt="icon" class="size-full object-cover" />
+        </div>
+        <div class="border-Lumira-Gray-200 flex h-[419px] items-center justify-center overflow-hidden rounded-[18px] border">
+          <img src="assets/images/thumbnails/product-detail-2.png" alt="icon" class="size-full object-cover" />
+        </div>
+        <div class="border-Lumira-Gray-200 flex h-[419px] items-center justify-center overflow-hidden rounded-[18px] border">
+          <img src="assets/images/thumbnails/product-detail-3.png" alt="icon" class="size-full object-cover" />
+        </div>
+        <div class="border-Lumira-Gray-200 flex h-[419px] items-center justify-center overflow-hidden rounded-[18px] border">
+          <img src="assets/images/thumbnails/product-detail-4.png" alt="icon" class="size-full object-cover" />
+        </div>
+        <div class="border-Lumira-Gray-200 flex h-[419px] items-center justify-center overflow-hidden rounded-[18px] border">
+          <img src="assets/images/thumbnails/product-detail-5.png" alt="icon" class="size-full object-cover" />
+        </div>
+        <div class="border-Lumira-Gray-200 flex h-[419px] items-center justify-center overflow-hidden rounded-[18px] border">
+          <img src="assets/images/thumbnails/product-detail-6.png" alt="icon" class="size-full object-cover" />
+        </div>
+      </section>
+    </div>
+    <section id="ModalPreview" class="absolute top-0 left-0 h-full w-full scale-y-0 overflow-hidden bg-[#101828CC] p-[14px] backdrop-blur-xs transition-all duration-600 [.open]:scale-y-100">
+      <div class="relative">
+        <div id="ModalPreviewButtons" class="group absolute top-[28px] right-[28px] flex flex-col gap-[14px]">
+          <button id="ModalPreviewClose" type="button" class="group-[.zoom]:border-Lumira-Gray-300 group-[.zoom]:hover:ring-Lumira-Gray-300 border-Lumira-Gray-400 hover:ring-Lumira-Gray-400 relative flex size-[58px] shrink-0 items-center justify-center rounded-full border bg-[#EAECF033] transition-all duration-300 hover:ring-2">
+            <img src="assets/images/icons/x-mark-white.svg" alt="icon" class="size-[18px] transition-all duration-300 group-[.zoom]:opacity-0" />
+            <img src="assets/images/icons/x-mark-black.svg" alt="icon" class="absolute size-[18px] opacity-0 transition-all duration-300 group-[.zoom]:opacity-100" />
+          </button>
+          <button id="ModalPreviewToggleZoom" type="button" class="group-[.zoom]:border-Lumira-Gray-300 group-[.zoom]:hover:ring-Lumira-Gray-300 border-Lumira-Gray-400 hover:ring-Lumira-Gray-400 relative flex size-[58px] shrink-0 items-center justify-center rounded-full border bg-[#EAECF033] transition-all duration-300 hover:ring-2">
+            <img src="assets/images/icons/magnifying-glass-thin-plus-white.svg" alt="icon" class="size-[18px] transition-all duration-300 group-[.zoom]:opacity-0" />
+            <img src="assets/images/icons/magnifying-glass-thin-plus-black.svg" alt="icon" class="absolute size-[18px] opacity-0 transition-all duration-300 group-[.zoom]:opacity-100" />
+          </button>
+        </div>
+        <div id="ModalPreviewContent" class="content mx-auto w-[1000px] bg-white transition-all duration-600 [.zoom]:w-full [&::-webkit-scrollbar]:hidden overflow-hidden rounded-3xl">
+          <div class="overflow-y-auto h-[calc(100vh-14px)] [&::-webkit-scrollbar]:hidden">
+            <img src="assets/images/thumbnails/thumbnail-modal-product-detail-1.webp" alt="thumbnail" class="w-full shrink-0" />
+            <img src="assets/images/thumbnails/thumbnail-modal-product-detail-2.webp" alt="thumbnail" class="w-full shrink-0" />
+            </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Dapatkan referensi ke elemen-elemen yang dibutuhkan
+      const previewBtn = document.getElementById('PreviewBtn');
+      const modalPreview = document.getElementById('ModalPreview');
+      const modalPreviewClose = document.getElementById('ModalPreviewClose');
+      const modalPreviewToggleZoom = document.getElementById('ModalPreviewToggleZoom');
+      const modalPreviewContent = document.getElementById('ModalPreviewContent');
+      const modalPreviewButtons = document.getElementById('ModalPreviewButtons');
+
+      // 1. Logika untuk membuka modal
+      if (previewBtn) {
+        // Pastikan elemen ada
+        previewBtn.addEventListener('click', () => {
+          if (modalPreview) {
+            // Pastikan elemen modal ada
+            modalPreview.classList.add('open');
+            document.body.classList.add('overflow-hidden');
+          }
+        });
+      }
+
+      // 2. Logika untuk menutup modal
+      if (modalPreviewClose) {
+        // Pastikan elemen ada
+        modalPreviewClose.addEventListener('click', () => {
+          if (modalPreview) {
+            // Pastikan elemen modal ada
+            modalPreview.classList.remove('open');
+            document.body.classList.remove('overflow-hidden');
+            // Opsional: Hapus juga kelas 'zoom' saat modal ditutup
+            if (modalPreviewContent && modalPreviewContent.classList.contains('zoom')) {
+              modalPreviewContent.classList.remove('zoom');
+            }
+          }
+        });
+      }
+
+      // 3. Logika untuk toggle zoom pada konten modal
+      if (modalPreviewToggleZoom) {
+        // Pastikan elemen ada
+        modalPreviewToggleZoom.addEventListener('click', () => {
+          if (modalPreviewContent && modalPreviewButtons) {
+            // Pastikan elemen konten modal ada
+            modalPreviewContent.classList.toggle('zoom');
+            modalPreviewButtons.classList.toggle('zoom');
+          }
+        });
+      }
+    </script>
+    <script src="js/format-dropdown.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/dropdown-jquery-plus-thin-icon.js"></script>
+  </body>
+</html>
