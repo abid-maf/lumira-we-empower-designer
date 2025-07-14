@@ -24,7 +24,7 @@
   <body>
     <main class="fleco flex flex-col bg-white p-3.5">
       <!-- navbar above mobile  -->
-      <nav id="NavTopContainerDekstopV2" class="group/scroll scroll tablet:block fixed z-1000 mx-auto flex w-full justify-center">
+      <nav id="NavTopContainerDekstopV2" class="group/scroll scroll tablet:block fixed max-w-[1128px] z-1000 left-1/2 -translate-x-1/2 flex w-full justify-center">
         <div class="group/scroll border-Lumira-Border-Gray group-[&.scroll]/scroll:border-Lumira-Gray-700 relative mx-auto flex w-full max-w-[1128px] items-center justify-between rounded-full border bg-white px-4 py-3.5 transition-all duration-300 group-[&.scroll]/scroll:bg-[#0B1220D6] group-[&.scroll]/scroll:backdrop-blur-xl">
           <a href="" class="relative shrink-0">
             <img src="assets/images/logos/company.svg" alt="company logo" class="h-[48px] w-[180px] shrink-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-0" />
@@ -1128,12 +1128,27 @@
         <img id="Bg-Image" src="assets/images/backgrounds/bg-header-grand-open.webp" alt="image" class="absolute bottom-0 left-0 h-full w-full rounded-[18px]" />
         <div class="relative mx-auto flex w-full max-w-[1128px] flex-col items-center gap-[120px] py-[62px]">
           <div id="HeaderText" class="tablet:px-0 mx-auto flex w-full max-w-[1022px] flex-col items-center px-[12px]">
-            <h1 class="mt-6 max-w-[810px] bg-gradient-to-t from-white/70 to-white bg-clip-text text-center text-[60px] leading-[70px] font-semibold text-transparent">Grand Opening Deals!</h1>
+            <h1 class="mt-6 max-w-[810px] bg-gradient-to-t from-white/70 to-white bg-clip-text text-center text-[60px] leading-[80px] font-semibold text-transparent">Grand Opening Deals!</h1>
             <p class="mt-[24px] max-w-[700px] text-center text-[20px] leading-[30px] text-white">Enjoy a flat IDR 100.000 discount on all Grand Opening Deals products. Limited time only, grab your favorites now!</p>
-            <span class="border-Lumira-Pink-300 blink-grand hover:ring-2 hover:ring-Lumira-Pink-300 transition-all duration-300 !w-fit bg-[#FFF2FB4F] item-center mt-[30px] flex pl-5 pr-6 justify-center gap-[12.81px] items-center rounded-full border py-[12px]">
-              <img src="assets/images/icons/isicon-lightning-filled-white.svg" alt="lsicon:lightning-filled" class="size-[22px] shrink-0" />
-              <p class="text-white text-[18px] leading-[28px] font-medium ">12D 15:20:12</p>
-            </span>
+            
+            <section id="Timer" class="flex mt-[44px] items-center gap-2">
+        <div class="p-5 w-[120px] border border-Lumira-Pink-300 rounded-2xl bg-[#FFF2FB4F] hover:ring-1 ring-Lumira-Pink-300 transition-all duration-300 shrink-0 flex flex-col items-center">
+            <p class="font-medium text-center text-[30px] leading-[38px] text-white">12</p>
+            <h5 class="text-sm leading-[20px] text-white text-center">Days</h5>
+        </div>
+        <div class="p-5 w-[120px] border border-Lumira-Pink-300 rounded-2xl bg-[#FFF2FB4F] hover:ring-1 ring-Lumira-Pink-300 transition-all duration-300 shrink-0 flex flex-col items-center">
+            <p class="font-medium text-center text-[30px] leading-[38px] text-white">15</p>
+            <h5 class="text-sm leading-[20px] text-white text-center">Hours</h5>
+        </div>
+        <div class="p-5 w-[120px] border border-Lumira-Pink-300 rounded-2xl bg-[#FFF2FB4F] hover:ring-1 ring-Lumira-Pink-300 transition-all duration-300 shrink-0 flex flex-col items-center">
+            <p class="font-medium text-center text-[30px] leading-[38px] text-white">20</p>
+            <h5 class="text-sm leading-[20px] text-white text-center">Minutes</h5>
+        </div>
+        <div class="p-5 w-[120px] border border-Lumira-Pink-300 rounded-2xl bg-[#FFF2FB4F] hover:ring-1 ring-Lumira-Pink-300 transition-all duration-300 shrink-0 flex flex-col items-center">
+            <p class="font-medium text-center text-[30px] leading-[38px] text-white">59</p>
+            <h5 class="text-sm leading-[20px] text-white text-center">Seconds</h5>
+        </div>
+    </section>
           </div>
         </div>
       </header>
@@ -1339,7 +1354,7 @@
         <!-- tab content -->
         <div id="Tabs-Content">
           <div id="tab1">
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-4">
               <a href="https://www.figma.com/community/file/1455493105157156091/kasa-furniture-ecommerce-mobile-app-ui-kit" class="card">
                 <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-[296px] flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
                   <div class="thumb relative flex h-[196px] w-full items-center justify-center overflow-hidden rounded-[6px]">
@@ -1495,7 +1510,7 @@
             </div>
           </div>
           <div id="tab2" class="hidden">
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-4">
               <a href="https://themeforest.net/item/craftword-creative-agency-copywiting-portfolio-elementor-template-kit/58027271" class="card tablet:w-[296px] w-full">
                 <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
                   <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
@@ -1660,7 +1675,7 @@
           </div>
 
           <div id="tab3" class="hidden">
-            <div class="flex flex-wrap justify-center gap-4">
+            <div class="flex flex-wrap gap-4">
               <a href="https://www.figma.com/community/file/1375353868005632012/western-asian-foods-3d-icon-pack" class="card tablet:w-[296px] w-full">
                 <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
                   <div class="thumb bg-Lumira-Gray-100 relative flex h-[264px] w-full items-center justify-center overflow-hidden rounded-[6px]">
