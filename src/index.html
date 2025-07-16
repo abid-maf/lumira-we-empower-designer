@@ -22,7 +22,7 @@
   </head>
   <body>
     <main class="tablet:p-3.5 flex flex-col overflow-hidden bg-white px-2 pt-[84px] pb-2">
-      <header class="relative w-full bg-[#F2D4E2] rounded-[18px]">
+      <header class="relative w-full rounded-[18px] bg-[#F2D4E2]">
         <img id="Bg-Image" src="assets/images/backgrounds/bg-header.webp" alt="image" class="tablet:rounded-[18px] absolute top-0 left-0 h-full w-full rounded-[14px]" />
         <img src="assets/images/icons/header-mask.svg" alt="mask" class="absolute top-[160px] left-1/2 h-[464.43px] w-[815.59px] -translate-x-1/2 transform" />
         <div class="relative mx-auto flex w-full max-w-[1128px] flex-col items-center gap-[120px] pb-[80px]">
@@ -1026,6 +1026,16 @@
                             </div>
                           </a>
                         </div>
+                        <!-- not found -->
+                        <div class="navbar-top-not-found flex items-center justify-center px-[32px] py-[80px]">
+                          <div class="flex flex-col items-center gap-4">
+                            <img src="assets/images/icons/notification-bell-2.svg" alt="icon" class="size-[36px] shrink-0 group-[&.scroll]/scroll:block" />
+                            <div class="not-found-icon flex w-[196px] flex-col gap-2">
+                              <h5 class="text-center font-medium group-[&.scroll]/scroll:text-white">No Notifications Yet</h5>
+                              <p class="group-[&.scroll]/scroll:text-Lumira-Gray-300 text-Lumira-Gray-500 text-center text-xs leading-[18px]">You're all caught up! Any updates or alerts will appear here.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1979,7 +1989,7 @@
             </div>
             <hr class="text-Lumira-Pink-200 flex-1" />
             <a href="browse-all-grand-opening-deals.html" class="shrink-0">
-              <div class="bg-Lumira-Pink-600 border-Lumira-Pink-400 hover:ring-Lumira-Pink-600 hover:ring-offset-1 tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex items-center gap-2 rounded-full border px-4 py-2 transition-all duration-300 hover:ring-2">
+              <div class="bg-Lumira-Pink-600 border-Lumira-Pink-400 hover:ring-Lumira-Pink-600 tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex items-center gap-2 rounded-full border px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-offset-1">
                 <p class="tablet:text-sm text-xs leading-[20px] font-medium text-white">Browse All</p>
                 <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="tablet:size-4 size-[14px] shrink-0" />
               </div>
@@ -2923,7 +2933,7 @@
           <h2 class="tablet:text-[36px] tablet:leading-[44px] shrink-0 text-[20px] leading-[30px] font-medium">Featured Products</h2>
           <hr class="text-Lumira-Gray-200 min-w-[19px] flex-1 shrink-0" />
           <a href="browse-all-featured-products.html" class="shrink-0">
-            <div class="bg-Lumira-BlackOpium tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-offset-1 hover:ring-[#090807]">
+            <div class="bg-Lumira-BlackOpium tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-[#090807] hover:ring-offset-1">
               <p class="tablet:leading-[20px] tablet:text-sm text-xs leading-[18px] font-medium text-white">Browse All</p>
               <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="tablet:size-4 size-[14px] shrink-0" />
             </div>
@@ -3082,7 +3092,6 @@
               </div>
             </div>
           </a>
-          
         </div>
       </section>
       <hr class="text-Lumira-Gray-200 tablet:mt-[52px] mt-[80px] w-full" />
@@ -3091,7 +3100,7 @@
           <h2 class="tablet:text-[36px] tablet:leading-[44px] text-[20px] leading-[30px] font-medium">Trending Website Templates</h2>
           <hr class="text-Lumira-Gray-200 min-w-[19px] flex-1 shrink-0" />
           <a href="browse-all-website.html" class="shrink-0">
-            <div class="bg-Lumira-BlackOpium tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex items-center gap-2 rounded-full border  border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-offset-1 hover:ring-[#090807]">
+            <div class="bg-Lumira-BlackOpium tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-[#090807] hover:ring-offset-1">
               <p class="tablet:leading-[20px] tablet:text-sm text-xs leading-[18px] font-medium text-white">Browse All</p>
               <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="tablet:size-4 size-[14px] shrink-0" />
             </div>
@@ -3258,7 +3267,6 @@
               </div>
             </div>
           </a>
-          
         </div>
       </section>
       <hr class="text-Lumira-Gray-200 tablet:mt-[52px] mt-[80px] w-full" />
@@ -3267,7 +3275,7 @@
           <h2 class="tablet:text-[36px] tablet:leading-[44px] text-[20px] leading-[30px] font-medium">Trending 3D & 2D Icon Pack</h2>
           <hr class="text-Lumira-Gray-200 min-w-[19px] flex-1 shrink-0" />
           <a href="browse-all-icon.html" class="shrink-0">
-            <div class="bg-Lumira-BlackOpium tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-offset-1 hover:ring-[#090807]">
+            <div class="bg-Lumira-BlackOpium tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-[#090807] hover:ring-offset-1">
               <p class="tablet:leading-[20px tablet:text-sm text-xs leading-[18px] font-medium text-white">Browse All</p>
               <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="tablet:size-4 size-[14px] shrink-0" />
             </div>
@@ -3474,7 +3482,7 @@
             <h2 class="tablet:text-[36px] tablet:leading-[44px] text-[20px] leading-[30px] font-medium">Freebie Products</h2>
             <hr class="text-Lumira-Gray-200 min-w-[19px] flex-1 shrink-0" />
             <a href="browse-all-freebies.html" class="shrink-0">
-              <div class="bg-Lumira-BlackOpium tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-offset-1 hover:ring-[#090807]">
+              <div class="bg-Lumira-BlackOpium tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-[#090807] hover:ring-offset-1">
                 <p class="tablet:leading-[20px tablet:text-sm text-xs leading-[18px] font-medium text-white">Browse All</p>
                 <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="tablet:size-4 size-[14px] shrink-0" />
               </div>

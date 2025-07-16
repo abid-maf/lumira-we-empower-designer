@@ -24,7 +24,7 @@
   <body>
     <main class="fleco flex flex-col bg-white p-3.5">
       <!-- header -->
-      <header class="relative w-full overflow-hidden bg-[#F2D4E2] rounded-[18px]">
+      <header class="relative w-full overflow-hidden rounded-[18px] bg-[#F2D4E2]">
         <img id="Bg-Image" src="assets/images/backgrounds/bg-header-browse-all.webp" alt="image" class="absolute left-0 h-full w-full rounded-[18px]" />
         <img src="assets/images/icons/header-mask.svg" alt="mask" class="absolute top-[15px] left-1/2 h-[464.43px] w-[815.59px] -translate-x-1/2 transform" />
         <div class="relative mx-auto flex w-full max-w-[1128px] flex-col items-center gap-[120px] pb-[80px]">
@@ -1028,6 +1028,16 @@
                             </div>
                           </a>
                         </div>
+                        <!-- not found -->
+                        <div class="navbar-top-not-found flex items-center justify-center px-[32px] py-[80px]">
+                          <div class="flex flex-col items-center gap-4">
+                            <img src="assets/images/icons/notification-bell-2.svg" alt="icon" class="size-[36px] shrink-0 group-[&.scroll]/scroll:block" />
+                            <div class="not-found-icon flex w-[196px] flex-col gap-2">
+                              <h5 class="text-center font-medium group-[&.scroll]/scroll:text-white">No Notifications Yet</h5>
+                              <p class="group-[&.scroll]/scroll:text-Lumira-Gray-300 text-Lumira-Gray-500 text-center text-xs leading-[18px]">You're all caught up! Any updates or alerts will appear here.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1138,7 +1148,7 @@
 
       <section id="ListProducts" class="mx-auto mt-[14px] flex w-full max-w-[1232px] flex-col gap-[32px] pt-[52px]">
         <div class="flex w-full items-center gap-5">
-          <div id="BrowseAllSwiper" class="tag-wrapper relative w-full min-w-0 max-w-[855px]">
+          <div id="BrowseAllSwiper" class="tag-wrapper relative w-full max-w-[855px] min-w-0">
             <div id="TabButtons" class="tag-container flex flex-nowrap items-center gap-[6px] overflow-x-auto [&::-webkit-scrollbar]:hidden">
               <div class="swiper-slide group tab-btn active !w-fit" data-content="tab1">
                 <button type="button">
@@ -1306,8 +1316,8 @@
                 </div>
               </button>
 
-              <div class="dropdown-content absolute left-[-108px] z-50 h-0 group-[.open]:h-fit overflow-hidden transition-all duration-300 pt-2">
-                <div class="border-Lumira-Gray-200 flex w-[328px] flex-col gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] backdrop-blur-xl shadow-xl shadow-[#00000014]">
+              <div class="dropdown-content absolute left-[-108px] z-50 h-0 overflow-hidden pt-2 transition-all duration-300 group-[.open]:h-fit">
+                <div class="border-Lumira-Gray-200 flex w-[328px] flex-col gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-xl">
                   <button type="button" class="dropdown-content-list group/child-format hover:border-Lumira-Gray-200 flex items-center justify-center gap-[12px] rounded-[8px] border border-transparent px-[40px] py-6 transition-all duration-300 hover:bg-white">
                     <img src="assets/images/icons/browse-all/all.svg" alt="icon" class="size-6 shrink-0" />
                     <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Any format</p>
@@ -1376,8 +1386,8 @@
                 </div>
               </button>
 
-              <div class="dropdown-content absolute right-0 z-50 h-0 group-[.open]:h-fit overflow-hidden transition-all duration-300 pt-2">
-                <div class="border-Lumira-Gray-200 flex w-[220px] flex-col gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] backdrop-blur-xl shadow-xl shadow-[#00000014]">
+              <div class="dropdown-content absolute right-0 z-50 h-0 overflow-hidden pt-2 transition-all duration-300 group-[.open]:h-fit">
+                <div class="border-Lumira-Gray-200 flex w-[220px] flex-col gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-xl">
                   <div class="group/child-dropdown">
                     <button class="dropdown-content-list w-full" type="button">
                       <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex items-center gap-2 rounded-[8px] border border-transparent p-[22px] transition-all duration-300 group-hover/child-dropdown:bg-white">
@@ -1419,166 +1429,166 @@
         <div id="Tabs-Content">
           <div id="tab1">
             <div class="flex flex-wrap gap-4">
-<a href="https://themeforest.net/item/craftword-creative-agency-copywiting-portfolio-elementor-template-kit/58027271" class="card tablet:w-[296px] w-full">
-  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-      <img src="assets/images/thumbnails/CRAFTWORD.jpg" alt="CRAFTWORD" class="h-full w-full object-cover" />
-      <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
-    </div>
-    <div class="desc flex flex-col gap-2 px-2">
-      <h3 class="line-clamp-2 h-[48px] font-medium">Craftword - Creative Agency & Copywriting Portfolio Elementor Template Kit</h3>
-      <div class="flex items-center gap-[6px]">
-        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-        <div class="flex items-center gap-2 text-xs leading-[18px]">
-          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</a>
-<a href="https://dongan.lemonsqueezy.com/buy/c16c26ee-6682-4216-b60a-3ba2d02a5219" class="card tablet:w-[296px] w-full">
-  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-      <img src="assets/images/thumbnails/DONGAN.jpg" alt="DONGAN" class="h-full w-full object-cover" />
-      <div class="category-alert bg-Lumira-Indigo-700 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Framer</div>
-    </div>
-    <div class="desc flex flex-col gap-2 px-2">
-      <h3 class="line-clamp-2 h-[48px] font-medium">Dongan - Digital Agency Website Framer Template</h3>
-      <div class="flex items-center gap-[6px]">
-        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-        <div class="flex items-center gap-2 text-xs leading-[18px]">
-          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">270000</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</a>
-<a href="https://themeforest.net/item/castrade-live-streaming-room-rental-elementor-template-kit/58468345" class="card tablet:w-[296px] w-full">
-  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-      <img src="assets/images/thumbnails/CASTRADE.jpg" alt="CASTRADE" class="h-full w-full object-cover" />
-      <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
-    </div>
-    <div class="desc flex flex-col gap-2 px-2">
-      <h3 class="line-clamp-2 h-[48px] font-medium">Castrade - Live Streaming Room Rental Elementor Template Kit</h3>
-      <div class="flex items-center gap-[6px]">
-        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-        <div class="flex items-center gap-2 text-xs leading-[18px]">
-          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</a>
-<a href="https://themeforest.net/item/sellbiz-startup-and-business-marketplace-elementor-template-kit/57817097" class="card tablet:w-[296px] w-full">
-  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-      <img src="assets/images/thumbnails/SELLBIZ.jpg" alt="SELLBIZ" class="h-full w-full object-cover" />
-      <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
-    </div>
-    <div class="desc flex flex-col gap-2 px-2">
-      <h3 class="line-clamp-2 h-[48px] font-medium">Sellbiz - Startup & Business Marketplace Elementor Template Kit</h3>
-      <div class="flex items-center gap-[6px]">
-        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-        <div class="flex items-center gap-2 text-xs leading-[18px]">
-          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</a>
-<a href="https://dongan.lemonsqueezy.com/buy/a6cc77fc-e84e-4fc0-8db1-f91b787d6829" class="card tablet:w-[296px] w-full">
-  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-      <img src="assets/images/thumbnails/CHEMICLY.jpg" alt="CHEMICLY" class="h-full w-full object-cover" />
-      <div class="category-alert bg-Lumira-Indigo-700 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Framer</div>
-    </div>
-    <div class="desc flex flex-col gap-2 px-2">
-      <h3 class="line-clamp-2 h-[48px] font-medium">Chemicly - SaaS & Startup AI Framer Template</h3>
-      <div class="flex items-center gap-[6px]">
-        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-        <div class="flex items-center gap-2 text-xs leading-[18px]">
-          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">500000</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</a>
-<a href="https://themeforest.net/item/finbank-digital-banking-fintech-elementor-template-kit/51974592" class="card tablet:w-[296px] w-full">
-  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-      <img src="assets/images/thumbnails/FINBANK.jpg" alt="FINBANK" class="h-full w-full object-cover" />
-      <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
-    </div>
-    <div class="desc flex flex-col gap-2 px-2">
-      <h3 class="line-clamp-2 h-[48px] font-medium">Finbank - Digital Banking & Fintech Elementor Template Kit</h3>
-      <div class="flex items-center gap-[6px]">
-        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-        <div class="flex items-center gap-2 text-xs leading-[18px]">
-          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">150000</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</a>
-<a href="https://themeforest.net/item/oranx-product-designer-personal-portfolio-elementor-template-kit/58139829" class="card tablet:w-[296px] w-full">
-  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
-      <img src="assets/images/thumbnails/ORANX.jpg" alt="ORANX" class="h-full w-full object-cover" />
-      <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
-    </div>
-    <div class="desc flex flex-col gap-2 px-2">
-      <h3 class="line-clamp-2 h-[48px] font-medium">Oranx - Product Designer Personal Portfolio Elementor Template Kit</h3>
-      <div class="flex items-center gap-[6px]">
-        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-        <div class="flex items-center gap-2 text-xs leading-[18px]">
-          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</a>
-<a href="https://dongan.lemonsqueezy.com/buy/df40ff56-e59b-4985-9b85-0ab6443ccf2c" class="card tablet:w-[296px] w-full">
-  <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
-    <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
-      <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
-      <img src="assets/images/thumbnails/SANTO.jpg" alt="SANTO" class="h-full w-full object-cover" />
-      <div class="category-alert bg-Lumira-Indigo-700 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Framer</div>
-    </div>
-    <div class="desc flex flex-col gap-2 px-2">
-      <h3 class="line-clamp-2 h-[48px] font-medium">Santo - Personal Portfolio Framer Template</h3>
-      <div class="flex items-center gap-[6px]">
-        <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
-        <div class="flex items-center gap-2 text-xs leading-[18px]">
-          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
-          <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
-          <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">300000</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</a>
+              <a href="https://themeforest.net/item/craftword-creative-agency-copywiting-portfolio-elementor-template-kit/58027271" class="card tablet:w-[296px] w-full">
+                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/CRAFTWORD.jpg" alt="CRAFTWORD" class="h-full w-full object-cover" />
+                    <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 h-[48px] font-medium">Craftword - Creative Agency & Copywriting Portfolio Elementor Template Kit</h3>
+                    <div class="flex items-center gap-[6px]">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <div class="flex items-center gap-2 text-xs leading-[18px]">
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://dongan.lemonsqueezy.com/buy/c16c26ee-6682-4216-b60a-3ba2d02a5219" class="card tablet:w-[296px] w-full">
+                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/DONGAN.jpg" alt="DONGAN" class="h-full w-full object-cover" />
+                    <div class="category-alert bg-Lumira-Indigo-700 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Framer</div>
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 h-[48px] font-medium">Dongan - Digital Agency Website Framer Template</h3>
+                    <div class="flex items-center gap-[6px]">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <div class="flex items-center gap-2 text-xs leading-[18px]">
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">270000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://themeforest.net/item/castrade-live-streaming-room-rental-elementor-template-kit/58468345" class="card tablet:w-[296px] w-full">
+                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/CASTRADE.jpg" alt="CASTRADE" class="h-full w-full object-cover" />
+                    <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 h-[48px] font-medium">Castrade - Live Streaming Room Rental Elementor Template Kit</h3>
+                    <div class="flex items-center gap-[6px]">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <div class="flex items-center gap-2 text-xs leading-[18px]">
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://themeforest.net/item/sellbiz-startup-and-business-marketplace-elementor-template-kit/57817097" class="card tablet:w-[296px] w-full">
+                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/SELLBIZ.jpg" alt="SELLBIZ" class="h-full w-full object-cover" />
+                    <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 h-[48px] font-medium">Sellbiz - Startup & Business Marketplace Elementor Template Kit</h3>
+                    <div class="flex items-center gap-[6px]">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <div class="flex items-center gap-2 text-xs leading-[18px]">
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://dongan.lemonsqueezy.com/buy/a6cc77fc-e84e-4fc0-8db1-f91b787d6829" class="card tablet:w-[296px] w-full">
+                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/CHEMICLY.jpg" alt="CHEMICLY" class="h-full w-full object-cover" />
+                    <div class="category-alert bg-Lumira-Indigo-700 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Framer</div>
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 h-[48px] font-medium">Chemicly - SaaS & Startup AI Framer Template</h3>
+                    <div class="flex items-center gap-[6px]">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <div class="flex items-center gap-2 text-xs leading-[18px]">
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">500000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://themeforest.net/item/finbank-digital-banking-fintech-elementor-template-kit/51974592" class="card tablet:w-[296px] w-full">
+                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/FINBANK.jpg" alt="FINBANK" class="h-full w-full object-cover" />
+                    <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 h-[48px] font-medium">Finbank - Digital Banking & Fintech Elementor Template Kit</h3>
+                    <div class="flex items-center gap-[6px]">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <div class="flex items-center gap-2 text-xs leading-[18px]">
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">150000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://themeforest.net/item/oranx-product-designer-personal-portfolio-elementor-template-kit/58139829" class="card tablet:w-[296px] w-full">
+                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/ORANX.jpg" alt="ORANX" class="h-full w-full object-cover" />
+                    <div class="category-alert bg-Lumira-Pink-600 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Elementor</div>
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 h-[48px] font-medium">Oranx - Product Designer Personal Portfolio Elementor Template Kit</h3>
+                    <div class="flex items-center gap-[6px]">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <div class="flex items-center gap-2 text-xs leading-[18px]">
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">160000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://dongan.lemonsqueezy.com/buy/df40ff56-e59b-4985-9b85-0ab6443ccf2c" class="card tablet:w-[296px] w-full">
+                <div class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 bg-Lumira-Gray-50 flex w-full flex-col gap-4 rounded-[12px] border px-1.5 pt-1.5 pb-5 transition-all duration-300 hover:ring">
+                  <div class="thumb relative flex h-[340px] w-full items-center justify-center overflow-hidden rounded-[6px]">
+                    <img src="assets/images/icons/popular.svg" alt="popular" class="absolute top-3 right-3 z-10 hidden size-8 shrink-0" />
+                    <img src="assets/images/thumbnails/SANTO.jpg" alt="SANTO" class="h-full w-full object-cover" />
+                    <div class="category-alert bg-Lumira-Indigo-700 absolute right-[12px] bottom-[12px] rounded-full px-4 py-1 text-center text-[10px] leading-[18px] font-medium text-white">Framer</div>
+                  </div>
+                  <div class="desc flex flex-col gap-2 px-2">
+                    <h3 class="line-clamp-2 h-[48px] font-medium">Santo - Personal Portfolio Framer Template</h3>
+                    <div class="flex items-center gap-[6px]">
+                      <img src="assets/images/icons/owner.svg" alt="owner" class="size-5 shrink-0" />
+                      <div class="flex items-center gap-2 text-xs leading-[18px]">
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">YDN x Designers</p>
+                        <img src="assets/images/icons/point.svg" alt="point" class="size-[2px] shrink-0" />
+                        <p class="new-price text-Lumira-Gray-600 text-xs leading-[18px]">300000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
           <div id="tab2" class="hidden">
@@ -1992,7 +2002,7 @@
           <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
           <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 h-[314px] rounded-[12px] border"></div>
         </section>
-        <button type="button" class="hover:ring-Lumira-Gray-700 hover:ring-offset-1 mx-auto mt-[30px] flex w-fit items-center gap-[6px] rounded-full bg-black px-5 py-[14px] text-white transition-all duration-300 hover:ring-2">
+        <button type="button" class="hover:ring-Lumira-Gray-700 mx-auto mt-[30px] flex w-fit items-center gap-[6px] rounded-full bg-black px-5 py-[14px] text-white transition-all duration-300 hover:ring-2 hover:ring-offset-1">
           <p class="text-sm leading-[20px] font-medium">Load more</p>
           <img src="assets/images/icons/browse-all/arrow-down-white.svg" alt="icon" class="size-4 shrink-0" />
         </button>
@@ -2000,7 +2010,7 @@
 
       <section id="Return" class="mx-auto mt-[94px] flex w-full max-w-[1232px] justify-end pr-[90px]">
         <a href="">
-          <div class="bg-Lumira-Gray-200 border-Lumira-Gray-300 hover:ring-Lumira-Gray-400 hover:ring-offset-1 flex size-[58px] shrink-0 items-center justify-center rounded-full border transition-all duration-300 hover:ring-2">
+          <div class="bg-Lumira-Gray-200 border-Lumira-Gray-300 hover:ring-Lumira-Gray-400 flex size-[58px] shrink-0 items-center justify-center rounded-full border transition-all duration-300 hover:ring-2 hover:ring-offset-1">
             <img src="assets/images/icons/browse-all/arrow-up-black.svg" alt="icon" class="size-[18px] shrink-0" />
           </div>
         </a>

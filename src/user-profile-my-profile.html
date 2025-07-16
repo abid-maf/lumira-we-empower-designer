@@ -24,7 +24,7 @@
   <body>
     <main class="fleco flex flex-col bg-white p-3.5">
       <!-- navbar above mobile  -->
-      <nav id="NavTopContainerDekstopV2" class="group/scroll scroll tablet:block fixed max-w-[1128px] z-1000 left-1/2 -translate-x-1/2 flex w-full justify-center">
+      <nav id="NavTopContainerDekstopV2" class="group/scroll scroll tablet:block fixed left-1/2 z-1000 flex w-full max-w-[1128px] -translate-x-1/2 justify-center">
         <div class="group/scroll border-Lumira-Border-Gray group-[&.scroll]/scroll:border-Lumira-Gray-700 relative mx-auto flex w-full max-w-[1128px] items-center justify-between rounded-full border bg-white px-4 py-3.5 transition-all duration-300 group-[&.scroll]/scroll:bg-[#0B1220D6] group-[&.scroll]/scroll:backdrop-blur-xl">
           <a href="" class="relative shrink-0">
             <img src="assets/images/logos/company.svg" alt="company logo" class="h-[48px] w-[180px] shrink-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-0" />
@@ -1023,6 +1023,16 @@
                         </div>
                       </a>
                     </div>
+                    <!-- not found -->
+                    <div class="navbar-top-not-found flex items-center justify-center px-[32px] py-[80px]">
+                      <div class="flex flex-col items-center gap-4">
+                        <img src="assets/images/icons/notification-bell-2.svg" alt="icon" class="size-[36px] shrink-0 group-[&.scroll]/scroll:block" />
+                        <div class="not-found-icon flex w-[196px] flex-col gap-2">
+                          <h5 class="text-center font-medium group-[&.scroll]/scroll:text-white">No Notifications Yet</h5>
+                          <p class="group-[&.scroll]/scroll:text-Lumira-Gray-300 text-Lumira-Gray-500 text-center text-xs leading-[18px]">You're all caught up! Any updates or alerts will appear here.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1133,7 +1143,7 @@
               <p class="text-center text-white">Recommended size: 1412 × 320 px</p>
             </div>
             <div id="ButtonsChangeBanner" class="flex items-center">
-              <button type="button" id="uploadImageBtn" class="bg-Lumira-BlackOpium rounded-full border border-[#090807] px-6 py-[10px] text-center text-sm font-medium text-white transition-all duration-300 hover:shadow-lg hover:shadow-[#09080717] hover:ring-2 hover:ring-[#090807] hover:ring-offset-1">Upload Image</button>
+              <button type="button" id="uploadImageBtn" class="bg-Lumira-BlackOpium rounded-full border border-[#090807] px-6 py-[10px] text-center text-sm font-medium text-white transition-all duration-300 hover:shadow-lg hover:ring-2 hover:shadow-[#09080717] hover:ring-[#090807] hover:ring-offset-1">Upload Image</button>
               <button type="button" id="removeImageBtn" class="w-[102px] py-[10px] text-sm text-white transition-all duration-300 hover:font-bold">Remove</button>
               <input type="file" id="bannerImageInput" accept="image/*" class="hidden" />
             </div>
@@ -1145,7 +1155,7 @@
       <div class="mx-auto flex max-w-[1232px] gap-[32px]">
         <section id="UserProfile" class="w-[280px] shrink-0">
           <div class="sticky top-[122px] z-40 mt-[-60px] flex flex-col gap-6">
-            <div  class="header-user-profile flex flex-col gap-[28px]">
+            <div class="header-user-profile flex flex-col gap-[28px]">
               <div id="userProfileImageWrapper" class="bg-Lumira-Gray-200 relative flex size-[120px] shrink-0 items-center justify-center overflow-hidden rounded-full ring-[5px] ring-white transition-all duration-300 [.size-sticky]:size-[80px]">
                 <img id="profileImage" src="assets/images/profile/profile.png" alt="profile" class="size-full shrink-0 object-cover" />
                 <button id="toggleImageProfileButton" type="button" class="absolute top-0 left-0 flex h-full w-full items-center justify-center bg-[#0B122099] opacity-0 backdrop-blur-xs transition-all duration-300 hover:opacity-100">
@@ -1160,7 +1170,7 @@
             </div>
             <div class="list-user-profile flex flex-col gap-[12px]">
               <a href="">
-                <div class="bg-Lumira-Gray-50 hover:ring-offset-1 border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center justify-between rounded-full border px-5 py-3 transition-all duration-300 hover:ring-2">
+                <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 hover:ring-Lumira-Gray-400 flex items-center justify-between rounded-full border px-5 py-3 transition-all duration-300 hover:ring-2 hover:ring-offset-1">
                   <span class="size-4 shrink-0"></span>
                   <p class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Edit Profile</p>
                   <img src="assets/images/icons/edit-pen.svg" alt="icon" class="size-4 shrink-0" />
@@ -1805,7 +1815,7 @@
 
       <section id="Return" class="mx-auto mt-[94px] flex w-full max-w-[1232px] justify-end pr-[90px]">
         <a href="">
-          <div class="bg-Lumira-Gray-200 border-Lumira-Gray-300 hover:ring-Lumira-Gray-400 hover:ring-offset-1 flex size-[58px] shrink-0 items-center justify-center rounded-full border transition-all duration-300 hover:ring-2">
+          <div class="bg-Lumira-Gray-200 border-Lumira-Gray-300 hover:ring-Lumira-Gray-400 flex size-[58px] shrink-0 items-center justify-center rounded-full border transition-all duration-300 hover:ring-2 hover:ring-offset-1">
             <img src="assets/images/icons/browse-all/arrow-up-black.svg" alt="icon" class="size-[18px] shrink-0" />
           </div>
         </a>

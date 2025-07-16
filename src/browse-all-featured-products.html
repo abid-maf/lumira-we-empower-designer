@@ -23,7 +23,7 @@
   <body>
     <main class="fleco flex flex-col bg-white p-3.5">
       <!-- navbar above mobile  -->
-      <nav id="NavTopContainerDekstopV2" class="group/scroll scroll tablet:block fixed max-w-[1128px] z-1000 left-1/2 -translate-x-1/2 flex w-full justify-center">
+      <nav id="NavTopContainerDekstopV2" class="group/scroll scroll tablet:block fixed left-1/2 z-1000 flex w-full max-w-[1128px] -translate-x-1/2 justify-center">
         <div class="group/scroll border-Lumira-Border-Gray group-[&.scroll]/scroll:border-Lumira-Gray-700 relative mx-auto flex w-full max-w-[1128px] items-center justify-between rounded-full border bg-white px-4 py-3.5 transition-all duration-300 group-[&.scroll]/scroll:bg-[#0B1220D6] group-[&.scroll]/scroll:backdrop-blur-xl">
           <a href="" class="relative shrink-0">
             <img src="assets/images/logos/company.svg" alt="company logo" class="h-[48px] w-[180px] shrink-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-0" />
@@ -1022,6 +1022,16 @@
                         </div>
                       </a>
                     </div>
+                    <!-- not found -->
+                    <div class="navbar-top-not-found flex items-center justify-center px-[32px] py-[80px]">
+                      <div class="flex flex-col items-center gap-4">
+                        <img src="assets/images/icons/notification-bell-2.svg" alt="icon" class="size-[36px] shrink-0 group-[&.scroll]/scroll:block" />
+                        <div class="not-found-icon flex w-[196px] flex-col gap-2">
+                          <h5 class="text-center font-medium group-[&.scroll]/scroll:text-white">No Notifications Yet</h5>
+                          <p class="group-[&.scroll]/scroll:text-Lumira-Gray-300 text-Lumira-Gray-500 text-center text-xs leading-[18px]">You're all caught up! Any updates or alerts will appear here.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1123,15 +1133,15 @@
         </div>
       </nav>
       <!-- header -->
-      <header class="relative mt-[90px] w-full overflow-hidden bg-[#4D31E7] rounded-[18px]">
+      <header class="relative mt-[90px] w-full overflow-hidden rounded-[18px] bg-[#4D31E7]">
         <img id="Bg-Image" src="assets/images/backgrounds/bg-header-featured.png" alt="image" class="absolute bottom-0 left-0 h-full w-full rounded-[18px]" />
         <img id="Bg-Image" src="assets/images/backgrounds/mask-featured.svg" alt="icon" class="absolute bottom-0 left-0 h-full w-full rounded-[18px]" />
         <div class="relative mx-auto flex w-full max-w-[1128px] flex-col items-center gap-[120px] py-[62px]">
           <div id="HeaderText" class="tablet:px-0 mx-auto flex w-full max-w-[1022px] flex-col items-center px-[12px]">
-            <div class="flex mt-6 items-center gap-[12px]">
-              <div class="size-[48px] shrink-0" ></div>
-            <h1 class="max-w-[810px] bg-gradient-to-t from-white/70 to-white bg-clip-text text-center text-[60px] leading-[70px] font-semibold text-transparent">Featured Products</h1>
-            <img src="assets/images/icons/popular-header.svg" alt="icon" class="size-[48px] shrink-0" />
+            <div class="mt-6 flex items-center gap-[12px]">
+              <div class="size-[48px] shrink-0"></div>
+              <h1 class="max-w-[810px] bg-gradient-to-t from-white/70 to-white bg-clip-text text-center text-[60px] leading-[70px] font-semibold text-transparent">Featured Products</h1>
+              <img src="assets/images/icons/popular-header.svg" alt="icon" class="size-[48px] shrink-0" />
             </div>
             <p class="mt-[24px] max-w-[700px] text-center text-[20px] leading-[30px] text-white">Carefully curated by the Lumira team, these featured products represent the best quality and design. Only the finest make the cut.</p>
           </div>
@@ -1191,7 +1201,7 @@
                 </div>
               </button>
 
-              <div class="dropdown-content absolute right-0 z-50 h-0 group-[.open]:h-fit overflow-hidden transition-all duration-300 pt-2">
+              <div class="dropdown-content absolute right-0 z-50 h-0 overflow-hidden pt-2 transition-all duration-300 group-[.open]:h-fit">
                 <div class="border-Lumira-Gray-200 flex w-[436px] flex-col gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-xl">
                   <button type="button" class="dropdown-content-list group/child-format hover:border-Lumira-Gray-200 flex items-center justify-center gap-[12px] rounded-[8px] border border-transparent px-[40px] py-6 transition-all duration-300 hover:bg-white">
                     <img src="assets/images/icons/browse-all/all.svg" alt="icon" class="size-6 shrink-0" />
@@ -1333,7 +1343,7 @@
               </div>
             </div>
             <div class="container-dropdown group peer relative">
-              <button  type="button" class="button-dropdown bg-Lumira-Gray-50 border-Lumira-Gray-200 group-[.open]:border-Lumira-Gray-400 group-hover:border-Lumira-Gray-400 flex items-center gap-2 rounded-full border px-[20px] py-[15px] transition-all duration-300 focus:outline-none">
+              <button type="button" class="button-dropdown bg-Lumira-Gray-50 border-Lumira-Gray-200 group-[.open]:border-Lumira-Gray-400 group-hover:border-Lumira-Gray-400 flex items-center gap-2 rounded-full border px-[20px] py-[15px] transition-all duration-300 focus:outline-none">
                 <p class="button-dropdown-title group-[.open]:text-Lumira-Gray-900 group-hover:text-Lumira-Gray-900 text-Lumira-Gray-500 text-sm leading-[20px] font-medium transition-all duration-300">Recent</p>
                 <div class="button-dropdown-icon group-[.open]:text-Lumira-Gray-900 group-hover:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300 group-[.open]:rotate-180">
                   <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1342,7 +1352,7 @@
                 </div>
               </button>
 
-              <div class="dropdown-content absolute right-0 z-50 h-0 group-[.open]:h-fit transition-all duration-300 overflow-hidden pt-2">
+              <div class="dropdown-content absolute right-0 z-50 h-0 overflow-hidden pt-2 transition-all duration-300 group-[.open]:h-fit">
                 <div class="border-Lumira-Gray-200 flex w-[220px] flex-col gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-xl">
                   <div class="group/child-dropdown">
                     <button class="dropdown-content-list w-full" type="button">
