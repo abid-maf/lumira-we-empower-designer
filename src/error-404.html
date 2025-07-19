@@ -22,9 +22,9 @@
     <title>Lumira | Grand Opening Deals</title>
   </head>
   <body>
-    <main class="fleco flex flex-col bg-white p-3.5">
+    <main class="flex flex-col gap-[14px] bg-white p-3.5">
       <!-- navbar above mobile  -->
-<nav id="NavTopContainerDekstopV2" class="group/scroll scroll tablet:block fixed max-w-[1128px] z-1000 left-1/2 -translate-x-1/2 flex w-full justify-center">
+      <nav id="NavTopContainerDekstopV2" class="group/scroll scroll tablet:block fixed left-1/2 z-1000 flex w-full max-w-[1128px] -translate-x-1/2 justify-center">
         <div class="group/scroll border-Lumira-Border-Gray group-[&.scroll]/scroll:border-Lumira-Gray-700 relative mx-auto flex w-full max-w-[1128px] items-center justify-between rounded-full border bg-white px-4 py-3.5 transition-all duration-300 group-[&.scroll]/scroll:bg-[#0B1220D6] group-[&.scroll]/scroll:backdrop-blur-xl">
           <a href="" class="relative shrink-0">
             <img src="assets/images/logos/company.svg" alt="company logo" class="h-[48px] w-[180px] shrink-0 transition-all duration-300 group-[&.scroll]/scroll:opacity-0" />
@@ -857,184 +857,190 @@
                 <div>
                   <a href="" class="shrink-0 transition-all duration-300 group-[&.scroll]/scroll:hidden">
                     <div class="relative flex size-[48px] items-center justify-center">
+                      <div class="relative">
                       <img src="assets/images/icons/notification-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
                       <img src="assets/images/icons/notification-blue.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
+                      <div class="size-[7px] rounded-full bg-Lumira-Rose-600 ring-2 ring-white absolute top-0 right-0"></div>
+                      </div>
                     </div>
                   </a>
                   <a href="" class="relative hidden shrink-0 transition-all duration-300 group-[&.scroll]/scroll:block">
                     <div class="relative flex size-[48px] items-center justify-center">
+                      <div class="relative">
                       <img src="assets/images/icons/dark/notification-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
                       <img src="assets/images/icons/dark/notification-blue.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
+                      <div class="size-[7px] rounded-full bg-Lumira-Rose-600 ring-2 ring-[##303341] absolute top-0 right-0"></div>
+                      </div>
                     </div>
                   </a>
                 </div>
                 <div id="DropdownNotif" class="absolute left-[-140px] z-10 pt-[20px]">
-                      <div class="border-Lumira-Gray-200 group-[&.scroll]/scroll:border-Lumira-Gray-700 hidden max-h-[378px] w-[260px] overflow-y-auto rounded-[18px] border bg-white px-1.5 py-3 transition-all duration-300 group-hover:block group-[&.scroll]/scroll:bg-[#303241] [&::-webkit-scrollbar]:hidden">
-                        <div class="flex flex-col gap-y-3">
-                          <a href="">
-                            <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
-                              <div class="profil-notif relative">
-                                <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
-                                  <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
-                                </div>
-                                <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
-                                  <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
-                                </span>
-                              </div>
-                              <div class="profil-message flex flex-col gap-0.5">
-                                <div class="flex items-center justify-between">
-                                  <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
-                                  <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
-                                </div>
-                                <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
-                              </div>
+                  <div class="border-Lumira-Gray-200 group-[&.scroll]/scroll:border-Lumira-Gray-700 hidden max-h-[378px] w-[260px] overflow-y-auto rounded-[18px] border bg-white px-1.5 py-3 transition-all duration-300 group-hover:block group-[&.scroll]/scroll:bg-[#303241] [&::-webkit-scrollbar]:hidden">
+                    <div class="flex flex-col gap-y-3">
+                      <a href="">
+                        <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
+                          <div class="profil-notif relative">
+                            <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
+                              <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
                             </div>
-                          </a>
-
-                          <hr class="text-Lumira-Gray-200 group-[&.scroll]/scroll:text-Lumira-Gray-700" />
-
-                          <a href="">
-                            <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
-                              <div class="profil-notif relative">
-                                <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
-                                  <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
-                                </div>
-                                <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
-                                  <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
-                                </span>
-                              </div>
-                              <div class="profil-message flex flex-col gap-0.5">
-                                <div class="flex items-center justify-between">
-                                  <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
-                                  <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
-                                </div>
-                                <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
-                              </div>
-                            </div>
-                          </a>
-
-                          <hr class="text-Lumira-Gray-200 group-[&.scroll]/scroll:text-Lumira-Gray-700" />
-
-                          <a href="">
-                            <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
-                              <div class="profil-notif relative">
-                                <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
-                                  <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
-                                </div>
-                                <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
-                                  <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
-                                </span>
-                              </div>
-                              <div class="profil-message flex flex-col gap-0.5">
-                                <div class="flex items-center justify-between">
-                                  <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
-                                  <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
-                                </div>
-                                <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
-                              </div>
-                            </div>
-                          </a>
-
-                          <hr class="text-Lumira-Gray-200 group-[&.scroll]/scroll:text-Lumira-Gray-700" />
-
-                          <a href="">
-                            <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
-                              <div class="profil-notif relative">
-                                <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
-                                  <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
-                                </div>
-                                <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
-                                  <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
-                                </span>
-                              </div>
-                              <div class="profil-message flex flex-col gap-0.5">
-                                <div class="flex items-center justify-between">
-                                  <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
-                                  <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
-                                </div>
-                                <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
-                              </div>
-                            </div>
-                          </a>
-
-                          <hr class="text-Lumira-Gray-200 group-[&.scroll]/scroll:text-Lumira-Gray-700" />
-
-                          <a href="">
-                            <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
-                              <div class="profil-notif relative">
-                                <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
-                                  <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
-                                </div>
-                                <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
-                                  <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
-                                </span>
-                              </div>
-                              <div class="profil-message flex flex-col gap-0.5">
-                                <div class="flex items-center justify-between">
-                                  <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
-                                  <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
-                                </div>
-                                <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
-                              </div>
-                            </div>
-                          </a>
-
-                          <hr class="text-Lumira-Gray-200 group-[&.scroll]/scroll:text-Lumira-Gray-700" />
-
-                          <a href="">
-                            <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
-                              <div class="profil-notif relative">
-                                <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
-                                  <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
-                                </div>
-                                <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
-                                  <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
-                                </span>
-                              </div>
-                              <div class="profil-message flex flex-col gap-0.5">
-                                <div class="flex items-center justify-between">
-                                  <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
-                                  <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
-                                </div>
-                                <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
-                              </div>
-                            </div>
-                          </a>
-
-                          <hr class="text-Lumira-Gray-200 group-[&.scroll]/scroll:text-Lumira-Gray-700" />
-
-                          <a href="">
-                            <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
-                              <div class="profil-notif relative">
-                                <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
-                                  <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
-                                </div>
-                                <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
-                                  <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
-                                </span>
-                              </div>
-                              <div class="profil-message flex flex-col gap-0.5">
-                                <div class="flex items-center justify-between">
-                                  <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
-                                  <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
-                                </div>
-                                <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <!-- not found -->
-                        <div class="navbar-top-not-found flex items-center justify-center px-[32px] py-[80px]">
-                          <div class="flex flex-col items-center gap-4">
-                            <img src="assets/images/icons/notification-bell-2.svg" alt="icon" class="size-[36px] shrink-0 group-[&.scroll]/scroll:block" />
-                            <div class="not-found-icon flex w-[196px] flex-col gap-2">
-                              <h5 class="text-center font-medium group-[&.scroll]/scroll:text-white">No Notifications Yet</h5>
-                              <p class="group-[&.scroll]/scroll:text-Lumira-Gray-300 text-Lumira-Gray-500 text-center text-xs leading-[18px]">You're all caught up! Any updates or alerts will appear here.</p>
-                            </div>
+                            <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
+                              <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
+                            </span>
                           </div>
+                          <div class="profil-message flex flex-col gap-0.5">
+                            <div class="flex items-center justify-between">
+                              <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
+                              <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
+                            </div>
+                            <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
+                          </div>
+                        </div>
+                      </a>
+
+                      <hr class="text-Lumira-Gray-200 group-[&.scroll]/scroll:text-Lumira-Gray-700" />
+
+                      <a href="">
+                        <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
+                          <div class="profil-notif relative">
+                            <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
+                              <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
+                            </div>
+                            <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
+                              <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
+                            </span>
+                          </div>
+                          <div class="profil-message flex flex-col gap-0.5">
+                            <div class="flex items-center justify-between">
+                              <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
+                              <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
+                            </div>
+                            <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
+                          </div>
+                        </div>
+                      </a>
+
+                      <hr class="text-Lumira-Gray-200 group-[&.scroll]/scroll:text-Lumira-Gray-700" />
+
+                      <a href="">
+                        <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
+                          <div class="profil-notif relative">
+                            <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
+                              <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
+                            </div>
+                            <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
+                              <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
+                            </span>
+                          </div>
+                          <div class="profil-message flex flex-col gap-0.5">
+                            <div class="flex items-center justify-between">
+                              <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
+                              <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
+                            </div>
+                            <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
+                          </div>
+                        </div>
+                      </a>
+
+                      <hr class="text-Lumira-Gray-200 group-[&.scroll]/scroll:text-Lumira-Gray-700" />
+
+                      <a href="">
+                        <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
+                          <div class="profil-notif relative">
+                            <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
+                              <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
+                            </div>
+                            <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
+                              <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
+                            </span>
+                          </div>
+                          <div class="profil-message flex flex-col gap-0.5">
+                            <div class="flex items-center justify-between">
+                              <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
+                              <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
+                            </div>
+                            <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
+                          </div>
+                        </div>
+                      </a>
+
+                      <hr class="text-Lumira-Gray-200 group-[&.scroll]/scroll:text-Lumira-Gray-700" />
+
+                      <a href="">
+                        <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
+                          <div class="profil-notif relative">
+                            <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
+                              <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
+                            </div>
+                            <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
+                              <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
+                            </span>
+                          </div>
+                          <div class="profil-message flex flex-col gap-0.5">
+                            <div class="flex items-center justify-between">
+                              <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
+                              <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
+                            </div>
+                            <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
+                          </div>
+                        </div>
+                      </a>
+
+                      <hr class="text-Lumira-Gray-200 group-[&.scroll]/scroll:text-Lumira-Gray-700" />
+
+                      <a href="">
+                        <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
+                          <div class="profil-notif relative">
+                            <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
+                              <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
+                            </div>
+                            <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
+                              <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
+                            </span>
+                          </div>
+                          <div class="profil-message flex flex-col gap-0.5">
+                            <div class="flex items-center justify-between">
+                              <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
+                              <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
+                            </div>
+                            <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
+                          </div>
+                        </div>
+                      </a>
+
+                      <hr class="text-Lumira-Gray-200 group-[&.scroll]/scroll:text-Lumira-Gray-700" />
+
+                      <a href="">
+                        <div class="card-notif group-[&.scroll]/scroll:hover:border-Lumira-Gray-700 hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex gap-[10px] rounded-xl border border-transparent px-[12px] py-[6px] transition-all duration-300 hover:border group-[&.scroll]/scroll:hover:bg-[#1A1F2F]">
+                          <div class="profil-notif relative">
+                            <div class="flex size-[28px] shrink-0 items-center justify-center overflow-hidden rounded-full">
+                              <img src="assets/images/profile/profile-1.png" alt="image" class="size-full object-cover" />
+                            </div>
+                            <span class="profil-alert group-[&.scroll]/scroll:ring-Lumira-Gray-800 absolute top-[14px] left-[18px] flex size-[14px] shrink-0 items-center justify-center rounded-full bg-[#16B364] ring ring-white">
+                              <img src="assets/images/icons/shopping-bag.svg" alt="icon" class="size-[6px] shrink-0" />
+                            </span>
+                          </div>
+                          <div class="profil-message flex flex-col gap-0.5">
+                            <div class="flex items-center justify-between">
+                              <h5 class="text-xs leading-[18px] font-medium group-[&.scroll]/scroll:text-white">Ardhiyanto</h5>
+                              <p class="text-Lumira-Gray-400 text-[8px] leading-[14px]">8m ago</p>
+                            </div>
+                            <p class="text-Lumira-Gray-900 text-[10px] leading-[16px] group-[&.scroll]/scroll:text-white"><span class="text-Lumira-Gray-500 group-[&.scroll]/scroll:text-Lumira-Gray-300 font-normal">Purchased</span> Navel - Nature Travel Booking App UI Kit</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- not found -->
+                    <div class="navbar-top-not-found flex items-center justify-center px-[32px] py-[80px]">
+                      <div class="flex flex-col items-center gap-4">
+                        <img src="assets/images/icons/notification-bell-2.svg" alt="icon" class="size-[36px] shrink-0 group-[&.scroll]/scroll:block" />
+                        <div class="not-found-icon flex w-[196px] flex-col gap-2">
+                          <h5 class="text-center font-medium group-[&.scroll]/scroll:text-white">No Notifications Yet</h5>
+                          <p class="group-[&.scroll]/scroll:text-Lumira-Gray-300 text-Lumira-Gray-500 text-center text-xs leading-[18px]">You're all caught up! Any updates or alerts will appear here.</p>
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
               </div>
 
               <div class="profile-nav group relative">
@@ -1133,23 +1139,23 @@
           </div>
         </div>
       </nav>
-      <section id="Error404" class="flex mt-[90px]  flex-col items-center gap-[101px] pt-[140px]">
+      <section id="Error404" class="mt-[90px] rounded-[12px] bg-Lumira-Gray-50 border border-Lumira-Gray-200 flex flex-col items-center gap-[101px] pt-[140px]">
         <div class="oops mx-auto flex w-full max-w-[810px] flex-col items-center gap-[32px]">
           <div class="opps-desc flex flex-col items-center gap-6">
             <img src="assets/images/icons/chart-circle-gray.svg" alt="icon" class="size-[60px] shrink-0" />
             <div class="flex flex-col gap-5">
-              <h1 class="text-[48px] leading-[60px] font-medium">Oops! We couldn't find <span class="text text-Lumira-Indigo-600 italic">that page.</span></h1>
+              <h1 class="text-[48px] leading-[60px] font-medium text-center">Oops! We couldn't find <span class="text text-Lumira-Indigo-600 italic">that page.</span></h1>
               <p class="text-Lumira-Gray-500 mx-auto max-w-[630px] text-center text-[20px] leading-[30px]">Oops! The page you're looking for doesn't exist. It may have been moved, deleted, or never existed.</p>
             </div>
           </div>
           <a href="" class="w-fit shrink-0">
-            <div class="bg-Lumira-Gray-900 hover:ring-offset-1 tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex w-fit items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-[#090807]">
+            <div class="bg-Lumira-Gray-900 tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex w-fit items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-[#090807] hover:ring-offset-1">
               <p class="tablet:text-sm text-xs leading-[20px] font-medium text-white">Get started</p>
               <img src="assets/images/icons/arrow-top-right.svg" alt="Arrow Top Right" class="tablet:size-4 size-[14px] shrink-0" />
             </div>
           </a>
         </div>
-        <img src="assets/images/icons/404-gray.svg" alt="icon" class="shrink-0 w-[667px]">
+        <img src="assets/images/icons/404-gray.svg" alt="icon" class="w-[667px] shrink-0" />
       </section>
       <footer class="relative overflow-hidden rounded-[18px]">
         <img src="assets/images/backgrounds/bg-footer.png" alt="image" class="absolute top-0 bottom-0 left-0 h-full w-full" />
