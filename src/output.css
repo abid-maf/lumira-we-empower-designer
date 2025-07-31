@@ -29,7 +29,6 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --font-weight-black: 900;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
@@ -659,8 +658,17 @@
   .h-\[620px\] {
     height: 620px;
   }
+  .h-\[5000\] {
+    height: 5000;
+  }
+  .h-\[5000px\] {
+    height: 5000px;
+  }
   .h-full {
     height: 100%;
+  }
+  .h-screen {
+    height: 100vh;
   }
   .max-h-\[378px\] {
     max-height: 378px;
@@ -757,6 +765,15 @@
   }
   .w-\[436px\] {
     width: 436px;
+  }
+  .w-\[500\] {
+    width: 500;
+  }
+  .w-\[500px\] {
+    width: 500px;
+  }
+  .w-\[600px\] {
+    width: 600px;
   }
   .w-\[620px\] {
     width: 620px;
@@ -958,17 +975,11 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
-  .gap-7 {
-    gap: calc(var(--spacing) * 7);
-  }
   .gap-\[2px\] {
     gap: 2px;
   }
   .gap-\[6px\] {
     gap: 6px;
-  }
-  .gap-\[7\] {
-    gap: 7;
   }
   .gap-\[7px\] {
     gap: 7px;
@@ -1471,9 +1482,6 @@
   .py-\[32px\] {
     padding-block: 32px;
   }
-  .py-\[40\] {
-    padding-block: 40;
-  }
   .py-\[40px\] {
     padding-block: 40px;
   }
@@ -1687,10 +1695,6 @@
   .text-\[60px\] {
     font-size: 60px;
   }
-  .leading-0 {
-    --tw-leading: calc(var(--spacing) * 0);
-    line-height: calc(var(--spacing) * 0);
-  }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
     line-height: calc(var(--spacing) * 5);
@@ -1719,10 +1723,6 @@
     --tw-leading: 28px;
     line-height: 28px;
   }
-  .leading-\[30\] {
-    --tw-leading: 30;
-    line-height: 30;
-  }
   .leading-\[30px\] {
     --tw-leading: 30px;
     line-height: 30px;
@@ -1739,10 +1739,6 @@
     --tw-leading: 44px;
     line-height: 44px;
   }
-  .leading-\[60\] {
-    --tw-leading: 60;
-    line-height: 60;
-  }
   .leading-\[60px\] {
     --tw-leading: 60px;
     line-height: 60px;
@@ -1754,10 +1750,6 @@
   .leading-\[80px\] {
     --tw-leading: 80px;
     line-height: 80px;
-  }
-  .font-black {
-    --tw-font-weight: var(--font-weight-black);
-    font-weight: var(--font-weight-black);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -1823,9 +1815,6 @@
   }
   .text-\[\#FFFFFF1A\] {
     color: #FFFFFF1A;
-  }
-  .text-\[48\] {
-    color: 48;
   }
   .text-black {
     color: var(--color-black);

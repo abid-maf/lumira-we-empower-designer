@@ -6,31 +6,56 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Document</title>
   </head>
-  <body class="bg-gray-400">
-    <section id="WhyChooseLumira" class="flex flex-col gap-[52px] py-[72px]"></section>
-    <h2 class="why-choose-title flex items-center gap-[7px] text-[48px] font-semibold">Why Choose<img src="assets/images/icons/lumira.svg" alt="icon" class="h-[35px] shrink-0" />?</h2>
-    <div class="why-choose-cards flex items-center gap-4">
-      <div class="choose-card border-Lumira-Gray-200 flex flex-col gap-[40px] rounded-xl border bg-white px-[32px] py-[40px]">
-        <h3 class="card-title text-xl leading-[30px] font-medium text-black">Wide Variety of Assets</h3>
-        <div class="flex flex-col gap-4">
-          <p class="card-price text-Lumira-Gray-900 text-[48px] leading-[60px] font-semibold">4,500<span class="text-Lumira-Indigo-600">+</span></p>
-          <p class="card-desc text-Lumira-Gray-600">A one-stop shop for UI kits, website templates, icons and 3D assets.</p>
+  <body class="flex h-[5000px] flex-col justify-end bg-gray-400">
+    <section id="WhyChooseLumira" class="bg-Lumira-Gray-50 flex flex-col gap-[52px] py-[72px]">
+      <h2 class="why-choose-title flex w-[600px] items-center gap-[7px] text-[48px] font-semibold">Why Choose<img src="assets/images/icons/lumira.svg" alt="icon" class="h-[35px] shrink-0" />?</h2>
+      <div class="why-choose-cards flex items-center gap-4">
+        <div class="choose-card border-Lumira-Gray-200 flex flex-col gap-[40px] rounded-xl border bg-white px-[32px] py-[40px]">
+          <h3 class="card-title text-xl leading-[30px] font-medium text-black">Wide Variety of Assets</h3>
+          <div class="flex flex-col gap-4">
+            <p class="card-price text-Lumira-Gray-900 text-[48px] leading-[60px] font-semibold"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="4500" data-purecounter-duration="2.5">0</span><span class="text-Lumira-Indigo-600">+</span></p>
+            <p class="card-desc text-Lumira-Gray-600">A one-stop shop for UI kits, website templates, icons and 3D assets.</p>
+          </div>
+        </div>
+        <div class="choose-card border-Lumira-Gray-200 flex flex-col gap-[40px] rounded-xl border bg-white px-[32px] py-[40px]">
+          <h3 class="card-title text-xl leading-[30px] font-medium text-black">High Customer Satisfaction</h3>
+          <div class="flex flex-col gap-4">
+            <p class="card-price text-Lumira-Gray-900 text-[48px] leading-[60px] font-semibold"><span class="purecounter" data-purecounter-start="0" data-purecounter-end="99" data-purecounter-duration="2.5">0</span><span class="text-Lumira-Indigo-600">%</span></p>
+            <p class="card-desc text-Lumira-Gray-600">A one-stop shop for UI kits, website templates, icons and 3D assets.</p>
+          </div>
+        </div>
+        <div class="choose-card border-Lumira-Gray-200 flex flex-col gap-[40px] rounded-xl border bg-white px-[32px] py-[40px]">
+          <h3 class="card-title text-xl leading-[30px] font-medium text-black">Turn Your Creativity into Cash</h3>
+          <div class="flex flex-col gap-4">
+            <p class="card-price text-Lumira-Gray-900 text-[48px] leading-[60px] font-semibold"><span class="text-Lumira-Gray-500 font-normal">$</span><span class="purecounter" data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="2.5">0</span><span class="text-Lumira-Indigo-600">+</span></p>
+            <p class="card-desc text-Lumira-Gray-600">Join Lumira and start earning by selling your digital products to a thriving community.</p>
+          </div>
         </div>
       </div>
-      <div class="choose-card border-Lumira-Gray-200 flex flex-col gap-[40px] rounded-xl border bg-white px-[32px] py-[40px]">
-        <h3 class="card-title text-xl leading-[30px] font-medium text-black">High Customer Satisfaction</h3>
-        <div class="flex flex-col gap-4">
-          <p class="card-price text-Lumira-Gray-900 text-[48px] leading-[60px] font-semibold">99<span class="text-Lumira-Indigo-600">%</span></p>
-          <p class="card-desc text-Lumira-Gray-600">Delivering assets that meet the highest standards in design and performance.</p>
-        </div>
-      </div>
-      <div class="choose-card border-Lumira-Gray-200 flex flex-col gap-[40px] rounded-xl border bg-white px-[32px] py-[40px]">
-        <h3 class="card-title text-xl leading-[30px] font-medium text-black">Turn Your Creativity into Cash</h3>
-        <div class="flex flex-col gap-4">
-          <p class="card-price text-Lumira-Gray-900 text-[48px] leading-[60px] font-semibold"><span class="text-Lumira-Gray-500 font-normal">$</span>10,000<span class="text-Lumira-Indigo-600">+</span></p>
-          <p class="card-desc text-Lumira-Gray-600">A one-stop shop for UI kits, website templates, icons and 3D assets.</p>
-        </div>
-      </div>
-    </div>
+    </section>
+    <script src="js/precounter.js"></script>
+    <script>
+      // Create an Intersection Observer
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            // When the section becomes visible
+            if (entry.isIntersecting) {
+              // Start the counter
+              startCounter();
+              // Stop observing after it starts
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          // Start when at least 10% of the section is visible
+          threshold: 0.1,
+        }
+      );
+
+      // Observe the WhyChooseLumira section
+      observer.observe(document.getElementById('WhyChooseLumira'));
+    </script>
   </body>
 </html>
