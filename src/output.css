@@ -423,11 +423,17 @@
   .mt-\[-60px\] {
     margin-top: -60px;
   }
+  .mt-\[1\] {
+    margin-top: 1;
+  }
   .mt-\[6px\] {
     margin-top: 6px;
   }
   .mt-\[12px\] {
     margin-top: 12px;
+  }
+  .mt-\[14\] {
+    margin-top: 14;
   }
   .mt-\[14px\] {
     margin-top: 14px;
@@ -443,6 +449,9 @@
   }
   .mt-\[44px\] {
     margin-top: 44px;
+  }
+  .mt-\[72px\] {
+    margin-top: 72px;
   }
   .mt-\[80px\] {
     margin-top: 80px;
@@ -464,6 +473,9 @@
   }
   .mt-\[112px\] {
     margin-top: 112px;
+  }
+  .mt-\[148px\] {
+    margin-top: 148px;
   }
   .line-clamp-2 {
     overflow: hidden;
@@ -658,17 +670,11 @@
   .h-\[620px\] {
     height: 620px;
   }
-  .h-\[5000\] {
-    height: 5000;
-  }
   .h-\[5000px\] {
     height: 5000px;
   }
   .h-full {
     height: 100%;
-  }
-  .h-screen {
-    height: 100vh;
   }
   .max-h-\[378px\] {
     max-height: 378px;
@@ -765,12 +771,6 @@
   }
   .w-\[436px\] {
     width: 436px;
-  }
-  .w-\[500\] {
-    width: 500;
-  }
-  .w-\[500px\] {
-    width: 500px;
   }
   .w-\[600px\] {
     width: 600px;
@@ -1019,6 +1019,9 @@
   }
   .gap-\[40px\] {
     gap: 40px;
+  }
+  .gap-\[44px\] {
+    gap: 44px;
   }
   .gap-\[48px\] {
     gap: 48px;
@@ -1770,6 +1773,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .whitespace-nowrap {
+    white-space: nowrap;
   }
   .text-Lumira-Gray-200 {
     color: var(--color-Lumira-Gray-200);
@@ -2760,6 +2766,17 @@
       }
     }
   }
+  .hover\:hover\:ring-Lumira-Gray-300 {
+    &:hover {
+      @media (hover: hover) {
+        &:hover {
+          @media (hover: hover) {
+            --tw-ring-color: var(--color-Lumira-Gray-300);
+          }
+        }
+      }
+    }
+  }
   .hover\:ring-Lumira-Gray-200 {
     &:hover {
       @media (hover: hover) {
@@ -3243,6 +3260,11 @@
   .tablet\:py-\[72px\] {
     @media (width >= 640px) {
       padding-block: 72px;
+    }
+  }
+  .tablet\:py-\[80px\] {
+    @media (width >= 640px) {
+      padding-block: 80px;
     }
   }
   .tablet\:pt-0 {
