@@ -6,218 +6,66 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Document</title>
   </head>
-  <body class="flex flex-col justify-end bg-gray-400">
-    <section id="TrustedBy" class="bg-Lumira-Gray-50 flex flex-col gap-[52px] py-[80px]">
-      <div class="trusted-by-desc mx-auto flex w-full max-w-[800px] flex-col items-center gap-6">
-        <h2 class="text-Lumira-Gray-900 text-center text-[48px] leading-[60px] font-semibold">Trusted by over <span class="text-radial-gradient inline-block">1.000+ </span>designers, developers & creators!</h2>
-        <p class="text-Lumira-Gray-500 text-center text-xl leading-[30px]">Hear from designers, developers, and creators who’ve used our marketplace to streamline their workflow, reach new audiences, and boost their earnings.</p>
-      </div>
-      <div class="trusted-by-logos relative mx-auto w-full max-w-[720px] overflow-hidden">
-        <div class="flex w-max flex-nowrap">
-          <div class="slider w-max pr-6">
-            <div class="slider-left flex flex-nowrap items-center gap-6">
-              <img src="assets/images/icons/logo-1.svg" alt="icon" class="h-6 shrink-0" />
-              <img src="assets/images/icons/logo-2.svg" alt="icon" class="h-6 shrink-0" />
-              <img src="assets/images/icons/logo-3.svg" alt="icon" class="h-6 shrink-0" />
-              <img src="assets/images/icons/logo-4.svg" alt="icon" class="h-6 shrink-0" />
-              <img src="assets/images/icons/logo-5.svg" alt="icon" class="h-6 shrink-0" />
+  <body class="relative">
+    <button id="navbar-top-open-modal-btn" type="button" class="cursor-pointer">
+      <img src="assets/images/icons/search-gray.svg" alt="" class="size-6 w-fit" />
+    </button>
+    <section id="navbar-top-modal" class="fixed top-0 left-0 z-1000 h-full w-full bg-[#101828CC] backdrop-blur-xs">
+      <button id="navbar-top-close-modal-btn" type="button" class="absolute top-[28px] right-[28px] z-50 cursor-pointer">
+        <div class="border-Lumira-Gray-400 hover:ring-Lumira-Gray-400 relative flex size-[58px] shrink-0 items-center justify-center rounded-full border bg-[#EAECF033] transition-all duration-300 hover:ring-2">
+          <img src="assets/images/icons/x-mark-white.svg" alt="" class="size-[18px] shrink-0" />
+        </div>
+      </button>
+      <div class="navbar-top-modal-content flex size-full items-center justify-center">
+        <div class="h-[638px] w-[600px]">
+          <div class="flex flex-col gap-3">
+            <form action="" class="peer">
+              <div class="modal-content-search focus-within:ring-Lumira-Indigo-600 flex h-[70px] w-full items-center gap-3 rounded-full bg-white py-[6px] pr-[6px] pl-6 transition-all duration-300 focus-within:ring-3">
+                <input id="modal-search-input" type="text" autofocus class="placeholder:text-Lumira-Gray-500 text-Lumira-Gray-900 h-full w-full text-2xl leading-[32px] font-medium placeholder:text-2xl placeholder:leading-[32px] placeholder:font-normal focus:outline-none" placeholder="Search ..." />
+                <button id="clear-modal-search-input-btn" type="button" class="shrink-0"><img src="assets/images/icons/x-mark-gray.svg" alt="icon" class="size-5 shrink-0" /></button>
+                <button type="submit" class="shrink-0">
+                  <div class="bg-Lumira-Indigo-600 hover:shadow-Lumira-Indigo-600 flex h-[58px] w-[78px] shrink-0 items-center justify-center rounded-full transition-all duration-300 hover:shadow">
+                    <img src="assets/images/icons/search-white.svg" alt="" />
+                  </div>
+                </button>
+              </div>
+            </form>
+            <div class="container-lists peer-has-placeholder-shown:hidden">
+              <div class="modal-content-lists border-Lumira-Gray-200 flex h-[484px] w-full flex-col gap-[6px] rounded-2xl border-[1.5px] bg-white px-[6px] pt-[6px] pb-3">
+                <div class="list flex items-center gap-4 p-[6px]">
+                  <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
+                    <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
+                    <img src="assets/images/icons/popular.svg" alt="icon" class="absolute top-2 right-2 size-[16.33px] w-fit shrink-0" />
+                  </div>
+                  <div class="list-desc flex flex-1 flex-col gap-2 pt-1 pb-[18px]">
+                    <h5 class="font-medium text-black">Carta - Professional Services Website Template</h5>
+                    <div class="list-desc-path">
+                      <div class="flex items-center gap-[6px]">
+                        <div class="flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full">
+                          <img src="assets/images/profile/profile.png" alt="profile" class="h-full w-full object-cover" />
+                        </div>
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Rafiq</p>
+                      </div>
+                      <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                      <p>UI Kit</p>
+                      <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                      <p>Mobile App</p>
+                    </div>
+                    <p class="list-desc-price"></p>
+                  </div>
+                </div>
+                <div class="list"></div>
+                <div class="list"></div>
+              </div>
             </div>
-          </div>
-          <div class="slider w-max">
-            <div class="slider-left flex flex-nowrap items-center gap-6">
-              <img src="assets/images/icons/logo-1.svg" alt="icon" class="h-6 shrink-0" />
-              <img src="assets/images/icons/logo-2.svg" alt="icon" class="h-6 shrink-0" />
-              <img src="assets/images/icons/logo-3.svg" alt="icon" class="h-6 shrink-0" />
-              <img src="assets/images/icons/logo-4.svg" alt="icon" class="h-6 shrink-0" />
-              <img src="assets/images/icons/logo-5.svg" alt="icon" class="h-6 shrink-0" />
+            <div class="button-load-more peer-has-placeholder-shown:hidden">
+              <button type="button" class="flex w-full items-center justify-center py-[18px]">Load More</button>
             </div>
           </div>
         </div>
-        <span class="absolute top-0 left-0 z-30 h-full w-[92px] bg-gradient-to-r from-[#FFFFFF] to-[rgba(255,255,255,0.02)] transition-all duration-300"></span>
-        <span class="absolute top-0 right-0 z-30 h-full w-[92px] bg-gradient-to-l from-[#FFFFFF] to-[rgba(255,255,255,0.02)] transition-all duration-300"></span>
-      </div>
-      <div class="trusted-by-profiles relative">
-        <div class="flex w-max flex-nowrap">
-          <div class="slider w-max pr-4">
-            <div class="slider-left flex flex-nowrap items-center gap-4">
-              <div class="by-profile border-Lumira-Gray-200 relative flex h-[320px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[12px] border bg-white">
-                <img src="assets/images/profile/trusted-1.png" alt="image" class="size-full object-cover" />
-                <div class="by-profile-desc absolute right-[6px] bottom-[6px] left-[6px] flex flex-col gap-4 rounded-lg bg-[#101828]/[0.7] px-[6px] py-4 text-white backdrop-blur-sm">
-                  <p class="line-clamp-3 px-2 text-[10px] leading-[14px] text-white/70 hover:line-clamp-none">“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud”</p>
-                  <hr class="border-white/10" />
-                  <div class="by-profile-desc-name flex items-center justify-between gap-[10px] px-2">
-                    <img src="assets/images/icons/logo-1-white.svg" alt="icon" class="h-[14px] shrink-0" />
-                    <div>
-                      <h5 class="text-end text-xs leading-[18px] font-medium text-white">Carter Pier</h5>
-                      <p class="text-end text-[10px] leading-[18px] text-white/70">Designers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="by-profile border-Lumira-Gray-200 relative flex h-[320px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[12px] border bg-white">
-                <img src="assets/images/profile/trusted-1.png" alt="image" class="size-full object-cover" />
-                <div class="by-profile-desc absolute right-[6px] bottom-[6px] left-[6px] flex flex-col gap-4 rounded-lg bg-[#101828]/[0.7] px-[6px] py-4 text-white backdrop-blur-sm">
-                  <p class="line-clamp-3 px-2 text-[10px] leading-[14px] text-white/70 hover:line-clamp-none">“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud”</p>
-                  <hr class="border-white/10" />
-                  <div class="by-profile-desc-name flex items-center justify-between gap-[10px] px-2">
-                    <img src="assets/images/icons/logo-1-white.svg" alt="icon" class="h-[14px] shrink-0" />
-                    <div>
-                      <h5 class="text-end text-xs leading-[18px] font-medium text-white">Carter Pier</h5>
-                      <p class="text-end text-[10px] leading-[18px] text-white/70">Designers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="by-profile border-Lumira-Gray-200 relative flex h-[320px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[12px] border bg-white">
-                <img src="assets/images/profile/trusted-1.png" alt="image" class="size-full object-cover" />
-                <div class="by-profile-desc absolute right-[6px] bottom-[6px] left-[6px] flex flex-col gap-4 rounded-lg bg-[#101828]/[0.7] px-[6px] py-4 text-white backdrop-blur-sm">
-                  <p class="line-clamp-3 px-2 text-[10px] leading-[14px] text-white/70 hover:line-clamp-none">“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud”</p>
-                  <hr class="border-white/10" />
-                  <div class="by-profile-desc-name flex items-center justify-between gap-[10px] px-2">
-                    <img src="assets/images/icons/logo-1-white.svg" alt="icon" class="h-[14px] shrink-0" />
-                    <div>
-                      <h5 class="text-end text-xs leading-[18px] font-medium text-white">Carter Pier</h5>
-                      <p class="text-end text-[10px] leading-[18px] text-white/70">Designers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="by-profile border-Lumira-Gray-200 relative flex h-[320px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[12px] border bg-white">
-                <img src="assets/images/profile/trusted-1.png" alt="image" class="size-full object-cover" />
-                <div class="by-profile-desc absolute right-[6px] bottom-[6px] left-[6px] flex flex-col gap-4 rounded-lg bg-[#101828]/[0.7] px-[6px] py-4 text-white backdrop-blur-sm">
-                  <p class="line-clamp-3 px-2 text-[10px] leading-[14px] text-white/70 hover:line-clamp-none">“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud”</p>
-                  <hr class="border-white/10" />
-                  <div class="by-profile-desc-name flex items-center justify-between gap-[10px] px-2">
-                    <img src="assets/images/icons/logo-1-white.svg" alt="icon" class="h-[14px] shrink-0" />
-                    <div>
-                      <h5 class="text-end text-xs leading-[18px] font-medium text-white">Carter Pier</h5>
-                      <p class="text-end text-[10px] leading-[18px] text-white/70">Designers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="by-profile border-Lumira-Gray-200 relative flex h-[320px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[12px] border bg-white">
-                <img src="assets/images/profile/trusted-1.png" alt="image" class="size-full object-cover" />
-                <div class="by-profile-desc absolute right-[6px] bottom-[6px] left-[6px] flex flex-col gap-4 rounded-lg bg-[#101828]/[0.7] px-[6px] py-4 text-white backdrop-blur-sm">
-                  <p class="line-clamp-3 px-2 text-[10px] leading-[14px] text-white/70 hover:line-clamp-none">“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud”</p>
-                  <hr class="border-white/10" />
-                  <div class="by-profile-desc-name flex items-center justify-between gap-[10px] px-2">
-                    <img src="assets/images/icons/logo-1-white.svg" alt="icon" class="h-[14px] shrink-0" />
-                    <div>
-                      <h5 class="text-end text-xs leading-[18px] font-medium text-white">Carter Pier</h5>
-                      <p class="text-end text-[10px] leading-[18px] text-white/70">Designers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="by-profile border-Lumira-Gray-200 relative flex h-[320px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[12px] border bg-white">
-                <img src="assets/images/profile/trusted-1.png" alt="image" class="size-full object-cover" />
-                <div class="by-profile-desc absolute right-[6px] bottom-[6px] left-[6px] flex flex-col gap-4 rounded-lg bg-[#101828]/[0.7] px-[6px] py-4 text-white backdrop-blur-sm">
-                  <p class="line-clamp-3 px-2 text-[10px] leading-[14px] text-white/70 hover:line-clamp-none">“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud”</p>
-                  <hr class="border-white/10" />
-                  <div class="by-profile-desc-name flex items-center justify-between gap-[10px] px-2">
-                    <img src="assets/images/icons/logo-1-white.svg" alt="icon" class="h-[14px] shrink-0" />
-                    <div>
-                      <h5 class="text-end text-xs leading-[18px] font-medium text-white">Carter Pier</h5>
-                      <p class="text-end text-[10px] leading-[18px] text-white/70">Designers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slider w-max">
-            <div class="slider-left flex flex-nowrap items-center gap-4">
-              <div class="by-profile border-Lumira-Gray-200 relative flex h-[320px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[12px] border bg-white">
-                <img src="assets/images/profile/trusted-1.png" alt="image" class="size-full object-cover" />
-                <div class="by-profile-desc absolute right-[6px] bottom-[6px] left-[6px] flex flex-col gap-4 rounded-lg bg-[#101828]/[0.7] px-[6px] py-4 text-white backdrop-blur-sm">
-                  <p class="line-clamp-3 px-2 text-[10px] leading-[14px] text-white/70 hover:line-clamp-none">“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud”</p>
-                  <hr class="border-white/10" />
-                  <div class="by-profile-desc-name flex items-center justify-between gap-[10px] px-2">
-                    <img src="assets/images/icons/logo-1-white.svg" alt="icon" class="h-[14px] shrink-0" />
-                    <div>
-                      <h5 class="text-end text-xs leading-[18px] font-medium text-white">Carter Pier</h5>
-                      <p class="text-end text-[10px] leading-[18px] text-white/70">Designers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="by-profile border-Lumira-Gray-200 relative flex h-[320px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[12px] border bg-white">
-                <img src="assets/images/profile/trusted-1.png" alt="image" class="size-full object-cover" />
-                <div class="by-profile-desc absolute right-[6px] bottom-[6px] left-[6px] flex flex-col gap-4 rounded-lg bg-[#101828]/[0.7] px-[6px] py-4 text-white backdrop-blur-sm">
-                  <p class="line-clamp-3 px-2 text-[10px] leading-[14px] text-white/70 hover:line-clamp-none">“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud”</p>
-                  <hr class="border-white/10" />
-                  <div class="by-profile-desc-name flex items-center justify-between gap-[10px] px-2">
-                    <img src="assets/images/icons/logo-1-white.svg" alt="icon" class="h-[14px] shrink-0" />
-                    <div>
-                      <h5 class="text-end text-xs leading-[18px] font-medium text-white">Carter Pier</h5>
-                      <p class="text-end text-[10px] leading-[18px] text-white/70">Designers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="by-profile border-Lumira-Gray-200 relative flex h-[320px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[12px] border bg-white">
-                <img src="assets/images/profile/trusted-1.png" alt="image" class="size-full object-cover" />
-                <div class="by-profile-desc absolute right-[6px] bottom-[6px] left-[6px] flex flex-col gap-4 rounded-lg bg-[#101828]/[0.7] px-[6px] py-4 text-white backdrop-blur-sm">
-                  <p class="line-clamp-3 px-2 text-[10px] leading-[14px] text-white/70 hover:line-clamp-none">“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud”</p>
-                  <hr class="border-white/10" />
-                  <div class="by-profile-desc-name flex items-center justify-between gap-[10px] px-2">
-                    <img src="assets/images/icons/logo-1-white.svg" alt="icon" class="h-[14px] shrink-0" />
-                    <div>
-                      <h5 class="text-end text-xs leading-[18px] font-medium text-white">Carter Pier</h5>
-                      <p class="text-end text-[10px] leading-[18px] text-white/70">Designers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="by-profile border-Lumira-Gray-200 relative flex h-[320px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[12px] border bg-white">
-                <img src="assets/images/profile/trusted-1.png" alt="image" class="size-full object-cover" />
-                <div class="by-profile-desc absolute right-[6px] bottom-[6px] left-[6px] flex flex-col gap-4 rounded-lg bg-[#101828]/[0.7] px-[6px] py-4 text-white backdrop-blur-sm">
-                  <p class="line-clamp-3 px-2 text-[10px] leading-[14px] text-white/70 hover:line-clamp-none">“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud”</p>
-                  <hr class="border-white/10" />
-                  <div class="by-profile-desc-name flex items-center justify-between gap-[10px] px-2">
-                    <img src="assets/images/icons/logo-1-white.svg" alt="icon" class="h-[14px] shrink-0" />
-                    <div>
-                      <h5 class="text-end text-xs leading-[18px] font-medium text-white">Carter Pier</h5>
-                      <p class="text-end text-[10px] leading-[18px] text-white/70">Designers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="by-profile border-Lumira-Gray-200 relative flex h-[320px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[12px] border bg-white">
-                <img src="assets/images/profile/trusted-1.png" alt="image" class="size-full object-cover" />
-                <div class="by-profile-desc absolute right-[6px] bottom-[6px] left-[6px] flex flex-col gap-4 rounded-lg bg-[#101828]/[0.7] px-[6px] py-4 text-white backdrop-blur-sm">
-                  <p class="line-clamp-3 px-2 text-[10px] leading-[14px] text-white/70 hover:line-clamp-none">“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud”</p>
-                  <hr class="border-white/10" />
-                  <div class="by-profile-desc-name flex items-center justify-between gap-[10px] px-2">
-                    <img src="assets/images/icons/logo-1-white.svg" alt="icon" class="h-[14px] shrink-0" />
-                    <div>
-                      <h5 class="text-end text-xs leading-[18px] font-medium text-white">Carter Pier</h5>
-                      <p class="text-end text-[10px] leading-[18px] text-white/70">Designers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="by-profile border-Lumira-Gray-200 relative flex h-[320px] w-[270px] shrink-0 items-center justify-center overflow-hidden rounded-[12px] border bg-white">
-                <img src="assets/images/profile/trusted-1.png" alt="image" class="size-full object-cover" />
-                <div class="by-profile-desc absolute right-[6px] bottom-[6px] left-[6px] flex flex-col gap-4 rounded-lg bg-[#101828]/[0.7] px-[6px] py-4 text-white backdrop-blur-sm">
-                  <p class="line-clamp-3 px-2 text-[10px] leading-[14px] text-white/70 hover:line-clamp-none">“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud”</p>
-                  <hr class="border-white/10" />
-                  <div class="by-profile-desc-name flex items-center justify-between gap-[10px] px-2">
-                    <img src="assets/images/icons/logo-1-white.svg" alt="icon" class="h-[14px] shrink-0" />
-                    <div>
-                      <h5 class="text-end text-xs leading-[18px] font-medium text-white">Carter Pier</h5>
-                      <p class="text-end text-[10px] leading-[18px] text-white/70">Designers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <span class="absolute top-0 left-0 z-30 h-full w-[92px] bg-gradient-to-r from-[#FFFFFF] to-[rgba(255,255,255,0.02)] transition-all duration-300"></span>
-        <span class="absolute top-0 right-0 z-30 h-full w-[92px] bg-gradient-to-l from-[#FFFFFF] to-[rgba(255,255,255,0.02)] transition-all duration-300"></span>
       </div>
     </section>
+    <script src="js/modal-input-navbar-top-clear-input-value.js"></script>
+    <script src="js/modal-input-navbar-top-toggle.js"></script>
   </body>
 </html>
