@@ -804,14 +804,14 @@
           <div class="group/login login">
             <div class="before-login flex items-center gap-1.5 group-[&.login]/login:hidden">
               <div class="">
-                <a href="" class="relative shrink-0 transition-all duration-300 group-[&.scroll]/scroll:hidden">
+                <button type="button" class="navbar-top-open-modal-btn relative shrink-0 cursor-pointer transition-all duration-300 group-[&.scroll]/scroll:hidden">
                   <img src="assets/images/icons/search-nav-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
                   <img src="assets/images/icons/search-nav-black.svg" alt="icon" class="absolute top-0 size-5 shrink-0 opacity-0 transition-all duration-300 hover:opacity-100" />
-                </a>
-                <a href="" class="relative hidden shrink-0 transition-all duration-300 group-[&.scroll]/scroll:block">
+                </button>
+                <button type="button" class="navbar-top-open-modal-btn relative hidden shrink-0 cursor-pointer transition-all duration-300 group-[&.scroll]/scroll:block">
                   <img src="assets/images/icons/dark/search-nav-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
                   <img src="assets/images/icons/dark/search-nav-white.svg" alt="icon" class="absolute top-0 size-5 shrink-0 opacity-0 transition-all duration-300 hover:opacity-100" />
-                </a>
+                </button>
               </div>
               <a href="">
                 <div class="rounded-full px-5 py-3 text-sm leading-[20px] font-medium transition-all duration-300 group-[&.scroll]/scroll:text-white">Login</div>
@@ -823,18 +823,18 @@
 
             <div class="after-login hidden items-center gap-2 group-[&.login]/login:flex">
               <div class="search-nav">
-                <a href="" class="shrink-0 transition-all duration-300 group-[&.scroll]/scroll:hidden">
+                <button type="button" class="navbar-top-open-modal-btn shrink-0 cursor-pointer transition-all duration-300 group-[&.scroll]/scroll:hidden">
                   <div class="relative flex size-[48px] items-center justify-center">
                     <img src="assets/images/icons/search-nav-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
                     <img src="assets/images/icons/search-nav-black.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
                   </div>
-                </a>
-                <a href="" class="relative hidden shrink-0 transition-all duration-300 group-[&.scroll]/scroll:block">
+                </button>
+                <button type="button" class="navbar-top-open-modal-btn relative hidden shrink-0 cursor-pointer transition-all duration-300 group-[&.scroll]/scroll:block">
                   <div class="relative flex size-[48px] items-center justify-center">
                     <img src="assets/images/icons/dark/search-nav-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
                     <img src="assets/images/icons/dark/search-nav-white.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
                   </div>
-                </a>
+                </button>
               </div>
 
               <div class="bookmark-nav">
@@ -857,18 +857,18 @@
                   <a href="" class="shrink-0 transition-all duration-300 group-[&.scroll]/scroll:hidden">
                     <div class="relative flex size-[48px] items-center justify-center">
                       <div class="relative">
-                      <img src="assets/images/icons/notification-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
-                      <img src="assets/images/icons/notification-blue.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
-                      <div class="size-[7px] rounded-full bg-Lumira-Rose-600 ring-2 ring-white absolute top-0 right-0"></div>
+                        <img src="assets/images/icons/notification-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
+                        <img src="assets/images/icons/notification-blue.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
+                        <div class="bg-Lumira-Rose-600 absolute top-0 right-0 size-[7px] rounded-full ring-2 ring-white"></div>
                       </div>
                     </div>
                   </a>
                   <a href="" class="relative hidden shrink-0 transition-all duration-300 group-[&.scroll]/scroll:block">
                     <div class="relative flex size-[48px] items-center justify-center">
                       <div class="relative">
-                      <img src="assets/images/icons/dark/notification-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
-                      <img src="assets/images/icons/dark/notification-blue.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
-                      <div class="size-[7px] rounded-full bg-Lumira-Rose-600 ring-2 ring-[##303341] absolute top-0 right-0"></div>
+                        <img src="assets/images/icons/dark/notification-gray.svg" alt="icon" class="size-5 shrink-0 transition-all duration-300 hover:opacity-0" />
+                        <img src="assets/images/icons/dark/notification-blue.svg" alt="icon" class="absolute top-1/2 size-5 shrink-0 -translate-y-1/2 transform opacity-0 transition-all duration-300 hover:opacity-100" />
+                        <div class="bg-Lumira-Rose-600 absolute top-0 right-0 size-[7px] rounded-full ring-2 ring-[##303341]"></div>
                       </div>
                     </div>
                   </a>
@@ -1189,22 +1189,22 @@
           </div>
         </header>
         <section id="ProductDetailImages" class="grid grid-cols-2 gap-[14px]">
-          <div class="border-Lumira-Gray-200 flex bg-Lumira-Gray-50 items-center justify-center overflow-hidden rounded-[18px] border">
+          <div class="border-Lumira-Gray-200 bg-Lumira-Gray-50 flex items-center justify-center overflow-hidden rounded-[18px] border">
             <img src="assets/images/thumbnails/product-detail-1.png" alt="icon" class="size-full" />
           </div>
-          <div class="border-Lumira-Gray-200 flex bg-Lumira-Gray-50 items-center justify-center overflow-hidden rounded-[18px] border">
+          <div class="border-Lumira-Gray-200 bg-Lumira-Gray-50 flex items-center justify-center overflow-hidden rounded-[18px] border">
             <img src="assets/images/thumbnails/product-detail-2.png" alt="icon" class="size-full" />
           </div>
-          <div class="border-Lumira-Gray-200 flex bg-Lumira-Gray-50 items-center justify-center overflow-hidden rounded-[18px] border">
+          <div class="border-Lumira-Gray-200 bg-Lumira-Gray-50 flex items-center justify-center overflow-hidden rounded-[18px] border">
             <img src="assets/images/thumbnails/product-detail-3.png" alt="icon" class="size-full" />
           </div>
-          <div class="border-Lumira-Gray-200 flex bg-Lumira-Gray-50 items-center justify-center overflow-hidden rounded-[18px] border">
+          <div class="border-Lumira-Gray-200 bg-Lumira-Gray-50 flex items-center justify-center overflow-hidden rounded-[18px] border">
             <img src="assets/images/thumbnails/product-detail-4.png" alt="icon" class="size-full" />
           </div>
-          <div class="border-Lumira-Gray-200 flex bg-Lumira-Gray-50 items-center justify-center overflow-hidden rounded-[18px] border">
+          <div class="border-Lumira-Gray-200 bg-Lumira-Gray-50 flex items-center justify-center overflow-hidden rounded-[18px] border">
             <img src="assets/images/thumbnails/product-detail-5.png" alt="icon" class="size-full" />
           </div>
-          <div class="border-Lumira-Gray-200 flex bg-Lumira-Gray-50 items-center justify-center overflow-hidden rounded-[18px] border">
+          <div class="border-Lumira-Gray-200 bg-Lumira-Gray-50 flex items-center justify-center overflow-hidden rounded-[18px] border">
             <img src="assets/images/thumbnails/product-detail-6.png" alt="icon" class="size-full" />
           </div>
         </section>
@@ -1388,9 +1388,9 @@
                 <div class="flex flex-col gap-3">
                   <div class="flex items-center justify-between">
                     <div class="container-dropdown group peer relative">
-                      <button type="button" class="button-dropdown bg-white border-Lumira-Gray-200 group-[.open]:border-Lumira-Gray-400 group-hover:border-Lumira-Gray-400 flex items-center gap-2 rounded-full border px-[20px] py-[15px] transition-all duration-300 focus:outline-none">
-                        <p class="button-dropdown-title text-Lumira-Gray-900   text-sm leading-[20px] font-medium transition-all duration-300">Starter License</p>
-                        <div class="button-dropdown-icon text-Lumira-Gray-900  transition-all duration-300 group-[.open]:rotate-180">
+                      <button type="button" class="button-dropdown border-Lumira-Gray-200 group-[.open]:border-Lumira-Gray-400 group-hover:border-Lumira-Gray-400 flex items-center gap-2 rounded-full border bg-white px-[20px] py-[15px] transition-all duration-300 focus:outline-none">
+                        <p class="button-dropdown-title text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Starter License</p>
+                        <div class="button-dropdown-icon text-Lumira-Gray-900 transition-all duration-300 group-[.open]:rotate-180">
                           <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                           </svg>
@@ -1434,10 +1434,10 @@
                     <strong class="free text-Lumira-Gray-900 hidden text-2xl leading-[32px] font-semibold">Free</strong>
                   </div>
                   <p class="text-Lumira-Gray-500 px-2 text-sm leading-[20px]">Valid for <span class="font-bold">one project</span> only. Ideal for individuals or small-scale personal or client use.</p>
-                  <p class="free-description hidden text-Lumira-Gray-500 px-2 text-sm leading-[20px]">Free for <span class="font-bold">personal</span> and <span class="font-bold">non-commercial use</span> Attribution appreciated but not required, resale not allowed.</p>
+                  <p class="free-description text-Lumira-Gray-500 hidden px-2 text-sm leading-[20px]">Free for <span class="font-bold">personal</span> and <span class="font-bold">non-commercial use</span> Attribution appreciated but not required, resale not allowed.</p>
                 </div>
                 <div class="flex flex-col gap-2">
-                  <button type="submit" class="free-btn hidden bg-Lumira-Green-500 border-Lumira-Green-300 hover:ring-Lumira-Green-500 rounded-[12px] border py-[18px] text-center font-semibold text-white transition-all duration-300 hover:ring-2 hover:ring-offset-1">Download</button>
+                  <button type="submit" class="free-btn bg-Lumira-Green-500 border-Lumira-Green-300 hover:ring-Lumira-Green-500 hidden rounded-[12px] border py-[18px] text-center font-semibold text-white transition-all duration-300 hover:ring-2 hover:ring-offset-1">Download</button>
                   <button type="submit" class="bg-Lumira-Indigo-600 border-Lumira-Indigo-400 hover:ring-Lumira-Indigo-500 rounded-[12px] border py-[18px] text-center font-semibold text-white transition-all duration-300 hover:ring-2 hover:ring-offset-1">Buy Template</button>
                   <a href="">
                     <div class="bg-Lumira-Gray-900 rounded-[12px] py-[18px] text-center font-semibold text-white transition-all duration-300 hover:ring-2 hover:ring-black hover:ring-offset-1">Get It From Figma</div>
@@ -1449,12 +1449,12 @@
                   <p class="text-Lumira-Gray-900 text-center font-medium">Figma</p>
                   <h5 class="text-Lumira-Gray-500 text-center text-xs leading-[18px]">Compatibility</h5>
                 </div>
-                <span class="bg-Lumira-Gray-200 inline-block h-full w-[1px] shrink-0 min-h-[76px]"></span>
+                <span class="bg-Lumira-Gray-200 inline-block h-full min-h-[76px] w-[1px] shrink-0"></span>
                 <div class="flex w-full max-w-[109.33px] flex-col items-center justify-center gap-1 py-[12px]">
                   <p class="text-Lumira-Gray-900 text-center font-medium">12.3 mb</p>
                   <h5 class="text-Lumira-Gray-500 text-center text-xs leading-[18px]">File size</h5>
                 </div>
-                <span class="bg-Lumira-Gray-200 inline-block h-full w-[1px] min-h-[76px]"></span>
+                <span class="bg-Lumira-Gray-200 inline-block h-full min-h-[76px] w-[1px]"></span>
                 <div class="flex w-full max-w-[109.33px] flex-col items-center justify-center gap-1 py-[12px]">
                   <p class="text-Lumira-Gray-900 text-center font-medium">12/06/25</p>
                   <h5 class="text-Lumira-Gray-500 text-center text-xs leading-[18px]">Last update</h5>
@@ -1502,9 +1502,9 @@
         <hr class="text-Lumira-Gray-200 mt-[112px] w-full" />
         <section id="MoreUIKitBy" class="tablet:rounded-[18px] mx-auto mt-[92px] max-w-[1232px] pb-[134px]">
           <div class="tablet:gap-[52px] mx-auto flex w-full flex-col gap-[32px]">
-            <div class=" tablet:gap-[32px] flex items-center gap-[12px]">
+            <div class="tablet:gap-[32px] flex items-center gap-[12px]">
               <h2 class="tablet:text-[36px] tablet:leading-[44px] text-[20px] leading-[30px] font-medium">More UI Kit by Rafiq</h2>
-              <h2 class="freebie-more tablet:text-[36px] hidden tablet:leading-[44px] text-[20px] leading-[30px] font-medium">More UI Kit Like This</h2>
+              <h2 class="freebie-more tablet:text-[36px] tablet:leading-[44px] hidden text-[20px] leading-[30px] font-medium">More UI Kit Like This</h2>
               <hr class="text-Lumira-Gray-200 min-w-[19px] flex-1 shrink-0" />
               <a href="browse-all-freebies.html" class="shrink-0">
                 <div class="bg-Lumira-BlackOpium tablet:gap-1.5 tablet:px-5 tablet:py-2.5 flex items-center gap-2 rounded-full border border-[#090807] px-4 py-2 transition-all duration-300 hover:ring-2 hover:ring-[#090807] hover:ring-offset-1">
@@ -1731,6 +1731,152 @@
         </div>
       </div>
     </section>
+    <section id="navbar-top-modal" class="fixed top-0 left-0 z-1000 hidden h-full w-full bg-[#101828CC] backdrop-blur-xs">
+      <button id="navbar-top-close-modal-btn" type="button" class="absolute top-[28px] right-[28px] z-50 cursor-pointer">
+        <div class="border-Lumira-Gray-400 hover:ring-Lumira-Gray-400 relative flex size-[58px] shrink-0 items-center justify-center rounded-full border bg-[#EAECF033] transition-all duration-300 hover:ring-2">
+          <img src="assets/images/icons/x-mark-white.svg" alt="" class="size-[18px] shrink-0" />
+        </div>
+      </button>
+      <div class="navbar-top-modal-content flex size-full items-center justify-center">
+        <div class="h-[638px] w-[600px]">
+          <div class="flex flex-col gap-3">
+            <form action="" class="peer">
+              <div class="modal-content-search focus-within:ring-Lumira-Indigo-600 flex h-[70px] w-full items-center gap-3 rounded-full bg-white py-[6px] pr-[6px] pl-6 transition-all duration-300 focus-within:ring-3">
+                <input id="modal-search-input" type="text" autofocus class="peer placeholder:text-Lumira-Gray-500 text-Lumira-Gray-900 h-full w-full text-2xl leading-[32px] font-medium placeholder:text-2xl placeholder:leading-[32px] placeholder:font-normal focus:outline-none" placeholder="Search ..." />
+                <button id="clear-modal-search-input-btn" type="button" class="shrink-0 cursor-pointer peer-placeholder-shown:hidden"><img src="assets/images/icons/x-mark-gray.svg" alt="icon" class="size-5 shrink-0" /></button>
+                <button type="submit" class="shrink-0 cursor-pointer">
+                  <div class="bg-Lumira-Indigo-600 hover:shadow-Lumira-Indigo-600 flex h-[58px] w-[78px] shrink-0 items-center justify-center rounded-full transition-all duration-300 hover:shadow">
+                    <img src="assets/images/icons/search-white.svg" alt="" />
+                  </div>
+                </button>
+              </div>
+            </form>
+            <div class="container-lists peer-has-placeholder-shown:hidden">
+              <div class="modal-content-lists border-Lumira-Gray-200 flex h-[484px] w-full rounded-2xl border-[1.5px] bg-white px-[6px] pt-[6px] pb-3">
+                <div class="list flex w-full flex-col items-center gap-[6px] overflow-y-auto p-[6px] [&::-webkit-scrollbar]:hidden">
+                  <div class="list flex items-center gap-4 p-[6px]">
+                    <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
+                      <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
+                      <img src="assets/images/icons/popular.svg" alt="icon" class="absolute top-2 right-2 size-[16.33px] w-fit shrink-0" />
+                    </div>
+                    <div class="list-desc flex flex-1 flex-col gap-2 pt-1 pb-[18px]">
+                      <h5 class="font-medium text-black">Carta - Professional Services Website Template</h5>
+                      <div class="list-desc-path flex items-center gap-[8px]">
+                        <div class="flex items-center gap-[6px]">
+                          <div class="flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full">
+                            <img src="assets/images/profile/profile.png" alt="profile" class="h-full w-full object-cover" />
+                          </div>
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Rafiq</p>
+                        </div>
+                        <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">UI Kit</p>
+                        <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Mobile App</p>
+                      </div>
+                      <p class="list-desc-price text-Lumira-Gray-600 text-xs leading-[18px]">IDR 200.000</p>
+                    </div>
+                  </div>
+                  <div class="list flex items-center gap-4 p-[6px]">
+                    <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
+                      <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
+                      <img src="assets/images/icons/popular.svg" alt="icon" class="absolute top-2 right-2 size-[16.33px] w-fit shrink-0" />
+                    </div>
+                    <div class="list-desc flex flex-1 flex-col gap-2 pt-1 pb-[18px]">
+                      <h5 class="font-medium text-black">Carta - Professional Services Website Template</h5>
+                      <div class="list-desc-path flex items-center gap-[8px]">
+                        <div class="flex items-center gap-[6px]">
+                          <div class="flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full">
+                            <img src="assets/images/profile/profile.png" alt="profile" class="h-full w-full object-cover" />
+                          </div>
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Rafiq</p>
+                        </div>
+                        <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">UI Kit</p>
+                        <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Mobile App</p>
+                      </div>
+                      <p class="list-desc-price text-Lumira-Gray-600 text-xs leading-[18px]">IDR 200.000</p>
+                    </div>
+                  </div>
+                  <div class="list flex items-center gap-4 p-[6px]">
+                    <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
+                      <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
+                      <img src="assets/images/icons/popular.svg" alt="icon" class="absolute top-2 right-2 size-[16.33px] w-fit shrink-0" />
+                    </div>
+                    <div class="list-desc flex flex-1 flex-col gap-2 pt-1 pb-[18px]">
+                      <h5 class="font-medium text-black">Carta - Professional Services Website Template</h5>
+                      <div class="list-desc-path flex items-center gap-[8px]">
+                        <div class="flex items-center gap-[6px]">
+                          <div class="flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full">
+                            <img src="assets/images/profile/profile.png" alt="profile" class="h-full w-full object-cover" />
+                          </div>
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Rafiq</p>
+                        </div>
+                        <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">UI Kit</p>
+                        <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Mobile App</p>
+                      </div>
+                      <p class="list-desc-price text-Lumira-Gray-600 text-xs leading-[18px]">IDR 200.000</p>
+                    </div>
+                  </div>
+                  <div class="list flex items-center gap-4 p-[6px]">
+                    <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
+                      <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
+                      <img src="assets/images/icons/popular.svg" alt="icon" class="absolute top-2 right-2 size-[16.33px] w-fit shrink-0" />
+                    </div>
+                    <div class="list-desc flex flex-1 flex-col gap-2 pt-1 pb-[18px]">
+                      <h5 class="font-medium text-black">Carta - Professional Services Website Template</h5>
+                      <div class="list-desc-path flex items-center gap-[8px]">
+                        <div class="flex items-center gap-[6px]">
+                          <div class="flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full">
+                            <img src="assets/images/profile/profile.png" alt="profile" class="h-full w-full object-cover" />
+                          </div>
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Rafiq</p>
+                        </div>
+                        <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">UI Kit</p>
+                        <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Mobile App</p>
+                      </div>
+                      <p class="list-desc-price text-Lumira-Gray-600 text-xs leading-[18px]">IDR 200.000</p>
+                    </div>
+                  </div>
+                  <div class="list flex items-center gap-4 p-[6px]">
+                    <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
+                      <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
+                      <img src="assets/images/icons/popular.svg" alt="icon" class="absolute top-2 right-2 size-[16.33px] w-fit shrink-0" />
+                    </div>
+                    <div class="list-desc flex flex-1 flex-col gap-2 pt-1 pb-[18px]">
+                      <h5 class="font-medium text-black">Carta - Professional Services Website Template</h5>
+                      <div class="list-desc-path flex items-center gap-[8px]">
+                        <div class="flex items-center gap-[6px]">
+                          <div class="flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full">
+                            <img src="assets/images/profile/profile.png" alt="profile" class="h-full w-full object-cover" />
+                          </div>
+                          <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Rafiq</p>
+                        </div>
+                        <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">UI Kit</p>
+                        <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                        <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Mobile App</p>
+                      </div>
+                      <p class="list-desc-price text-Lumira-Gray-600 text-xs leading-[18px]">IDR 200.000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button-load-more peer-has-placeholder-shown:hidden">
+              <button type="button" class="bg-Lumira-Indigo-600 hover:ring-Lumira-Indigo-400 border-Lumira-Indigo-400 flex w-full cursor-pointer items-center justify-center rounded-2xl border py-[18px] font-semibold text-white transition-all duration-300 hover:ring">Load More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/modal-input-navbar-top-clear-input-value.js"></script>
+    <script src="js/modal-input-navbar-top-toggle.js"></script>
+
     <script src="js/menu-dropdown-all.js"></script>
     <script src="js/format-currency.js"></script>
     <script src="js/nav-top-dark.js"></script>
