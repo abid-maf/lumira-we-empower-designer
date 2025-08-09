@@ -7,46 +7,123 @@
     <title>Document</title>
   </head>
   <body class="ringlu bg-black">
-    <div class="container-dropdown group peer relative">
-      <button type="button" class="button-dropdown bg-Lumira-Gray-50 border-Lumira-Gray-200 group-[.open]:border-Lumira-Gray-400 group-hover:border-Lumira-Gray-400 flex items-center gap-2 rounded-full border px-[20px] py-[15px] transition-all duration-300 focus:outline-none">
-        <p class="button-dropdown-title-price group-[.open]:text-Lumira-Gray-900 group-hover:text-Lumira-Gray-900 text-Lumira-Gray-500 text-sm leading-[20px] font-medium transition-all duration-300">Price</p>
-        <div class="button-dropdown-icon group-[.open]:text-Lumira-Gray-900 group-hover:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300 group-[.open]:rotate-180">
-          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </div>
-      </button>
-
-      <div class="dropdown-content absolute right-1/2 translate-x-1/2 z-50 h-0 overflow-hidden pt-2 transition-all duration-300 group-[.open]:h-fit">
-        <div class="group/reset-button-hide border-Lumira-Gray-200 flex w-[220px] flex-col gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-xl">
-          <div class=" price-range flex flex-col gap-1">
-            <label class="price-range-inputs border-Lumira-Gray-200 transition-all duration-300 focus-within:border-Lumira-Rose-600 flex items-center gap-1 rounded-lg border bg-white px-[14px] py-3">
-              <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">IDR</p>
-              <input type="number" class="min-price placeholder:text-Lumira-Gray-500 text-Lumira-Gray-900 h-full w-full text-sm leading-[20px] font-medium placeholder:text-base placeholder:font-normal focus:outline-none" placeholder="minimum" />
-            </label>
-            <label class="price-range-inputs border-Lumira-Gray-200 transition-all duration-300 focus-within:border-Lumira-Rose-600 flex items-center gap-1 rounded-lg border bg-white px-[14px] py-3">
-              <p class="text-Lumira-Gray-900 text-sm leading-[20px] font-medium">IDR</p>
-              <input type="number" class="max-price placeholder:text-Lumira-Gray-500 text-Lumira-Gray-900 h-full w-full text-sm leading-[20px] font-medium placeholder:text-base placeholder:font-normal focus:outline-none" placeholder="maximum" />
-            </label>
-          </div>
-          <div class="buttons-range flex items-center gap-1">
-            <button class="group-has-placeholder-shown/reset-button-hide:hidden buttons-range-reset cursor-pointer" type="button">
-              <div class="bg-Lumira-Gray-900 flex size-[44px] shrink-0 items-center justify-center rounded-lg">
-                <img src="assets/images/icons/reset-white.svg" alt="icon" class="size-4 shrink-0" />
+    <div class="container-lists peer-has-placeholder-shown:hidden">
+      <div class="modal-content-lists border-Lumira-Gray-200 flex h-[484px] w-full rounded-2xl border-[1.5px] bg-white px-[6px] pt-[6px] pb-3">
+        <div class="list flex w-full flex-col items-center gap-[6px] overflow-y-auto [&::-webkit-scrollbar]:hidden">
+          <div class="list hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex w-full items-center justify-between gap-4 rounded-[12px] border border-transparent p-[6px] transition-all duration-300">
+            <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
+              <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
+              <img src="assets/images/icons/popular.svg" alt="icon" class="absolute top-2 right-2 size-[16.33px] w-fit shrink-0" />
+            </div>
+            <div class="list-desc flex flex-1 flex-col gap-2 pt-1 pb-[18px]">
+              <h5 class="font-medium text-black">Carta - Professional Services Website Template</h5>
+              <div class="list-desc-path flex items-center gap-[8px]">
+                <div class="flex items-center gap-[6px]">
+                  <div class="flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full">
+                    <img src="assets/images/profile/profile.png" alt="profile" class="h-full w-full object-cover" />
+                  </div>
+                  <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Rafiq</p>
+                </div>
+                <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                <p class="text-Lumira-Gray-600 text-xs leading-[18px]">UI Kit</p>
+                <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Mobile App</p>
               </div>
-            </button>
-            <button type="button" class="buttons-range-apply flex-1 cursor-pointer">
-              <div class="bg-Lumira-Indigo-600 flex h-[44px] flex-1 items-center justify-center rounded-lg text-white shadow-[#0908070D] transition-all duration-300 hover:shadow-xl text-[14px] leading-[20px] font-medium">Apply</div>
-            </button>
+              <p class="list-desc-price text-Lumira-Gray-600 text-xs leading-[18px]">IDR 200.000</p>
+            </div>
+          </div>
+          <div class="list hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex w-full items-center justify-between gap-4 rounded-[12px] border border-transparent p-[6px] transition-all duration-300">
+            <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
+              <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
+              <img src="assets/images/icons/popular.svg" alt="icon" class="absolute top-2 right-2 size-[16.33px] w-fit shrink-0" />
+            </div>
+            <div class="list-desc flex flex-1 flex-col gap-2 pt-1 pb-[18px]">
+              <h5 class="font-medium text-black">Carta - Professional Services Website Template</h5>
+              <div class="list-desc-path flex items-center gap-[8px]">
+                <div class="flex items-center gap-[6px]">
+                  <div class="flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full">
+                    <img src="assets/images/profile/profile.png" alt="profile" class="h-full w-full object-cover" />
+                  </div>
+                  <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Rafiq</p>
+                </div>
+                <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                <p class="text-Lumira-Gray-600 text-xs leading-[18px]">UI Kit</p>
+                <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Mobile App</p>
+              </div>
+              <p class="list-desc-price text-Lumira-Gray-600 text-xs leading-[18px]">IDR 200.000</p>
+            </div>
+          </div>
+          <div class="list hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex w-full items-center justify-between gap-4 rounded-[12px] border border-transparent p-[6px] transition-all duration-300">
+            <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
+              <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
+              <img src="assets/images/icons/popular.svg" alt="icon" class="absolute top-2 right-2 size-[16.33px] w-fit shrink-0" />
+            </div>
+            <div class="list-desc flex flex-1 flex-col gap-2 pt-1 pb-[18px]">
+              <h5 class="font-medium text-black">Carta - Professional Services Website Template</h5>
+              <div class="list-desc-path flex items-center gap-[8px]">
+                <div class="flex items-center gap-[6px]">
+                  <div class="flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full">
+                    <img src="assets/images/profile/profile.png" alt="profile" class="h-full w-full object-cover" />
+                  </div>
+                  <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Rafiq</p>
+                </div>
+                <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                <p class="text-Lumira-Gray-600 text-xs leading-[18px]">UI Kit</p>
+                <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Mobile App</p>
+              </div>
+              <p class="list-desc-price text-Lumira-Gray-600 text-xs leading-[18px]">IDR 200.000</p>
+            </div>
+          </div>
+          <div class="list hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex w-full items-center justify-between gap-4 rounded-[12px] border border-transparent p-[6px] transition-all duration-300">
+            <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
+              <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
+              <img src="assets/images/icons/popular.svg" alt="icon" class="absolute top-2 right-2 size-[16.33px] w-fit shrink-0" />
+            </div>
+            <div class="list-desc flex flex-1 flex-col gap-2 pt-1 pb-[18px]">
+              <h5 class="font-medium text-black">Carta - Professional Services Website Template</h5>
+              <div class="list-desc-path flex items-center gap-[8px]">
+                <div class="flex items-center gap-[6px]">
+                  <div class="flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full">
+                    <img src="assets/images/profile/profile.png" alt="profile" class="h-full w-full object-cover" />
+                  </div>
+                  <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Rafiq</p>
+                </div>
+                <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                <p class="text-Lumira-Gray-600 text-xs leading-[18px]">UI Kit</p>
+                <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Mobile App</p>
+              </div>
+              <p class="list-desc-price text-Lumira-Gray-600 text-xs leading-[18px]">IDR 200.000</p>
+            </div>
+          </div>
+          <div class="list hover:bg-Lumira-Gray-50 hover:border-Lumira-Gray-200 flex w-full items-center justify-between gap-4 rounded-[12px] border border-transparent p-[6px] transition-all duration-300">
+            <div class="list-image border-Lumira-Gray-200 relative flex h-[100px] w-[166px] shrink-0 items-center justify-center overflow-hidden rounded-lg border-[0.51px]">
+              <img src="assets/images/thumbnails/thumbnail-result-input-navtop.png" alt="thumbnails" class="h-full w-full object-cover" />
+              <img src="assets/images/icons/popular.svg" alt="icon" class="absolute top-2 right-2 size-[16.33px] w-fit shrink-0" />
+            </div>
+            <div class="list-desc flex flex-1 flex-col gap-2 pt-1 pb-[18px]">
+              <h5 class="font-medium text-black">Carta - Professional Services Website Template</h5>
+              <div class="list-desc-path flex items-center gap-[8px]">
+                <div class="flex items-center gap-[6px]">
+                  <div class="flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full">
+                    <img src="assets/images/profile/profile.png" alt="profile" class="h-full w-full object-cover" />
+                  </div>
+                  <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Rafiq</p>
+                </div>
+                <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                <p class="text-Lumira-Gray-600 text-xs leading-[18px]">UI Kit</p>
+                <img src="assets/images/icons/polygon.svg" alt="icon" class="w-[5px] shrink-0" />
+                <p class="text-Lumira-Gray-600 text-xs leading-[18px]">Mobile App</p>
+              </div>
+              <p class="list-desc-price text-Lumira-Gray-600 text-xs leading-[18px]">IDR 200.000</p>
+            </div>
           </div>
         </div>
+        div
       </div>
     </div>
-    <script src="js/format-currency.js"></script>
-    <script src="js/menu-dropdown-all.js"></script>
-    <script src="js/filter-price-dropdown.js"></script>
-      
-    </script>
   </body>
   <!-- <body class="relative bg-[linear-gradient(90deg,#F9FAFB_18.82%,rgba(249,250,251,0)_118.28%)]">
     <button id="navbar-top-open-modal-btn" type="button" class="cursor-pointer">
