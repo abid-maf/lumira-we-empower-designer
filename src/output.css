@@ -709,6 +709,12 @@
   .h-\[264px\] {
     height: 264px;
   }
+  .h-\[280\] {
+    height: 280;
+  }
+  .h-\[280px\] {
+    height: 280px;
+  }
   .h-\[314px\] {
     height: 314px;
   }
@@ -1118,9 +1124,6 @@
   .gap-\[28px\] {
     gap: 28px;
   }
-  .gap-\[30\] {
-    gap: 30;
-  }
   .gap-\[30px\] {
     gap: 30px;
   }
@@ -1147,9 +1150,6 @@
   }
   .gap-\[120px\] {
     gap: 120px;
-  }
-  .gap-\[146px\] {
-    gap: 146px;
   }
   .gap-x-\[6px\] {
     column-gap: 6px;
@@ -1753,9 +1753,6 @@
   }
   .pt-\[44px\] {
     padding-top: 44px;
-  }
-  .pt-\[50\] {
-    padding-top: 50;
   }
   .pt-\[50px\] {
     padding-top: 50px;
