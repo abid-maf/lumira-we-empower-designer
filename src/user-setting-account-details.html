@@ -1156,7 +1156,347 @@
         </div>
       </header>
 
-      <section id="Contents"></section>
+      <section id="Contents" class="flex flex-col gap-[14px] pt-[14px] pb-[162px]">
+        <div id="TabsButtons" class=" py-6">
+          <div class="grid grid-cols-4 border-Lumira-Gray-200 border-b px-[90px]">
+            <button type="button" data-content="tab1" class="tab-btn active [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer border-b border-transparent py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Account Details</button>
+            <button type="button" data-content="tab2" class="tab-btn [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer border-b border-transparent py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Password</button>
+            <button type="button" data-content="tab3" class="tab-btn [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer border-b border-transparent py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Security</button>
+            <button type="button" data-content="tab4" class="tab-btn [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer border-b border-transparent py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Notifications</button>
+          </div>
+        </div>
+        <div id="Tabs-Content" class="mx-auto w-full max-w-[720px]">
+          <div id="tab1" class="content-container">
+            <div class="content mx-auto w-full pt-[18px]">
+              <form action="" class="flex flex-col gap-[14px]">
+                <div class="content-header flex flex-col gap-[40px] pb-[32px]">
+                  <div class="content-header-image border-Lumira-Gray-200 relative mx-auto flex size-[120px] shrink-0 items-center justify-center overflow-hidden rounded-full border-2 bg-[#C6D0CB]">
+                    <img id="profileImage" src="assets/images/profile/user-setting-image-1.png" alt="profile image" class="h-full w-full object-cover" />
+                    <button id="toggleImageProfileButton" type="button" class="absolute top-0 left-0 flex h-full w-full items-center justify-center bg-[#0B122099] opacity-0 backdrop-blur-xs transition-all duration-300 hover:opacity-100">
+                      <img src="assets/images/icons/image-edit.svg" alt="icon" class="size-[27px] shrink-0" />
+                    </button>
+                    <input type="file" id="imageUploadInput" accept="image/*" class="hidden" />
+                  </div>
+                  <div class="content-header-inputs grid grid-cols-2 gap-4">
+                    <label class="col-span-1 flex flex-col gap-[6px]">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">First Name</h4>
+                      <input type="text" placeholder="Enter your first name" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                    </label>
+
+                    <label class="col-span-1 flex flex-col gap-[6px]">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Last Name</h4>
+                      <input type="text" placeholder="Enter your last name" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                    </label>
+
+                    <div class="select col-span-1 flex flex-col gap-[6px]">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Country</h4>
+                      <div class="container-dropdown group peer relative">
+                        <button type="button" class="button-dropdown bg-Lumira-Gray-50 border-Lumira-Gray-200 group-[.open]:border-Lumira-Gray-400 group-hover:border-Lumira-Gray-400 flex w-full items-center gap-1 rounded-xl border px-4 py-[14px] transition-all duration-300 focus:outline-none">
+                          <p class="button-dropdown-title group-[.open]:text-Lumira-Gray-900 group-hover:text-Lumira-Gray-900 text-Lumira-Gray-500 flex-1 text-start transition-all duration-300">Select your country</p>
+                          <div class="button-dropdown-icon group-[.open]:text-Lumira-Gray-900 group-hover:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300 group-[.open]:rotate-180">
+                            <svg width="20" height="20" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </button>
+
+                        <div class="dropdown-content absolute right-0 z-50 hidden w-full pt-2 transition-all duration-300 group-[.open]:block">
+                          <div class="border-Lumira-Gray-200 w--full flex flex-col gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-xl">
+                            <div class="group/child-dropdown">
+                              <button class="dropdown-content-list w-full" type="button">
+                                <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex items-center gap-2 rounded-[8px] border border-transparent px-[20px] py-[14px] transition-all duration-300 group-hover/child-dropdown:bg-white">
+                                  <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-dropdown:opacity-100" />
+                                  <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Afghanistan</p>
+                                </div>
+                              </button>
+                            </div>
+                            <div class="group/child-dropdown">
+                              <button class="dropdown-content-list w-full" type="button">
+                                <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex items-center gap-2 rounded-[8px] border border-transparent px-[20px] py-[14px] transition-all duration-300 group-hover/child-dropdown:bg-white">
+                                  <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-dropdown:opacity-100" />
+                                  <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Albania</p>
+                                </div>
+                              </button>
+                            </div>
+                            <div class="group/child-dropdown">
+                              <button class="dropdown-content-list w-full" type="button">
+                                <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex items-center gap-2 rounded-[8px] border border-transparent px-[20px] py-[14px] transition-all duration-300 group-hover/child-dropdown:bg-white">
+                                  <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-dropdown:opacity-100" />
+                                  <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Algeria</p>
+                                </div>
+                              </button>
+                            </div>
+                            <div class="group/child-dropdown">
+                              <button class="dropdown-content-list w-full" type="button">
+                                <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex items-center gap-2 rounded-[8px] border border-transparent px-[20px] py-[14px] transition-all duration-300 group-hover/child-dropdown:bg-white">
+                                  <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-dropdown:opacity-100" />
+                                  <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Andorra</p>
+                                </div>
+                              </button>
+                            </div>
+                            <div class="group/child-dropdown">
+                              <button class="dropdown-content-list w-full" type="button">
+                                <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex items-center gap-2 rounded-[8px] border border-transparent px-[20px] py-[14px] transition-all duration-300 group-hover/child-dropdown:bg-white">
+                                  <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-dropdown:opacity-100" />
+                                  <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">Angola</p>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="select col-span-1 flex flex-col gap-[6px]">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">City</h4>
+                      <div class="container-dropdown group peer relative">
+                        <button type="button" class="button-dropdown bg-Lumira-Gray-50 border-Lumira-Gray-200 group-[.open]:border-Lumira-Gray-400 group-hover:border-Lumira-Gray-400 flex w-full items-center gap-1 rounded-xl border px-4 py-[14px] transition-all duration-300 focus:outline-none">
+                          <p class="button-dropdown-title group-[.open]:text-Lumira-Gray-900 group-hover:text-Lumira-Gray-900 text-Lumira-Gray-500 flex-1 text-start transition-all duration-300">Enter your city</p>
+                          <div class="button-dropdown-icon group-[.open]:text-Lumira-Gray-900 group-hover:text-Lumira-Gray-900 text-[#98A2B3] transition-all duration-300 group-[.open]:rotate-180">
+                            <svg width="20" height="20" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.16675 5.3335L8.50008 10.6668L13.8334 5.3335" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </div>
+                        </button>
+
+                        <div class="dropdown-content absolute right-0 z-50 hidden w-full pt-2 transition-all duration-300 group-[.open]:block">
+                          <div class="border-Lumira-Gray-200 w--full flex flex-col gap-2 rounded-[12px] border bg-[#f9fafb7e] p-[6px] shadow-xl shadow-[#00000014] backdrop-blur-xl">
+                            <div class="group/child-dropdown">
+                              <button class="dropdown-content-list w-full" type="button">
+                                <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex items-center gap-2 rounded-[8px] border border-transparent px-[20px] py-[14px] transition-all duration-300 group-hover/child-dropdown:bg-white">
+                                  <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-dropdown:opacity-100" />
+                                  <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">city 1</p>
+                                </div>
+                              </button>
+                            </div>
+                            <div class="group/child-dropdown">
+                              <button class="dropdown-content-list w-full" type="button">
+                                <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex items-center gap-2 rounded-[8px] border border-transparent px-[20px] py-[14px] transition-all duration-300 group-hover/child-dropdown:bg-white">
+                                  <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-dropdown:opacity-100" />
+                                  <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">city 2</p>
+                                </div>
+                              </button>
+                            </div>
+                            <div class="group/child-dropdown">
+                              <button class="dropdown-content-list w-full" type="button">
+                                <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex items-center gap-2 rounded-[8px] border border-transparent px-[20px] py-[14px] transition-all duration-300 group-hover/child-dropdown:bg-white">
+                                  <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-dropdown:opacity-100" />
+                                  <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">vity 3</p>
+                                </div>
+                              </button>
+                            </div>
+                            <div class="group/child-dropdown">
+                              <button class="dropdown-content-list w-full" type="button">
+                                <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex items-center gap-2 rounded-[8px] border border-transparent px-[20px] py-[14px] transition-all duration-300 group-hover/child-dropdown:bg-white">
+                                  <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-dropdown:opacity-100" />
+                                  <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">city 4</p>
+                                </div>
+                              </button>
+                            </div>
+                            <div class="group/child-dropdown">
+                              <button class="dropdown-content-list w-full" type="button">
+                                <div class="group-hover/child-dropdown:border-Lumira-Gray-200 flex items-center gap-2 rounded-[8px] border border-transparent px-[20px] py-[14px] transition-all duration-300 group-hover/child-dropdown:bg-white">
+                                  <img src="assets/images/icons/browse-all/check-sm.svg" alt="icon" class="size-[22px] shrink-0 opacity-0 transition-all duration-300 group-hover/child-dropdown:opacity-100" />
+                                  <p class="text-Lumira-Gray-500 group-hover/child-dropdown:text-Lumira-Gray-900 text-sm leading-[20px] font-medium transition-all duration-300">city 5</p>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <label class="col-span-2 flex flex-col gap-[6px]">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Username</h4>
+                      <div class="group flex flex-col gap-1">
+                        <input type="text" placeholder="Choose a username" class="error peer [.error]:bg-Lumira-Rose-25 [.error]:border-Lumira-Rose-600 placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                        <p class="text-Lumira-Rose-600 hidden text-sm leading-5 peer-[.error]:block">Username already in use</p>
+                      </div>
+                    </label>
+                    <label class="col-span-2 flex flex-col gap-[6px]">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Account Email</h4>
+                      <input type="email" placeholder="Enter your email address" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                    </label>
+
+                    <label class="col-span-2 flex flex-col gap-[6px]">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Customer Support Email</h4>
+                      <input type="email" placeholder="Enter customer support email" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                    </label>
+                    <label class="col-span-2 flex flex-col gap-[6px]">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Website URL</h4>
+                      <input type="text" placeholder="Enter your website link" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                    </label>
+                    <label class="col-span-2 flex flex-col gap-[6px]">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Short Bio</h4>
+                      <textarea placeholder="Write a short introduction about yourself" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 h-[128px] w-full rounded-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none"></textarea>
+                    </label>
+                  </div>
+                </div>
+
+                <hr class="text-Lumira-Gray-200" />
+
+                <div class="content-social-integration flex flex-col gap-5 py-[32px]">
+                  <h3 class="integration-title text-Lumira-Gray-900 text-2xl leading-[32px] font-semibold">Social Integration</h3>
+                  <div class="bg-Lumira-Gray-50 border-Lumira-Gray-200 flex flex-col gap-5 rounded-xl border p-6">
+                    <div class="integration-cta flex items-center justify-between">
+                      <img src="assets/images/icons/google.svg" alt="icon" class="h-[40px] shrink-0" />
+                      <button type="button" class="buttons group" onclick="this.classList.toggle('active')">
+                        <div class="btn-connect flex h-[44px] w-[140px] shrink-0 items-center justify-center rounded-full bg-black text-center text-sm leading-5 font-medium text-white group-[.active]:hidden">Connect</div>
+                        <div class="btn-disconnect border-Lumira-Gray-200 hover:border-Lumira-Rose-200 hover:border-Lumira-Rose-50 hover:text-Lumira-Rose-600 text-Lumira-Gray-900 hidden h-[44px] w-[140px] shrink-0 items-center justify-center rounded-full border bg-white text-center text-sm leading-5 font-medium transition-all duration-300 group-[.active]:flex">Disconnect</div>
+                      </button>
+                    </div>
+                    <p class="integration-desc text-Lumira-Gray-500">Connect your Lumira account with Google for easy & secure sign-in.</p>
+                  </div>
+                </div>
+                <hr class="text-Lumira-Gray-200" />
+                <div class="content-social-profiles flex flex-col gap-5 py-[32px]">
+                  <h3 class="integration-title text-Lumira-Gray-900 text-2xl leading-[32px] font-semibold">Social Profiles</h3>
+                  <div class="social-profiles-inputs grid grid-cols-2 gap-4">
+                    <label class="col-span-1 flex flex-col gap-[6px] text-white">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">X<span class="text-Lumira-Gray-500 font-normal">(formerly Twitter)</span></h4>
+                      <div class="flex items-center">
+                        <div class="prefix bg-Lumira-Gray-100 border-Lumira-Gray-200 text-Lumira-Gray-500 flex h-full items-center rounded-l-xl border-y border-l pr-3 pl-5 font-medium">x.com/</div>
+                        <input type="text" placeholder="username" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-r-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                      </div>
+                    </label>
+                    <label class="col-span-1 flex flex-col gap-[6px] text-white">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Instagram</h4>
+                      <div class="flex items-center">
+                        <div class="prefix bg-Lumira-Gray-100 border-Lumira-Gray-200 text-Lumira-Gray-500 flex h-full items-center rounded-l-xl border-y border-l pr-3 pl-5 font-medium">instagram.com/</div>
+                        <input type="text" placeholder="username" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-r-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                      </div>
+                    </label>
+                    <label class="col-span-1 flex flex-col gap-[6px] text-white">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Behance</h4>
+                      <div class="flex items-center">
+                        <div class="prefix bg-Lumira-Gray-100 border-Lumira-Gray-200 text-Lumira-Gray-500 flex h-full items-center rounded-l-xl border-y border-l pr-3 pl-5 font-medium">behance.net/</div>
+                        <input type="text" placeholder="username" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-r-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                      </div>
+                    </label>
+                    <label class="col-span-1 flex flex-col gap-[6px] text-white">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Dribbble</h4>
+                      <div class="flex items-center">
+                        <div class="prefix bg-Lumira-Gray-100 border-Lumira-Gray-200 text-Lumira-Gray-500 flex h-full items-center rounded-l-xl border-y border-l pr-3 pl-5 font-medium">dribbble.com/</div>
+                        <input type="text" placeholder="username" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-r-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                      </div>
+                    </label>
+                    <label class="col-span-1 flex flex-col gap-[6px] text-white">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">LinkedIn</h4>
+                      <div class="flex items-center">
+                        <div class="prefix bg-Lumira-Gray-100 border-Lumira-Gray-200 text-Lumira-Gray-500 flex h-full items-center rounded-l-xl border-y border-l pr-3 pl-5 font-medium">linkedin.com/in/</div>
+                        <input type="text" placeholder="username" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-r-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                      </div>
+                    </label>
+                    <label class="col-span-1 flex flex-col gap-[6px] text-white">
+                      <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Youtube</h4>
+                      <div class="flex items-center">
+                        <div class="prefix bg-Lumira-Gray-100 border-Lumira-Gray-200 text-Lumira-Gray-500 flex h-full items-center rounded-l-xl border-y border-l pr-3 pl-5 font-medium">youtube.com/@</div>
+                        <input type="text" placeholder="username" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-r-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="bg-Lumira-Indigo-600 cursor-pointer rounded-xl py-[18px] text-center font-medium text-white">Update Settings</button>
+              </form>
+            </div>
+          </div>
+
+          <div id="tab2" class="content-container hidden">
+            <div class="relative flex w-full flex-col pt-[50px]">
+              <form action="" class="flex flex-col gap-[46px]">
+                <label class="flex flex-col gap-[6px]">
+                  <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Email</h4>
+                  <input type="email" placeholder="Enter your email address" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                </label>
+                <button type="submit" class="bg-Lumira-Indigo-600 cursor-pointer rounded-xl py-[18px] text-center font-medium text-white">Send Reset Link</button>
+              </form>
+              <div id="AlertResetLink" class="active fixed right-[-435px] bottom-[26px] z-50 transition-all duration-300 [.active]:right-[40px]">
+                <div class="border-Lumira-Green-500 shadow-Lumira-Green-500/20 flex w-fit items-start gap-3 rounded-lg border bg-[#EDFCF2CC] py-3 pr-5 pl-4 shadow-lg backdrop-blur-xl">
+                  <img src="assets/images/icons/send-paper-plane-green.svg" alt="icon" class="w-4 shrink-0" />
+                  <div class="desc flex flex-col gap-[6px]">
+                    <h5 class="text-Lumira-Gray-900 font-medium">Password reset link sent!</h5>
+                    <p class="text-Lumira-Gray-900">Check your inbox and spam folder for the password reset email.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab3" class="content-container hidden">
+            <div class="content pt-[18px]">
+              <form action="" class="flex flex-col gap-[46px]">
+                <div class="email-notif-lists flex flex-col gap-5">
+                  <div class="email-notif-list flex items-center justify-between gap-5">
+                    <h4 class="text-Lumira-Gray-900 font-medium">Platform news & updates</h4>
+                    <label class="group toggle-switch relative w-fit shrink-0">
+                      <input type="checkbox" checked class="absolute top-0 left-0 z-10 h-full w-full cursor-pointer opacity-0" />
+                      <div class="toggle-ui group-has-checked:bg-Lumira-Indigo-600 bg-Lumira-Gray-400 border-Lumira-Gray-200 h-6 w-[44px] rounded-full border p-1 transition-all duration-300">
+                        <div class="relative h-full w-full">
+                          <div class="toggle-ui-button-check absolute top-1/2 left-0 size-4 shrink-0 -translate-y-1/2 rounded-full bg-white transition-all duration-300 group-has-checked:left-full group-has-checked:-translate-x-[100%]"></div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <hr class="text-Lumira-Gray-200" />
+                  <div class="email-notif-list flex items-center justify-between gap-5">
+                    <h4 class="text-Lumira-Gray-900 font-medium">New followers</h4>
+                    <label class="group toggle-switch relative w-fit shrink-0">
+                      <input type="checkbox" checked class="absolute top-0 left-0 z-10 h-full w-full cursor-pointer opacity-0" />
+                      <div class="toggle-ui group-has-checked:bg-Lumira-Indigo-600 bg-Lumira-Gray-400 border-Lumira-Gray-200 h-6 w-[44px] rounded-full border p-1 transition-all duration-300">
+                        <div class="relative h-full w-full">
+                          <div class="toggle-ui-button-check absolute top-1/2 left-0 size-4 shrink-0 -translate-y-1/2 rounded-full bg-white transition-all duration-300 group-has-checked:left-full group-has-checked:-translate-x-[100%]"></div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <hr class="text-Lumira-Gray-200" />
+                  <div class="email-notif-list flex items-center justify-between gap-5">
+                    <h4 class="text-Lumira-Gray-900 font-medium">New releases</h4>
+                    <label class="group toggle-switch relative w-fit shrink-0">
+                      <input type="checkbox" checked class="absolute top-0 left-0 z-10 h-full w-full cursor-pointer opacity-0" />
+                      <div class="toggle-ui group-has-checked:bg-Lumira-Indigo-600 bg-Lumira-Gray-400 border-Lumira-Gray-200 h-6 w-[44px] rounded-full border p-1 transition-all duration-300">
+                        <div class="relative h-full w-full">
+                          <div class="toggle-ui-button-check absolute top-1/2 left-0 size-4 shrink-0 -translate-y-1/2 rounded-full bg-white transition-all duration-300 group-has-checked:left-full group-has-checked:-translate-x-[100%]"></div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <hr class="text-Lumira-Gray-200" />
+                  <div class="email-notif-list flex items-center justify-between gap-5">
+                    <h4 class="text-Lumira-Gray-900 font-medium">Product sales</h4>
+                    <label class="group toggle-switch relative w-fit shrink-0">
+                      <input type="checkbox" class="absolute top-0 left-0 z-10 h-full w-full cursor-pointer opacity-0" />
+                      <div class="toggle-ui group-has-checked:bg-Lumira-Indigo-600 bg-Lumira-Gray-400 border-Lumira-Gray-200 h-6 w-[44px] rounded-full border p-1 transition-all duration-300">
+                        <div class="relative h-full w-full">
+                          <div class="toggle-ui-button-check absolute top-1/2 left-0 size-4 shrink-0 -translate-y-1/2 rounded-full bg-white transition-all duration-300 group-has-checked:left-full group-has-checked:-translate-x-[100%]"></div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="bg-Lumira-Indigo-600 cursor-pointer rounded-xl py-[18px] text-center font-medium text-white">Update Settings</button>
+              </form>
+            </div>
+          </div>
+
+          <div id="tab4" class="content-container hidden">
+            <div class="content">
+              <div class="flex flex-col gap-[14px]">
+                <div class="content-desc flex flex-col gap-5">
+                  <h2 class="content-desc-title">Are you sure you want to delete your account?</h2>
+                  <div class="content-desc-paragraph flex flex-col gap-6">
+                    <p>Deleting your account and all related data is a manual process handled by our team. To request account removal, please contact support using the email address linked to the account you wish to delete.</p>
+                    <p>Please note: This action is permanent & cannot be undone.</p>
+                  </div>
+                </div>
+                <a href="" class="cursor-pointer">
+                  <div>Contact Support</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <footer class="relative overflow-hidden rounded-[18px]">
         <img src="assets/images/backgrounds/bg-footer.png" alt="image" class="absolute top-0 bottom-0 left-0 h-full w-full" />
@@ -1387,5 +1727,7 @@
     <script src="js/modal-input-navbar-top-toggle.js"></script>
     <script src="js/nav-top-dark.js"></script>
     <script src="js/browse-all-tabs.js"></script>
+    <script src="js/menu-dropdown-all-user-setting.js"></script>
+    <script src="js/change-profile.js"></script>
   </body>
 </html>

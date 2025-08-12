@@ -6,111 +6,29 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Document</title>
   </head>
-  <body class="bg-Lumira-Gray-700">
+  <body class="bg-Lumira-Gray-200">
     <section id="Contents" class="flex flex-col gap-[14px] pt-[14px] pb-[162px]">
       <div id="TabsButtons" class="px-[90px] py-6">
-        <div class="border-Lumira-Gray-600 grid grid-cols-4 border-b">
-          <button type="button" data-content="tab1" class="tab-btn [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Account Details</button>
-          <button type="button" data-content="tab2" class="tab-btn [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Password</button>
-          <button type="button" data-content="tab3" class="tab-btn [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Security</button>
-          <button type="button" data-content="tab4" class="tab-btn [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Notifications</button>
+        <div class="border-Lumira-Gray-600 grid grid-cols-4">
+          <button type="button" data-content="tab1" class="tab-btn border-Lumira-Gray-200 active [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer border-b py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Account Details</button>
+          <button type="button" data-content="tab2" class="tab-btn border-Lumira-Gray-200 [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer border-b py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Password</button>
+          <button type="button" data-content="tab3" class="tab-btn border-Lumira-Gray-200 [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer border-b py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Security</button>
+          <button type="button" data-content="tab4" class="tab-btn border-Lumira-Gray-200 [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer border-b py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Notifications</button>
         </div>
       </div>
       <div id="Tabs-Content">
-        <div id="tab1" class="content-container">
-          <div class="content">
-            <form action="">
-              <div class="content-header">
-                <div class="content-header-image"></div>
-                <div class="content-header-inputs grid grid-cols-2 gap-4">
-                  <label for="first-name" class="col-span-1 text-white">
-                    <h4>First Name</h4>
-                    <input type="text" id="first-name" placeholder="Enter your first name" class="w-full" />
-                  </label>
-                  <label for="first-name" class="col-span-1 text-white">
-                    <h4>First Name</h4>
-                    <input type="text" id="first-name" placeholder="Enter your first name" class="w-full" />
-                  </label>
-                  <label for="first-name" class="col-span-1 text-white">
-                    <h4>First Name</h4>
-                    <input type="text" id="first-name" placeholder="Enter your first name" class="w-full" />
-                  </label>
-                  <label for="first-name" class="col-span-1 text-white">
-                    <h4>First Name</h4>
-                    <input type="text" id="first-name" placeholder="Enter your first name" class="w-full" />
-                  </label>
-                  <label for="first-name" class="col-span-2 text-white">
-                    <h4>First Name</h4>
-                    <input type="text" id="first-name" placeholder="Enter your first name" class="w-full" />
-                  </label>
-                  <label for="first-name" class="col-span-2 text-white">
-                    <h4>First Name</h4>
-                    <input type="text" id="first-name" placeholder="Enter your first name" class="w-full" />
-                  </label>
-                  <label for="first-name" class="col-span-2 text-white">
-                    <h4>First Name</h4>
-                    <input type="text" id="first-name" placeholder="Enter your first name" class="w-full" />
-                  </label>
-                  <label for="first-name" class="col-span-2 text-white">
-                    <h4>First Name</h4>
-                    <input type="text" id="first-name" placeholder="Enter your first name" class="w-full" />
-                  </label>
-                  <label for="first-name" class="col-span-2 text-white">
-                    <h4>First Name</h4>
-                    <input type="text" id="first-name" placeholder="Enter your first name" class="w-full" />
-                  </label>
-                </div>
-              </div>
-              <hr />
-              <div class="content-social-integration">
-                <h3 class="integration-title">Social Integration</h3>
-                <div>
-                  <div class="integration-cta">
-                    <img src="" alt="" />
-                    <button type="button">Connect</button>
-                  </div>
-                  <p class="integration-desc">Connect your Lumira account with Google for easy & secure sign-in.</p>
-                </div>
-              </div>
-              <hr />
-              <div class="content-social-profiles">
-                <h3 class="social-profiles-title">Social Integration</h3>
-                <div class="social-profiles-inputs grid grid-cols-2 gap-4">
-                  <label for="" class="col-span-1 text-white">
-                    <h4>First Name</h4>
-                    <input type="text" id="first-name" placeholder="Enter your first name" class="w-full" />
-                  </label>
-                  <label for="" class="col-span-1 text-white">
-                    <h4>First Name</h4>
-                    <input type="text" id="first-name" placeholder="Enter your first name" class="w-full" />
-                  </label>
-                </div>
-              </div>
-              <button type="submit" class="cursor-pointer">Update Settings</button>
-            </form>
-          </div>
-        </div>
+        <div id="tab1" class="content-container"></div>
 
-        <div id="tab2" class="content-container hidden">
-          <div class="content">
-            <form action="">
-              <label for="first-name" class="col-span-1 text-white">
-                <h4>First Name</h4>
-                <input type="text" id="first-name" placeholder="Enter your first name" class="w-full" />
-              </label>
-              <button type="submit" class="cursor-pointer">Send Reset Link</button>
-            </form>
-          </div>
-        </div>
+        <div id="tab2" class="content-container hidden"></div>
 
         <div id="tab3" class="content-container hidden">
-          <div class="content">
-            <form action="">
-              <div class="email-notif-lists">
-                <div class="email-notif-list flex justify-between">
-                  <h4>Platform news & updates</h4>
+          <div class="content pt-[18px]">
+            <form action="" class="flex flex-col gap-[46px]">
+              <div class="email-notif-lists flex flex-col gap-5">
+                <div class="email-notif-list flex items-center justify-between gap-5">
+                  <h4 class="text-Lumira-Gray-900 font-medium">Platform news & updates</h4>
                   <label class="group toggle-switch relative w-fit shrink-0">
-                    <input type="checkbox" class="absolute top-0 left-0 z-10 h-full w-full cursor-pointer opacity-0" />
+                    <input type="checkbox" checked class="absolute top-0 left-0 z-10 h-full w-full cursor-pointer opacity-0" />
                     <div class="toggle-ui group-has-checked:bg-Lumira-Indigo-600 bg-Lumira-Gray-400 border-Lumira-Gray-200 h-6 w-[44px] rounded-full border p-1 transition-all duration-300">
                       <div class="relative h-full w-full">
                         <div class="toggle-ui-button-check absolute top-1/2 left-0 size-4 shrink-0 -translate-y-1/2 rounded-full bg-white transition-all duration-300 group-has-checked:left-full group-has-checked:-translate-x-[100%]"></div>
@@ -118,11 +36,11 @@
                     </div>
                   </label>
                 </div>
-                <hr />
-                <div class="email-notif-list flex justify-between">
-                  <h4>Platform news & updates</h4>
+                <hr class="text-Lumira-Gray-200" />
+                <div class="email-notif-list flex items-center justify-between gap-5">
+                  <h4 class="text-Lumira-Gray-900 font-medium">New followers</h4>
                   <label class="group toggle-switch relative w-fit shrink-0">
-                    <input type="checkbox" class="absolute top-0 left-0 z-10 h-full w-full cursor-pointer opacity-0" />
+                    <input type="checkbox" checked class="absolute top-0 left-0 z-10 h-full w-full cursor-pointer opacity-0" />
                     <div class="toggle-ui group-has-checked:bg-Lumira-Indigo-600 bg-Lumira-Gray-400 border-Lumira-Gray-200 h-6 w-[44px] rounded-full border p-1 transition-all duration-300">
                       <div class="relative h-full w-full">
                         <div class="toggle-ui-button-check absolute top-1/2 left-0 size-4 shrink-0 -translate-y-1/2 rounded-full bg-white transition-all duration-300 group-has-checked:left-full group-has-checked:-translate-x-[100%]"></div>
@@ -130,11 +48,11 @@
                     </div>
                   </label>
                 </div>
-                <hr />
-                <div class="email-notif-list flex justify-between">
-                  <h4>Platform news & updates</h4>
+                <hr class="text-Lumira-Gray-200" />
+                <div class="email-notif-list flex items-center justify-between gap-5">
+                  <h4 class="text-Lumira-Gray-900 font-medium">New releases</h4>
                   <label class="group toggle-switch relative w-fit shrink-0">
-                    <input type="checkbox" class="absolute top-0 left-0 z-10 h-full w-full cursor-pointer opacity-0" />
+                    <input type="checkbox" checked class="absolute top-0 left-0 z-10 h-full w-full cursor-pointer opacity-0" />
                     <div class="toggle-ui group-has-checked:bg-Lumira-Indigo-600 bg-Lumira-Gray-400 border-Lumira-Gray-200 h-6 w-[44px] rounded-full border p-1 transition-all duration-300">
                       <div class="relative h-full w-full">
                         <div class="toggle-ui-button-check absolute top-1/2 left-0 size-4 shrink-0 -translate-y-1/2 rounded-full bg-white transition-all duration-300 group-has-checked:left-full group-has-checked:-translate-x-[100%]"></div>
@@ -142,9 +60,9 @@
                     </div>
                   </label>
                 </div>
-                <hr />
-                <div class="email-notif-list flex justify-between">
-                  <h4>Platform news & updates</h4>
+                <hr class="text-Lumira-Gray-200" />
+                <div class="email-notif-list flex items-center justify-between gap-5">
+                  <h4 class="text-Lumira-Gray-900 font-medium">Product sales</h4>
                   <label class="group toggle-switch relative w-fit shrink-0">
                     <input type="checkbox" class="absolute top-0 left-0 z-10 h-full w-full cursor-pointer opacity-0" />
                     <div class="toggle-ui group-has-checked:bg-Lumira-Indigo-600 bg-Lumira-Gray-400 border-Lumira-Gray-200 h-6 w-[44px] rounded-full border p-1 transition-all duration-300">
@@ -155,7 +73,7 @@
                   </label>
                 </div>
               </div>
-              <button type="" class="cursor-pointer">Update Settings</button>
+              <button type="submit" class="bg-Lumira-Indigo-600 cursor-pointer rounded-xl py-[18px] text-center font-medium text-white">Update Settings</button>
             </form>
           </div>
         </div>
@@ -179,5 +97,7 @@
       </div>
     </section>
     <script src="js/browse-all-tabs.js"></script>
+    <script src="js/menu-dropdown-all-user-setting.js"></script>
+    <script src="js/change-profile.js"></script>
   </body>
 </html>
