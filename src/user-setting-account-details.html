@@ -1141,24 +1141,19 @@
       <!-- header -->
       <header class="bg-Lumira-Gray-100 border-Lumira-Gray-100 relative mt-[90px] w-full overflow-hidden rounded-[18px] border-[8px]">
         <img id="Bg-Image" src="assets/images/backgrounds/vector-path.svg" alt="icon" class="absolute bottom-0 left-0 h-full w-full rounded-[18px] object-cover" />
-        <div class="relative mx-auto flex w-full max-w-[1128px] flex-col items-center gap-[120px] py-[71px]">
+        <div class="relative mx-auto flex w-full max-w-[1128px] flex-col items-center gap-[120px] py-[85px]">
           <div id="HeaderText" class="tablet:px-0 mx-auto flex w-full max-w-[1022px] justify-center px-[12px]">
-            <div class="header-text-container flex flex-col items-center gap-6">
-              <div class="flex flex-col items-center gap-2">
-                <h1 class="header-text-title text-Lumira-Gray-500 text-center text-xl leading-[30px]">Search result</h1>
-                <p class="header-text-category text-Lumira-Gray-900 text-center text-[60px] leading-[70px] font-semibold">Travelling Booking</p>
-              </div>
-              <div class="header-text-count">
-                <p class="text-Lumira-Gray-500 text-center text-xl leading-[30px]"><span class="text-Lumira-Gray-900 font-bold">450</span> assets found</p>
-              </div>
+            <div class="header-text-container flex flex-col items-center gap-[30px]">
+              <h1 class="header-text text-Lumira-Gray-900 text-center text-[60px] leading-[70px] font-semibold">My Account</h1>
+              <p class="text-black text-center text-xl leading-[30px]">Manage your profile, security and notification settings.</p>
             </div>
           </div>
         </div>
       </header>
 
       <section id="Contents" class="flex flex-col gap-[14px] pt-[14px] pb-[162px]">
-        <div id="TabsButtons" class=" py-6">
-          <div class="grid grid-cols-4 border-Lumira-Gray-200 border-b px-[90px]">
+        <div id="TabsButtons" class="py-6">
+          <div class="border-Lumira-Gray-200 grid grid-cols-4 border-b px-[90px]">
             <button type="button" data-content="tab1" class="tab-btn active [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer border-b border-transparent py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Account Details</button>
             <button type="button" data-content="tab2" class="tab-btn [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer border-b border-transparent py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Password</button>
             <button type="button" data-content="tab3" class="tab-btn [&.active]:border-Lumira-Indigo-600 [&.active]:text-Lumira-Indigo-600 hover:border-Lumira-Indigo-600 hover:text-Lumira-Indigo-600 text-Lumira-Gray-500 cursor-pointer border-b border-transparent py-6 text-center text-lg leading-[28px] transition-all duration-300 hover:border-b-2 hover:font-semibold [&.active]:border-b-2 [&.active]:font-semibold">Security</button>
@@ -1480,17 +1475,17 @@
           </div>
 
           <div id="tab4" class="content-container hidden">
-            <div class="content">
-              <div class="flex flex-col gap-[14px]">
+            <div class="content pt-[50px]">
+              <div class="flex flex-col gap-[46px]">
                 <div class="content-desc flex flex-col gap-5">
-                  <h2 class="content-desc-title">Are you sure you want to delete your account?</h2>
+                  <h2 class="content-desc-title text-Lumira-Gray-900 leading-8 font-semibold">Are you sure you want to delete your account?</h2>
                   <div class="content-desc-paragraph flex flex-col gap-6">
-                    <p>Deleting your account and all related data is a manual process handled by our team. To request account removal, please contact support using the email address linked to the account you wish to delete.</p>
-                    <p>Please note: This action is permanent & cannot be undone.</p>
+                    <p class="text-Lumira-Gray-500">Deleting your account and all related data is a manual process handled by our team. To request account removal, please contact support using the email address linked to the account you wish to delete.</p>
+                    <p class="text-Lumira-Gray-900 font-medium">Please note: This action is permanent & <span class="text-Lumira-Rose-600">cannot be undone.</span></p>
                   </div>
                 </div>
                 <a href="" class="cursor-pointer">
-                  <div>Contact Support</div>
+                  <div class="bg-Lumira-Gray-900 rounded-xl py-[18px] text-center font-medium text-white">Contact Support</div>
                 </a>
               </div>
             </div>

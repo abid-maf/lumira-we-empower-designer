@@ -1118,6 +1118,9 @@
   .gap-\[28px\] {
     gap: 28px;
   }
+  .gap-\[30\] {
+    gap: 30;
+  }
   .gap-\[30px\] {
     gap: 30px;
   }
@@ -1703,6 +1706,9 @@
   .py-\[80px\] {
     padding-block: 80px;
   }
+  .py-\[85px\] {
+    padding-block: 85px;
+  }
   .pt-0 {
     padding-top: calc(var(--spacing) * 0);
   }
@@ -1730,9 +1736,6 @@
   .pt-\[14px\] {
     padding-top: 14px;
   }
-  .pt-\[18\] {
-    padding-top: 18;
-  }
   .pt-\[18px\] {
     padding-top: 18px;
   }
@@ -1750,6 +1753,9 @@
   }
   .pt-\[44px\] {
     padding-top: 44px;
+  }
+  .pt-\[50\] {
+    padding-top: 50;
   }
   .pt-\[50px\] {
     padding-top: 50px;
@@ -1932,6 +1938,10 @@
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
+  }
+  .leading-8 {
+    --tw-leading: calc(var(--spacing) * 8);
+    line-height: calc(var(--spacing) * 8);
   }
   .leading-\[14px\] {
     --tw-leading: 14px;
