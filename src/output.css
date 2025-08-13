@@ -709,9 +709,6 @@
   .h-\[264px\] {
     height: 264px;
   }
-  .h-\[280\] {
-    height: 280;
-  }
   .h-\[280px\] {
     height: 280px;
   }
@@ -1393,6 +1390,9 @@
   }
   .bg-Lumira-Yellow-400 {
     background-color: var(--color-Lumira-Yellow-400);
+  }
+  .bg-\[\#\#F9FAFBCC\] {
+    background-color: ##F9FAFBCC;
   }
   .bg-\[\#0B122099\] {
     background-color: #0B122099;
@@ -3268,6 +3268,13 @@
       }
     }
   }
+  .hover\:ring-Lumira-Gray-900 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-ring-color: var(--color-Lumira-Gray-900);
+      }
+    }
+  }
   .hover\:ring-Lumira-Green-500 {
     &:hover {
       @media (hover: hover) {
@@ -3289,6 +3296,13 @@
       }
     }
   }
+  .hover\:ring-Lumira-Indigo-600 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-ring-color: var(--color-Lumira-Indigo-600);
+      }
+    }
+  }
   .hover\:ring-Lumira-Pink-400 {
     &:hover {
       @media (hover: hover) {
@@ -3307,6 +3321,20 @@
     &:hover {
       @media (hover: hover) {
         --tw-ring-color: var(--color-Lumira-Rose-200);
+      }
+    }
+  }
+  .hover\:ring-Lumira-Rose-500 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-ring-color: var(--color-Lumira-Rose-500);
+      }
+    }
+  }
+  .hover\:ring-Lumira-Rose-600 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-ring-color: var(--color-Lumira-Rose-600);
       }
     }
   }
