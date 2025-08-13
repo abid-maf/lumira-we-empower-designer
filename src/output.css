@@ -742,6 +742,9 @@
   .h-full {
     height: 100%;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .max-h-\[378px\] {
     max-height: 378px;
   }
@@ -756,6 +759,9 @@
   }
   .min-h-full {
     min-height: 100%;
+  }
+  .min-h-screen {
+    min-height: 100vh;
   }
   .\!w-fit {
     width: fit-content !important;
@@ -903,6 +909,9 @@
   }
   .max-w-\[340px\] {
     max-width: 340px;
+  }
+  .max-w-\[400\] {
+    max-width: 400;
   }
   .max-w-\[400px\] {
     max-width: 400px;
@@ -1088,6 +1097,9 @@
   .gap-\[2px\] {
     gap: 2px;
   }
+  .gap-\[6\] {
+    gap: 6;
+  }
   .gap-\[6px\] {
     gap: 6px;
   }
@@ -1141,6 +1153,15 @@
   }
   .gap-\[52px\] {
     gap: 52px;
+  }
+  .gap-\[96\.54px\] {
+    gap: 96.54px;
+  }
+  .gap-\[96\.\] {
+    gap: 96.;
+  }
+  .gap-\[96\] {
+    gap: 96;
   }
   .gap-\[101px\] {
     gap: 101px;
@@ -1390,9 +1411,6 @@
   }
   .bg-Lumira-Yellow-400 {
     background-color: var(--color-Lumira-Yellow-400);
-  }
-  .bg-\[\#\#F9FAFBCC\] {
-    background-color: ##F9FAFBCC;
   }
   .bg-\[\#0B122099\] {
     background-color: #0B122099;
@@ -3321,20 +3339,6 @@
     &:hover {
       @media (hover: hover) {
         --tw-ring-color: var(--color-Lumira-Rose-200);
-      }
-    }
-  }
-  .hover\:ring-Lumira-Rose-500 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-ring-color: var(--color-Lumira-Rose-500);
-      }
-    }
-  }
-  .hover\:ring-Lumira-Rose-600 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-ring-color: var(--color-Lumira-Rose-600);
       }
     }
   }
