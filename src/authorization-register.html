@@ -21,39 +21,79 @@
     <title>Lumira | Register</title>
   </head>
   <body>
-    <div class="flex min-h-screen flex-col gap-[14px] overflow-hidden bg-white">
-      <aside id="Sidebar" class="relative h-screen overflow-hidden rounded-[18px]">
+    <div class="flex min-h-screen gap-[14px] overflow-hidden bg-white p-[14px]">
+      <aside id="Sidebar" class="relative flex w-full max-w-[460px] flex-col justify-end overflow-hidden rounded-[18px]">
         <img id="BgImage" src="assets/images/backgrounds/auth-bg.png" alt="background" class="absolute top-0 left-0 h-full w-full object-cover" />
-        <div class="content-scroll-automation">
+        <div class="content-scroll-automation relative pb-[32px]">
           <div class="list flex flex-col gap-[96.54px]">
-            <div class="image"></div>
-            <div class="work-by flex flex-col gap-[6px]">
-              <h5>Marketplace - Premium 3D Icon Pack</h5>
+            <img class="list-thumbnail" src="assets/images/icons/auth-1.svg" alt="thumbnail" />
+            <div class="work-by relative z-20 flex flex-col gap-[6px] px-[32px]">
+              <h5 class="text-Lumira-Indigo-25 text-sm leading-5 font-medium">Marketplace - Premium 3D Icon Pack</h5>
               <div class="flex items-center gap-[6px]">
-                <div class="image"></div>
-                <p>Fandy Ramadhan</p>
+                <div class="work-by-image flex size-5 shrink-0 items-center justify-center rounded-full">
+                  <img src="assets/images/profile/auth-profile-1.png" alt="profile" class="h-full w-full rounded-full object-cover" />
+                </div>
+                <p class="text-xs leading-[18px] text-white">Fandy Ramadhan</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="bg-gradient"></div>
+        <div class="bg-gradient absolute bottom-0 left-0 z-10 h-[334px] w-full bg-[linear-gradient(180deg,rgba(73,0,221,0)_0%,#4900DD_50%)]"></div>
       </aside>
-      <main id="Content" class="h-screen overflow-y-auto [&::-webkit-scrollbar]:hidden">
-        <form action="" class="mx-auto w-full max-w-[400px]">
+      <main id="Content" class="w-full overflow-y-auto [&::-webkit-scrollbar]:hidden">
+        <form action="" class="mx-auto w-full max-w-[400px] py-[64px]">
           <div class="flex flex-col gap-[32px]">
             <header>
-              <h1>Create Your Lumira Account 🚀</h1>
+              <h1 class="text-2xl leading-[32px] font-semibold text-[#000A19]">Create Your<br />Lumira Account 🚀</h1>
             </header>
-            <button type="button" class="flex items-center gap-2">
-              <img src="" alt="" />
-              <p>Register with Google</p>
+            <button type="button" class="border-Lumira-Gray-200 hover:ring-Lumira-Gray-200 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl border bg-white px-4 py-4 transition-all duration-300 hover:ring-2 hover:ring-offset-1">
+              <img src="assets/images/icons/google-login.svg" alt="icon" class="size-5 shrink-0" />
+              <p class="text-Lumira-Gray-900 text-sm leading-5 font-semibold">Register with Google</p>
             </button>
             <div class="or-line flex items-center gap-2">
-              <hr />
-              <p>or</p>
-              <hr />
+              <hr class="text-Lumira-Gray-200 flex-1" />
+              <p class="text-Lumira-Gray-400 text-sm leading-[20px]">or</p>
+              <hr class="text-Lumira-Gray-200 flex-1" />
             </div>
-            <section id="Inputs" class="grid grid-cols-2 gap-5"></section>
+            <section id="Inputs" class="grid grid-cols-2 gap-5">
+              <label class="col-span-1 flex flex-col gap-[6px]">
+                <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">First Name</h4>
+                <input type="text" placeholder="First name" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+              </label>
+              <label class="col-span-1 flex flex-col gap-[6px]">
+                <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Last Name</h4>
+                <input type="text" placeholder="Last name" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+              </label>
+              <label class="col-span-2 flex flex-col gap-[6px]">
+                <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Email</h4>
+                <input type="email" placeholder="Enter your email address" class="placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+              </label>
+
+              <label class="col-span-2 flex flex-col gap-[6px]">
+                <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Username</h4>
+                <div class="group flex flex-col gap-1">
+                  <input type="text" placeholder="Choose a username" class="error peer [.error]:bg-Lumira-Rose-25 [.error]:border-Lumira-Rose-600 placeholder:text-Lumira-Gray-500 border-Lumira-Gray-200 text-Lumira-Gray-900 focus:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 w-full rounded-xl border bg-white px-5 py-[14px] text-base leading-6 font-medium transition-all duration-300 placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                  <p class="text-Lumira-Rose-600 hidden text-sm leading-5 peer-[.error]:block">Username already in use</p>
+                </div>
+              </label>
+              <label class="col-span-2 flex flex-col gap-[6px]">
+                <h4 class="text-Lumira-Gray-900 text-sm leading-5 font-medium">Password</h4>
+                <div class="focus-within:border-Lumira-Gray-400 hover:border-Lumira-Gray-400 border-Lumira-Gray-200 flex w-full items-center gap-1 rounded-xl border bg-white px-5 py-[14px] transition-all duration-300 focus-within:outline-none">
+                  <input id="PasswordInput" type="password" placeholder="Set your password" class="placeholder:text-Lumira-Gray-500 text-Lumira-Gray-900 flex-1 text-base leading-6 font-medium placeholder:text-base placeholder:leading-6 placeholder:font-normal focus:outline-none" />
+                  <button type="button" id="PasswordToggle" class="group/eye relative cursor-pointer">
+                    <img src="assets/images/icons/eye-closed-gray.svg" alt="icon" class="size-5 shrink-0 group-[&.active]/eye:hidden" />
+                    <img src="assets/images/icons/eye-open-gray.svg" alt="icon" class="hidden size-5 shrink-0 group-[&.active]/eye:block" />
+                  </button>
+                </div>
+              </label>
+              <div class="agree-terms">
+                <div class="relative size-5 shrink-0">
+                  <input type="checkbox" class="absolute top-0 left-0 h-full w-full" />
+                  <div class="checkmark size-full"></div>
+                </div>
+                <p>I agree to all the<span>Terms & Privacy Policy</span></p>
+              </div>
+            </section>
             <button type="submit">Register</button>
             <div class="alert flex items-center gap-[6px]">
               <p>Already have an account?</p>
@@ -63,5 +103,6 @@
         </form>
       </main>
     </div>
+    <script src="js/eye-password.js"></script>
   </body>
 </html>
