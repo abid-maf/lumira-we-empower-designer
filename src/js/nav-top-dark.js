@@ -1,6 +1,7 @@
 window.addEventListener('scroll', function () {
   // Dapatkan elemen bilah navigasi utama di bagian atas halaman (untuk tampilan desktop).
   const navTopContainerDekstop = document.getElementById('NavTopContainerDekstop');
+  const NavTopEmpty = document.getElementById('NavTopEmpty');
 
   // Jika elemen navTopContainerDekstop tidak ditemukan, hentikan fungsi agar tidak error.
   if (!navTopContainerDekstop) {
@@ -18,6 +19,7 @@ window.addEventListener('scroll', function () {
     // Tambahkan kelas CSS untuk membuatnya tetap (fixed), bergeser ke atas sedikit,
     // dan menghilangkan padding atas default.
     navTopContainerDekstop.classList.add('fixed', 'top-[-85px]', 'pt-0');
+    NavTopEmpty.classList.add('h-[140px]');
     // Hapus padding atas yang mungkin ada sebelumnya.
     navTopContainerDekstop.classList.remove('pt-[60px]');
 
@@ -32,6 +34,7 @@ window.addEventListener('scroll', function () {
     navTopContainerDekstop.classList.remove('transition-all', 'duration-400'); // Hapus transisi
     navTopContainerDekstop.classList.remove('fixed', 'top-[-85px]', 'pt-0'); // Hapus posisi fixed
     navTopContainerDekstop.classList.add('pt-[60px]'); // Kembalikan padding atas default
+    NavTopEmpty.classList.remove('h-[140px]');
   }
 
   // Logika 3: Tambahkan atau hapus kelas 'scroll' berdasarkan posisi gulir.
